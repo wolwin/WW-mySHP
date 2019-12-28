@@ -1,2 +1,2 @@
 # WW-mySHP
- Various SmartHome Projects
+ Various <b>S</b>mart-<b>H</b>ome-<b>P</b>rojects
