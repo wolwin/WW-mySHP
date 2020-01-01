@@ -4,7 +4,7 @@
 
 der unterschiedlichen <b>S</b>mart-<b>H</b>ome-<b>P</b>rojekte:
 
-| **Bezeichnung** | **Beschreibung** |
+| **Projekt** | **Beschreibung** |
 | --- | --- |
 | [Projekt HB-UNI-Sens-X](./SHP_HB-UNI-Sens-X/README.md "Zeigen ...")| Universielle 'AskSin++' Platine mit verschiedenen Sensor Anschluß- und Konfigurationsmöglichkeiten |
 | [Projekt HB-UNI-Mini-X](./SHP_HB-UNI-Mini-X/README.md "Zeigen ...") | Universielle 'AskSin++' Mini-Platine |
