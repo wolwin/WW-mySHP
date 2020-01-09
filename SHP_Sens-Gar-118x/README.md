@@ -35,6 +35,7 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
       //   - ATtiny24A => sleep    = 5uA
 
 - Funktion der GARDENA 118x Sensoren (z.B. mit einem GARDENA Bewässerungscomputer EasyControl)
+
       // GARDENA
       //
       // GARDENA - Bewässerungscomputer EasyControl - Art.-Nr. 1881
@@ -61,6 +62,7 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 
 
 - ATtiny24a Anschlüsse und Programmiereinstellungen
+
       // ATMEL ATTINY 24a
       // ----------------
       //                        +-\/-+                                   ARDUINO Pro Mini
@@ -91,7 +93,6 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
       // - the bootloader of the ATtiny13A (ATtiny24A) must be set first - if  
       //   not set, the power consumtion of 5uA could not be reached !
       // - the Brown out Detection Level of the board must be disabled !
-
 
 #### ATtiny24a INO-Script
 [Download ...](./bin/GARDENA_Sensor_118x_20191228.zip)
