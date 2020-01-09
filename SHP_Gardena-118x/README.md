@@ -12,5 +12,20 @@ Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'H
 
 #### Bilder
 
+
+- Übersicht - 'Sens-Gar-118x'
+  - die GARDENA 118x Sensoren werden mit ihren Zuleitungskabeln über die Schraubklemmen verbunden (rechts)
+    - Gerät 1 = Kabel 'Gar1 + GND'
+    - Gerät 2 = Kabel 'Gar2 + GND'
+  - die Ausgabe-Ports des ATtiny24a sind über eine JST-XH Buchse herausgeführt (oben mittig)
+<br><br>
+- Ansicht
+<br><br>
+![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_01.jpg "Sens-Gar-118x")
+<br><br>![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_02.jpg "Sens-Gar-118x")
+<br><br>
+
+
+
 #### Historie
 - 2020-01-10 - Erstveröffentlichung

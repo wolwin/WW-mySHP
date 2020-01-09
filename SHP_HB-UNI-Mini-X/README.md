@@ -20,31 +20,31 @@ AddOn Platine für 'HB-UNI-Mini-X' im THT-Format. Mit 'HB-UNI-Mini-X' und dem 'H
 <br><br>
 - Vorderseite (ohne Sendemodul)
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_01.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_01.jpg "HB-UNI-Mini-X")
 <br><br>
 - Rückseite (ohne Sendemodul)
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_02.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_02.jpg "HB-UNI-Mini-X")
 <br><br>
 - Seitenansicht (ohne Sendemodul)
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_03.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_03.jpg "HB-UNI-Mini-X")
 <br><br>
 - Ansicht mit Sendemodul
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_04.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_04.jpg "HB-UNI-Mini-X")
 <br><br>
 - Detailansicht Variante 1 mit Sendemodul
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_06.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_06.jpg "HB-UNI-Mini-X")
 <br><br>
 - Detailansicht Variante 2 mit Sendemodul
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_08.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_08.jpg "HB-UNI-Mini-X")
 <br><br>
 - Detailansicht Variante 1 mit AddOn und Sendemodul
 <br><br>
-![WW-myPCB - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_10.jpg "HB-UNI-Mini-X")
+![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_10.jpg "HB-UNI-Mini-X")
 
 
 
