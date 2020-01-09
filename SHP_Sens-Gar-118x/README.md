@@ -12,6 +12,9 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 - Platine 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_Sens-Gar-118x/README.md)
 - Platine 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-UNI-Mini-X/README.md)
 
+#### Einsatz der Platine
+- Projekt 'SHP_HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-SCI-4-O-Gar118x/README.md)
+
 #### Funktion
 - Allgemeine Funktionsbeschreibung von Platine und ATtiny24a
 
@@ -108,9 +111,6 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 <br><br>
 ![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_01.jpg "Sens-Gar-118x")
 <br><br>![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_02.jpg "Sens-Gar-118x")
-<br><br>
-
-
 
 #### Historie
 - 2020-01-10 - Erstveröffentlichung
