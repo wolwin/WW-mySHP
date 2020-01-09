@@ -6,7 +6,7 @@
 
 Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X'. Eine Einbau- bzw. Montagemöglichkeit kann über vier 2 mm Platinen-Löcher realisiert werden.
 
-Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen GARDENA 118x Sensoren (bzw. potential freien Schaltern). Über die Ausgangsports des ATtiny 24a wird ein Änderungsflag, der Sensorstatus ON / OFF und bei den GARDENA Sensoren der Leitungsstatus VERBUNDEN / UNTERBROCHEN ausgegeben.
+Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen GARDENA 118x Sensoren (bzw. potential freien Schaltern). Über die Ausgangsports des ATtiny 24a wird ein Änderungsflag, der Sensorstatus ON / OFF und bei den GARDENA Sensoren der Leitungsstatus VERBUNDEN / UNTERBROCHEN als Fehlerstatus ausgegeben.
 
 #### Platine
 - Platine 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_Sens-Gar-118x/README.md)
