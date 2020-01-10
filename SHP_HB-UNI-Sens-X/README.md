@@ -9,7 +9,7 @@ Universielle 'AskSin++' Platine mit verschiedenen Sensor Anschluß- und Konfigur
 - Ziel des Projektes war, eine universielle Platine im THT-Format (=>'Through Hole Technology') zu erstellen, an die unterschiedliche Sensoren für unterschiedliche 'AskSin++' Projekte angeschlossen werden können. Gleichzeitig sollte hardwareseitig ein Batterie-Betrieb mit möglichst geringer Stromaufnahme sichergestellt werden - alternativ sollte auch der Betrieb an einer externen Festspannung (4-9 V) möglich sein.
 Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da dieser sowohl einen Batterie- als auch Festspannungsbetrieb möglich macht - ein evtl. größerer Raumbedarf für die Batterien / Akkus wurde dabei bewußt in Kauf genommen.
 
-- Eine interessanter Artikel über batteriebetriebene Anwendungen ist auf der 'Mikrokontroller.net'-Side veröffentlicht worden - [Zeigen ...](https://www.mikrocontroller.net/articles/Versorgung_aus_einer_Zelle)
+- Ein interessanter Artikel über batteriebetriebene Anwendungen ist auf der 'Mikrokontroller.net'-Side veröffentlicht worden - [Zeigen ...](https://www.mikrocontroller.net/articles/Versorgung_aus_einer_Zelle)
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
 
 #### Platine
