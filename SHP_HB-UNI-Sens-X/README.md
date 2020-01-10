@@ -19,7 +19,7 @@ Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da
 - Grundsätzlich sind (fast alle) 'AskSin++' INO-Scripte (evtl. nach entsprechender Anpassung) auf der Platine lauffähig - dabei ist natürlich auf die hardwareseitige Port-Zuordnung zu achten.
 - Besonders ist hier die Entwicklung 'Universalsensor HB-UNI-Sensor1' von Tom Major zu nennen - sein zugehöriges INO-Script ist direkt auch auf der 'HB-UNI-Sens-X' Platine lauffähig:
   - Github Tom Major - HB-UNI-Sensor1 - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1)
-- Eine angepaßte Version des 'HB-UNI-Sensor1' Scripts, das auch die Option der MOSFET-Schaltung für I2C und 1-Wire Komponenten bietet, findet sich hier - [Download ...]((./bin/HB-UNI-Sensor1_V1.17_MOSFET.rar)
+- Eine angepaßte Version des 'HB-UNI-Sensor1' Scripts, das auch die Option der MOSFET-Schaltung für I2C und 1-Wire Komponenten bietet, findet sich hier - [Download ...](./bin/HB-UNI-Sensor1_V1.17_MOSFET.rar)
 
 #### Bilder
 - Übersicht - 'HB-UNI-Sens-X'
