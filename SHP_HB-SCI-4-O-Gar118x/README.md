@@ -37,6 +37,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - Detail Anschluß-Varianten 'Sens-Gar-118x' - [Zeigen ...](./bin/HB-SCI-4-O-Gar118x_Varianten.txt "Zeigen ...")
 
 #### INO-Script
+[Download ...](./bin/HB-SCI-4-O-Gar118x_20191228.zip)
 
 #### Inbetriebnahme
 Zwischen den Platinen müssen zur Inbetriebnahme noch folgende Kabelverbindungen hergestellt werden:
