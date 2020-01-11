@@ -41,7 +41,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 #### Inbetriebnahme
 Zwischen den Platinen müssen zur Inbetriebnahme noch folgende Kabelverbindungen hergestellt werden:
 
-- | **Sens-Gar-118x** | **HB-UNI-Mini-X** |
+| **Sens-Gar-118x** | **HB-UNI-Mini-X** |
 | --- | --- |
 | GND | GND |
 | PA0 | A1 |
