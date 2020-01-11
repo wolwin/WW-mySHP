@@ -56,6 +56,10 @@ Zwischen den Platinen müssen zur Inbetriebnahme noch folgende Kabelverbindungen
 - 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
 
 #### Bilder
+- 'HB-UNI-Sens-X' mit 'Sens-Gar-118x'
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_01.jpg "HB-UNI-Sens-X und Sens-Gar-118x")
+<br><br>
 
 #### Historie
 - 2020-01-10 - Erstveröffentlichung
