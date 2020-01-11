@@ -14,6 +14,11 @@ Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da
 
 - Die Möglichkeit einer Software gesteuerten GND-Schaltung (An/Aus) stellt mit einem optionalen N-MOSFET für I2C und / oder 1-Wire Komponneten sicher, dass die Sensoren während der 'Schlafphase' des Moduls zur Minimierung des Stromverbrauchs abgeschaltet werden können.
 
+- Optionale Batteriespannungsmessung über Spannungsteiler zur Vermeidung des "Babbling Idiot" (Dauersender) im Homematic Netzwerk bei Selbstbaugeräten.
+  - Artikel auf der 'AskSin++' Side - [Zeigen ...](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html=)
+  - Artikel auf Github Tom Major - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/Info/Babbling%20Idiot%20Protection)
+
+
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
 
 #### Platine
