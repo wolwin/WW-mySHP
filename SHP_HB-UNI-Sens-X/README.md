@@ -15,8 +15,8 @@ Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da
 - Die Möglichkeit einer Software gesteuerten GND-Schaltung (An/Aus) stellt mit einem optionalen N-MOSFET für I2C und / oder 1-Wire Komponneten sicher, dass die Sensoren während der 'Schlafphase' des Moduls zur Minimierung des Stromverbrauchs abgeschaltet werden können.
 
 - Optionale Batteriespannungsmessung über Spannungsteiler zur Vermeidung des "Babbling Idiot" (Dauersender) im Homematic Netzwerk bei Selbstbaugeräten.
-  - Artikel auf der 'AskSin++' Side - [Zeigen ...](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html=)
-  - Artikel auf Github Tom Major - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/Info/Babbling%20Idiot%20Protection)
+  - Artikel auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html=)
+  - Artikel auf Github 'Tom Major'-Side - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/Info/Babbling%20Idiot%20Protection)
 
 
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
@@ -27,7 +27,7 @@ Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da
 #### INO-Scripte
 - Grundsätzlich sind (fast alle) 'AskSin++' INO-Scripte (evtl. nach entsprechender Anpassung) auf der Platine lauffähig - dabei ist natürlich auf die hardwareseitige Port-Zuordnung zu achten.
 - Besonders ist hier die Entwicklung 'Universalsensor HB-UNI-Sensor1' von Tom Major zu nennen - sein zugehöriges INO-Script ist direkt auch auf der 'HB-UNI-Sens-X' Platine lauffähig:
-  - Github Tom Major - HB-UNI-Sensor1 - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1)
+  - Github 'Tom Major' - HB-UNI-Sensor1 - [Zeigen ...](https://github.com/TomMajor/SmartHome/tree/master/HB-UNI-Sensor1)
 - Eine angepaßte Version des 'HB-UNI-Sensor1' Scripts, das auch die Option der MOSFET-Schaltung für I2C und 1-Wire Komponenten bietet, findet sich hier - [Download ...](./bin/HB-UNI-Sensor1_V1.17_MOSFET.rar)
 
 #### 3D-Print
