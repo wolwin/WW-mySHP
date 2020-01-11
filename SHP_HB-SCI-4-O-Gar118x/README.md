@@ -18,8 +18,8 @@ Alle 5 Minuten wird der Status der angeschlossenen GARDENA 118x Sensoren (bzw. p
 
 #### Aufbau
 Das Gerät besteht aus zwei Teilen: der Sensor-Platine 'Sens-Gar-118x' (Platinenbestückung incl. Spannungsversorgung 4 - 9 V) und dem 'AskSin++' Modul (minimale Bestückung):
-  - SHP-Projekt 'Sens-Gar-118x' - [Zeigen ...](./SHP_Sens-Gar-118x/README.md "Zeigen ...")
-  - SHP-Projekt 'HB-UNI-Mini-X' - [Zeigen ...](./SHP_HB-UNI-Mini-X/README.md "Zeigen ...")
+  - SHP-Projekt 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md "Zeigen ...")
+  - SHP-Projekt 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Mini-X/README.md "Zeigen ...")
 
 #### Konfiguration
 
