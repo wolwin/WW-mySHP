@@ -1,0 +1,80 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sensor 'Sens-Gar-118x' Anschluß-Varianten
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Als Default-Einstellung (für Gardena-Geräte) bleiben die Jumper J1 und J2 immer ohne Brückung (OFF) - lediglich, wenn ein potential freier Schalter eingesetzt 
+werden soll, wird der zugehörige Jumper des Eingangs gejumpert (ON).
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Variante 1 - mit Fehler-Kanal
+    Platine
+    Jumper  : J1 = OFF  J2 = OFF
+    Inp-Gar1: Gardena 1188-20 (Feuchte)  oder  Gardena 1189-20 (Regen)
+    Inp-Gar2: -
+    WebUI   : Darstellung 2 Schalter (Status1 / Error1)
+
+    Variante 1 - ohne Fehler-Kanal
+    Platine
+    Jumper  : J1 = OFF  J2 = OFF
+    Inp-Gar1: Gardena 1188-20 (Feuchte)  oder  Gardena 1189-20 (Regen)
+    Inp-Gar2: -
+    WebUI   : Darstellung 1 Schalter (Status1)
+
+    Variante 2 - mit Fehler-Kanal (default)
+    Platine
+    Jumper  : J1 = OFF  J2 = OFF
+    Inp-Gar1: Gardena 1188-20 (Feuchte)
+    Inp-Gar2: Gardena 1189-20 (Regen)
+     oder
+    Inp-Gar1: Bewässerung-Flag - Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    Inp-Gar2: Bewässerung-Flag - Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    WebUI   : Darstellung 4 Schalter (Status1 / Error1 / Status2 / Error2)
+
+    Variante 2 - ohne Fehler-Kanal
+    Platine
+    Jumper  : J1 = OFF  J2 = OFF
+    Inp-Gar1: Gardena 1188-20 (Feuchte)
+    Inp-Gar2: Gardena 1189-20 (Regen)
+     oder
+    Inp-Gar1: Bewässerung-Flag - Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    Inp-Gar2: Bewässerung-Flag - Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    WebUI   : Darstellung 2 Schalter (Status1 / Status2)
+
+    Variante 3 - mit Fehler-Kanal
+    Platine
+    Jumper  : J1 = OFF  J2 = ON
+    Inp-Gar1: Gardena 1188-20 (Feuchte)  oder  Gardena 1189-20 (Regen)  oder  Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    Inp-Gar2: 1 potentialfreier Schalter
+    WebUI   : Darstellung 3 Schalter (Status1 / Error1 / Status2)
+
+    Variante 3 - ohne Fehler-Kanal
+    Platine
+    Jumper  : J1 = OFF  J2 = ON
+    Inp-Gar1: Gardena 1188-20 (Feuchte)  oder  Gardena 1189-20 (Regen)  oder  Y-Kabel mit Gardena 1188-20 (Feuchte) und Gardena 1189-20 (Regen)
+    Inp-Gar2: 1 potentialfreier Schalter
+    WebUI   : Darstellung 2 Schalter (Status1 / Status2)
+
+    Variante 4
+    Platine
+    Jumper  : J1 = ON  J2 = ON
+    Inp-Gar1: 1 potentialfreier Schalter
+    Inp-Gar2: -
+    WebUI   : Darstellung 1 Schalter (Status1)
+
+    Variante 4
+    Platine
+    Jumper  : J1 = ON  J2 = ON
+    Inp-Gar1: 1 potentialfreier Schalter
+    Inp-Gar2: 1 potentialfreier Schalter
+    WebUI   : Darstellung 2 Schalter (Status1 / Status2)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Anmerkung:
+----------
+
+>=5K 0hm = trocken     = ON  = 1 = (Fehler)      = Homematic Verschluss - OFFEN        (high - Verschluss offen)
+ = 0 Ohm = nass/feucht = OFF = 0 = (kein Fehler) = Homematic Verschluss - VERSCHLOSSEN (low  - Verschluss geschlossen)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
