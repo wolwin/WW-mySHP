@@ -42,7 +42,7 @@ AddOn Platine für 'HB-UNI-Mini-X' im THT-Format. Mit 'HB-UNI-Mini-X' und dem 'H
 <br><br>
 ![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_08.jpg "HB-UNI-Mini-X")
 <br><br>
-- Detailansicht Variante 1 mit AddOn und Sendemodul
+- Detailansicht Variante 1 mit 'HB-UNI-Mini-X-AddOn' und Sendemodul
 <br><br>
 ![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_10.jpg "HB-UNI-Mini-X")
 
