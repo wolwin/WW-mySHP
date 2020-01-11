@@ -2,7 +2,7 @@
 
 ## Übersicht
 
-der unterschiedlichen <b><u>S</u></b>mart-<b><u>H</u></b>ome-<b><u>P</u></b>rojekte:
+der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
 
 | **Projekt** | **Beschreibung** |
 | --- | --- |
