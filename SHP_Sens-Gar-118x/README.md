@@ -100,6 +100,9 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 #### ATtiny24a INO-Script
 [Download ...](./bin/GARDENA_Sensor_118x_20191228.zip)
 
+#### 3D-Print
+- 3D-Druck Projekte für 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+
 #### Bilder
 - Übersicht - 'Sens-Gar-118x'
   - die GARDENA 118x Sensoren werden mit ihren Zuleitungskabeln über die Schraubklemmen verbunden (rechts)
