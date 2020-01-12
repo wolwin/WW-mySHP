@@ -53,7 +53,7 @@ Zwischen den Platinen müssen zur Inbetriebnahme noch folgende Kabelverbindungen
 | VCC | VCC |
 
 #### 3D-Print
-- 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+- 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
 - 'HB-UNI-Sens-X' mit 'Sens-Gar-118x'
