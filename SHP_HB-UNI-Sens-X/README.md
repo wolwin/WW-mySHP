@@ -31,7 +31,7 @@ Dabei fiel die Wahl auf einen 'Step-Down' LDO (Low Drop-Out) Spannungsregler, da
 - Eine angepaßte Version des 'HB-UNI-Sensor1' Scripts, das auch die Option der MOSFET-Schaltung für I2C und 1-Wire Komponenten bietet, findet sich hier - [Download ...](./bin/HB-UNI-Sensor1_V1.17_MOSFET.rar)
 
 #### 3D-Print
-- 3D-Druck Projekte für 'HB-UNI-Sens-X' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+- 3D-Druck Projekte für 'HB-UNI-Sens-X' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
 - Übersicht - 'HB-UNI-Sens-X'

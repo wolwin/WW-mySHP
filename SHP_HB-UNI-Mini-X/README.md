@@ -13,7 +13,7 @@ AddOn Platine für 'HB-UNI-Mini-X' im THT-Format. Mit 'HB-UNI-Mini-X' und dem 'H
 - Platine 'HB-UNI-Mini-X-AddOn' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-UNI-Mini-X-AddOn/README.md)
 
 #### 3D-Print
-- 3D-Druck Projekte für 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+- 3D-Druck Projekte für 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
 - Übersicht - 'HB-UNI-Mini-X'

@@ -101,7 +101,7 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 [Download ...](./bin/GARDENA_Sensor_118x_20191228.zip)
 
 #### 3D-Print
-- 3D-Druck Projekte für 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+- 3D-Druck Projekte für 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
 - Übersicht - 'Sens-Gar-118x'
