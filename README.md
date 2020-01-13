@@ -11,6 +11,10 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
 | [Sens-Gar‑118x](./SHP_Sens-Gar-118x/README.md "Zeigen ...") | Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X' (THT-Format) |
 | [HB‑SCI‑4‑O‑Gar118x](./SHP_HB-SCI-4-O-Gar118x/README.md "Zeigen ...") | Anschluß von GARDENA 118x Geräten mit Hilfe von 'AskSin++' an Homematic |
 
+## Andere Übersichten
+- 'WW-myPCB' - Printed-Circuit-Board Projekte - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/README.md)
+- 'WW-my3DP' - 3D-Print Projekte - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+
 ## Disclaimer
 [Lese DISCLAIMER ...](DISCLAIMER.md "Lesen ...")
 
