@@ -70,7 +70,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_07.jpg "HB-SCI-4-O-Gar118x")
 <br><br>
-- Mit dem Anschluß der Gardena Geräte ist die Grundeinstellung abgeschlossen.
+- Mit dem Anschluß der Gardena Geräte ist die Grundeinstellung abgeschlossen: der Leitungsstatus wechselt auf 'ok' (='verschlossen') und der Gardena 118x Status wird angezeigt.
 
 #### Gardena 118x Status
 - Die Gardena 118x Sensoren unterscheiden zwischen 'trocken' und 'feucht' - hier eine Übersicht:
