@@ -84,7 +84,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
-- Testaufbau ['Sens-Gar-118x'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md) mit ['HB-UNI-Sens-X'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Sens-X/README.md) auf ['OBO-T40-HB-Sockel'](https://github.com/wolwin/WW-my3DPP/blob/master/3DP_OBO_T40_HB/README.md).
+- Testaufbau ['Sens-Gar-118x'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md) mit ['HB-UNI-Sens-X'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Sens-X/README.md) auf ['OBO-T40-HB-Sockel'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md).
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_01.jpg "HB-UNI-Sens-X und Sens-Gar-118x")
 <br><br>
