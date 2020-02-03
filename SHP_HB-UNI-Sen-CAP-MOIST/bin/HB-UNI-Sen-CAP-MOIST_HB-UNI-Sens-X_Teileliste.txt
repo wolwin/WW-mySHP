@@ -1,0 +1,49 @@
+====================================================
+HB-UNI-Sens-X - Version 2.2 für HB-UNI-Sen-CAP-MOIST
+====================================================
+
+Name	Beschreibung
+------------------------------------------
+U1      Arduino Pro Mini V3 - 3.3V (LEDs und LDO entfernen)
+CC1101  CC1101 Module
+S1      Pushbutton - Mikroschalter 6x6x6 mm - 2.5 
+C3      Electrolytic Capacitor 1uF
+C5      Ceramic Capacitor 1uF
+R4      Resistor 10k
+
+Optional - LED Anzeige
+----------------------
+D1      LED - 3mm
+R1      Resistor 1.5k
+1 x     2-fach Pinheader (J5)
+1 x     Jumper für Pinheader
+
+Spannungsüberwachung
+--------------------
+C4      Ceramic Capacitor 100nF
+R2      Resistor 470K
+R3      Resistor 100k
+
+1-Wire
+------
+R7      Resistor 4.7k
+
+GND-Schaltung
+-------------
+Q1      Basic FET N-Channel IRLU024NPBF / IRL2203N  / IRLZ34N 
+Jumper J3 = Stellung Mitte - unten (Richtung CC1101 Modul)  oder  Lötbrücke
+
+Spannungsversorgung für 4-9V
+----------------------------
+Jumper J1 = Stellung Mitte - '4-9V'  oder  Lötbrücke
+LDO     Voltage Regulator MCP1702
+C1      Ceramic Capacitor 1uF
+C2      Ceramic Capacitor 1uF
+
+Zubehör
+-------
+1 x     2-fach Pinheader (J5)
+2 x     3-fach Pinheader (J1, J3) oder Lötbrücken
+3 x     Jumper für Pinheader
+
+4 x     Befestigungsschrauben 2,2 x 6,5 oder 2,2 x 9,9 (optional)

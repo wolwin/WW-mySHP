@@ -1,4 +1,4 @@
-# WW-mySHP - SHP_Sens-Gar-118x
+# WW-mySHP - Sens-Gar-118x
 
 [Zurück zur Übersicht ...](../README.md)
 

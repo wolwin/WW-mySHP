@@ -1,4 +1,4 @@
-# WW-mySHP - SHP_HB-SCI-4-O-Gar118x
+# WW-mySHP - HB-SCI-4-O-Gar118x
 
 [Zurück zur Übersicht ...](../README.md)
 
