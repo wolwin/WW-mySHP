@@ -65,6 +65,9 @@ Das erweiterte INO-Script hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h
 - 3D-Druck Gehäuse 'HB-UNI-Sen-CAP-MOIST' mit Feuchte- und Temperatursensor
 <br><br>
 ![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_04.jpg "Gehäuse 'HB-UNI-Sen-CAP-MOIST'")<br><br>
+- Vier Feuchtesensoren in der CCU Zentrale
+<br><br>
+![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_05.jpg "Gehäuse 'HB-UNI-Sen-CAP-MOIST'")<br><br>
 
 #### Historie
 - 2020-02-04 - Erstveröffentlichung
