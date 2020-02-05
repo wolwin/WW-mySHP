@@ -49,7 +49,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - Detail Anschluß-Varianten 'Sens-Gar-118x' - [Zeigen ...](./bin/HB-SCI-4-O-Gar118x_Varianten.txt "Zeigen ...")
 
 #### INO-Script
-[Download ...](./bin/HB-SCI-4-O-Gar118x_20191228.zip)
+[Download ...](./bin/HB-SCI-4-O-Gar118x_20200204.zip)
 
 #### Inbetriebnahme
 - Zur Inbetriebnahme werden im ersten Schritt _keine_ Geräte an das 'Sens-Gar-118x' Sensor-Modul angeschlossen.
@@ -84,10 +84,23 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
 #### Bilder
-- Testaufbau ['Sens-Gar-118x'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md) mit ['HB-UNI-Sens-X'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Sens-X/README.md) auf ['OBO-T40-HB-Sockel'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md).
+- Aufbau ['Sens-Gar-118x'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md) mit ['HB-UNI-Sens-X'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Sens-X/README.md) auf ['OBO-T40-HB-Sockel'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md).
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_01.jpg "HB-UNI-Sens-X und Sens-Gar-118x")
 <br><br>
+- Anschlußmaterial - GARDENA Kabelweiche und
+[OBO Schraubverbinder aus der 'OBO Toolbox'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO/README.md)
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_03.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Einbau in ein OBO T40 Gehäuse
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_04.jpg "HB-SCI-4-O-Gar118x")
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_05.jpg "HB-SCI-4-O-Gar118x")
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_06.jpg "HB-SCI-4-O-Gar118x")
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_07.jpg "HB-SCI-4-O-Gar118x")
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_08.jpg "HB-SCI-4-O-Gar118x")
 
 #### Historie
+- 2020-02-04 - INO Bugfix und neue Bilder
 - 2020-01-10 - Erstveröffentlichung
