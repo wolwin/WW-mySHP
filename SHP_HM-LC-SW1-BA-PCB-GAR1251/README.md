@@ -9,11 +9,11 @@
 [Original-Projekt zeigen ...](https://homematic-forum.de/forum/viewtopic.php?f=76&t=49719&p=498577&hilit=HomeMatic+Gardena+Ventil)
 
 Bei der Inbetriebnahme der fertig aufgebauten Platine und dem Testen sind folgende Dinge aufgefallen:
-- es findet keine durchgreifende Überprüfung der Batteriespannung statt ([siehe 'Dauersender / Babbling Idiot'](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html))
+- es findet keine durchgreifende Überprüfung der Batteriespannung statt ([siehe AskSin++ 'Dauersender / Babbling Idiot'](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html))
 - Einstellparameter aus der CCU werden nicht alle vom Modul übernommen
 
 #### Änderungen
-Für das Platinen-Design V2.1 wurde ein Spannungsteiler aufgelötet, der zusammen mit einer erweiterten Firmware dafür sorgt, dass bei Unterschreitung der Batteriespannung das Modul mit CCU Meldung sich selbst deaktiviert. Im nächsten Platinen-Layout ist die Spannungsüberwachung direkt integriert.
+Beim Platinen-Design V2.1 wurde zusätzlich ein Spannungsteiler aufgelötet, der zusammen mit einer erweiterten Firmware dafür sorgt, dass bei Unterschreitung der Batteriespannung das Modul mit CCU Meldung sich selbst deaktiviert. In der nächsten Platinen-Version ist die Spannungsüberwachung direkt im Layout integriert.
 
 #### Beschreibung
 Die bisherige Firmware 'Gardena_Ventil' wurde komplett überarbeitet. Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
@@ -55,7 +55,9 @@ Falls eine Batteriespannungsmessung über Spannungsteiler durchgeführt werden s
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_02.jpg "HM-LC-SW1-BA-PCB-GAR1251 - Platine")
 
 #### Konfiguration und Inbetriebnahme
-Das INO-Script hier herunterladen und in 'HM-LC-SW1-BA-PCB-GAR1251.h' die Konfigurationsparameter anpassen - z.B. den voreingestellten Wert '#define BAT_SENSOR_MODE 1' = 'keine Batteriespannungsmessung' auf '#define BAT_SENSOR_MODE 2' für 'Batteriespannungsmessung über Spannungsteiler' umstellen. Dann weiter, wie gewohnt das INO Script kompilieren und über den 6-poligen ISP Anschluß auf der Platine hochladen (!!ACHTUNG!! vorher das CC1101 Sendemodul aus dem Sockel entfernen - ([siehe Tom Major - 'Warnung vor dem Flashen von 3,3V Geräten mit USBasp Klones'](https://github.com/TomMajor/SmartHome/tree/master/Info/Warnung_Flashen_33_USBasp_Klones/)).
+Das INO-Script hier herunterladen und in 'HM-LC-SW1-BA-PCB-GAR1251.h' die Konfigurationsparameter anpassen - z.B. den voreingestellten Wert '#define BAT_SENSOR_MODE 1' = 'keine Batteriespannungsmessung' auf '#define BAT_SENSOR_MODE 2' für 'Batteriespannungsmessung über Spannungsteiler' umstellen. Dann weiter, wie gewohnt das INO Script kompilieren und über den 6-poligen ISP Anschluß auf der Platine hochladen.
+
+!! ACHTUNG !! - vorher das CC1101 Sendemodul aus dem Sockel entfernen - [siehe Tom Major - 'Warnung vor dem Flashen von 3,3V Geräten mit USBasp Klones'](https://github.com/TomMajor/SmartHome/tree/master/Info/Warnung_Flashen_33_USBasp_Klones/).
 <br><br>
 Mit Anlernen an der Zentrale die Platine in Betrieb nehmen.
 <br><br>
