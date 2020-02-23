@@ -20,7 +20,7 @@ Die bisherige Firmware 'Gardena_Ventil' wurde komplett überarbeitet. Die softwa
 
 - HM-LC-SW1-BA-PCB-GAR1251.ino - geänderte Firmware
 - HM-LC-SW1-BA-PCB-GAR1251.h - Zusammenfassung aller möglichen Konfigurationsparameter
-- tmBattery.h - [siehe Tom Major - 'Dauersender / Babbling Idiot'](https://github.com/TomMajor/SmartHome/tree/master/Info/Babbling Idiot Protection/")
+- tmBattery.h - ([siehe Tom Major - 'Schutz vor 'Babbling Idiot'](https://github.com/TomMajor/SmartHome/tree/master/Info/Babbling%20Idiot%20Protection/))
 
 Von der Struktur her ist die Firmware an das eigentliche Ursprungsscript 'HM-LC-SW1-BA-PCB' angelehnt worden und wurde daher auch entsprechend umbenannt: 'HM-LC-SW1-BA-PCB-GAR1251'. Alle Konfigurationsmöglichkeiten sind jetzt in eine Konfigurationsdatei ausgelagert - d.h.: möchte man die Konfiguration ändern, kann man dies in der Konfigurationsdatei machen, ohne das eigentlich INO Script anfassen zu müssen. Welche Einstellungen man ändern kann, ist dort ausführlich in den Kommentaren dokumentiert.
 
