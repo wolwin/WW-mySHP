@@ -27,10 +27,8 @@ Von der Struktur her ist die Firmware an das eigentliche Ursprungsscript 'HM-LC-
  Folgende CCU-Einstellungen funktionieren jetzt: minimaler Batterie-Schwellwert (man kann sich jetzt bei Falscheingabe der minimalen Batteriespannung nicht mehr selbst aussperren, da die Falscheingabe nicht vom Modul übernommen wird) und Geräte-LED. Weiter kann bei der 'AskSin++' Konfiguration die Art des Batterieüberprüfung, die CC1101 Frequenz und der Modus des Anlernbuttons festgelegt werden. 'Alle' Funktionen wurden ausprobiert und auf Funktion geprüft - vom Aufspielen bis zum Schalttest am Gardena-Ventil ...
 
  - _Nur für Experten_:<br>Wichtig in diesem Zusammenhang ist natürlich, dass auch die 'Fuse Bits'
- des AVRs richtig gesetzt sind: das 'High Fuse' Bit muss für 'AskSin++' unbedingt auf '0xD2' gesetzt werden, damit z.B. für das Abspeichern der Frequenzeinstellung des CC1101 Sendemodul ein EEPROM Speicherbereich zur Verfügung gestellt wird ([siehe CC1101 Frequent Test](https://asksinpp.de/Grundlagen/FAQ/Fehlerhafte_CC1101.html)).
-
- 'HM-LC-SW1-BA-PCB-GAR1251' Fuses:
-
+ des AVRs richtig gesetzt sind: das 'High Fuse' Bit muss für 'AskSin++' unbedingt auf '0xD2' gesetzt werden, damit z.B. für das Abspeichern der Frequenzeinstellung des CC1101 Sendemodul ein EEPROM Speicherbereich zur Verfügung gestellt wird ([siehe CC1101 Frequent Test](https://asksinpp.de/Grundlagen/FAQ/Fehlerhafte_CC1101.html)).<br><br>
+ 'HM-LC-SW1-BA-PCB-GAR1251' Fuses:<br>
    | **Fuse** | **Wert** | **Bemerkung** |
    | --- | --- | --- |
    | Low Fuse | 0xE2 | !! _Nicht_ auf 'AskSin++'-Wert '0xFF' ändern !! |
