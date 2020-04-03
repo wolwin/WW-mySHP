@@ -49,7 +49,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - Detail Anschluß-Varianten 'Sens-Gar-118x' - [Zeigen ...](./bin/HB-SCI-4-O-Gar118x_Varianten.txt "Zeigen ...")
 
 #### INO-Script
-[Download ...](./bin/HB-SCI-4-O-Gar118x_20200204.zip)
+[Download ...](./bin/HB-SCI-4-O-Gar118x_20200323.zip)
 
 #### Inbetriebnahme
 - Zur Inbetriebnahme werden im ersten Schritt _keine_ Geräte an das 'Sens-Gar-118x' Sensor-Modul angeschlossen.
@@ -102,5 +102,6 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_08.jpg "HB-SCI-4-O-Gar118x")
 
 #### Historie
+- 2020-03-23 - INO Bugfix (force CCU toogle update)
 - 2020-02-04 - INO Bugfix und neue Bilder
 - 2020-01-10 - Erstveröffentlichung
