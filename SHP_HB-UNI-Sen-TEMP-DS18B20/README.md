@@ -23,15 +23,13 @@ Für eine einfache Konfiguration wurde zusätzlich noch eine '<HB-UNI-Sen-TEMP-D
 #### Beschreibung
 Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
 
-- HB-UNI-Sen-TEMP-DS18B20_ext.h
+- HB_UNI_Sen_TEMP_DS18B20_ext.h
 
   Zusammenfassung aller möglichen Konfigurationsparameter ausserhalb des INO-Files
 
-- HB-UNI-Sen-TEMP-DS18B20_ext.ino
+- HB_UNI_Sen_TEMP_DS18B20_ext.ino
 
-  Abgeänderte INO-Datei: es ist jetzt möglich, bestimmte Sensoren auf bestimmte Ports zu legen - dazu wird die ID des jeweiligen Sensor benutzt (#define cSENS_ID_ORDER in 'HB-UNI-Sen-TEMP-DS18B20_ext.h'). Beispiel: man kann das Modul mit 4 Ports konfigurieren (#define cANZ_SENSORS 4 in 'HB-UNI-Sen-TEMP-DS18B20_ext.h'), bei dem man aber nur für die Ports 3 und 4 die IDs einträgt, weil man erst später die Ports 1 und 2 mit Sensoren bestücken möchte. Angezeigt werden dann die Ports 1 ... 4, wobei die Ports 1 und 2 den Fehlerwert '-999' liefern (Sensorfehler).
-  Wird das #define cSENS_ID_ORDER in 'HB-UNI-Sen-TEMP-DS18B20_ext.h' auskommentiert, verhält sich das Modul wie vorher: es werden alle IDs der angeschlossenen Sensoren in der Busreihenfolge ermittelt und dann auch in dieser Reihenfolge ausgegeben.
-  Der Quelltextverlauf wurde insgesamt beibehalten und nur um die drei ID-Arrays erweitert.
+  Abgeänderte INO-Datei: es ist jetzt möglich, bestimmte Sensoren auf bestimmte Ports zu legen - dazu wird die ID des jeweiligen Sensor benutzt (#define cSENS_ID_ORDER in 'HB_UNI_Sen_TEMP_DS18B20_ext.h'). Beispiel: man kann das Modul mit 4 Ports konfigurieren (#define cANZ_SENSORS 4 in 'HB_UNI_Sen_TEMP_DS18B20_ext.h'), bei dem man aber nur für die Ports 3 und 4 die IDs einträgt, weil man erst später die Ports 1 und 2 mit Sensoren bestücken möchte. Angezeigt werden dann die Ports 1 ... 4, wobei die Ports 1 und 2 den Fehlerwert '-999' liefern (Sensorfehler). Wird das #define cSENS_ID_ORDER in 'HB_UNI_Sen_TEMP_DS18B20_ext.h' auskommentiert, verhält sich das Modul wie vorher: es werden alle IDs der angeschlossenen Sensoren in der Busreihenfolge ermittelt und dann auch in dieser Reihenfolge ausgegeben. Der Quelltextverlauf wurde insgesamt beibehalten und nur um die drei ID-Arrays erweitert.
 
 - Ds18b20.h
 
