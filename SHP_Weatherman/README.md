@@ -95,4 +95,4 @@ Da Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall abg
 - 3D-Druck Projekt der 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
 #### Historie
-- 2020-xx-xx - Veröffentlichung an dieser Stelle
+- 2020-06-07 - Veröffentlichung an dieser Stelle
