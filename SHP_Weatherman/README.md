@@ -42,8 +42,8 @@ Vielleicht kann man noch über einige Dinge (siehe Punkte 2 und 3) hinwegsehen u
   <i>'Unsozial wie ich bin mache ich nur das was ich möchte und was mir Spaß macht und nicht, was andere von mir wollen!! :mrgreen: :mrgreen: :mrgreen:<br>
   ... und wenn andere Bastler die Module auch genauso wie ich haben wollen, dann können sie diese Teile gerne nachbauen.<br>
   Die aber was anderes haben wollen, sollen eben was anderes nachbauen oder, besser noch, selbst entwickeln.<br>
-  Ist doch ganz einfach!</i>
-<br><br>
+  Ist doch ganz einfach!</i><br><br>
+
 - <b>Zusammenfassung:</b><br>
 Das Projekt läuft unter dem Titel 'WEATHERMAN … die perfekte Wetterstation für die Hausautomation'. Das sehe ich SO nicht - ich denke, die Kritikpunkte sprechen für sich. Vor zwei Jahren war der Weg zu verläßlichen eigenen Wetterinformationen für die Heimautomation aus meiner Sicht fast vollständig erreicht - die Optimierung von wenigen Dingen hätten einen sehr guten Stand gebracht. Leider hat der Entwickler Dr. Stall einen anderen Weg eingeschlagen.
 
