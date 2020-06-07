@@ -20,7 +20,7 @@ Im Fehlerfall wird nun immer ''-999' als Fehlerwert zurückgegeben - Fehlerfall 
 
 Für eine einfache Konfiguration wurde zusätzlich noch eine '<HB-UNI-Sen-TEMP-DS18B20_ext.h>' angelegt, in der alle wesentlichen Konfigurationsparameter zusammengefasst sind - es braucht nun nicht mehr das Original INO File geändert werden.
 
-#### Beschreibung
+#### Realisierung
 Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
 
 - HB_UNI_Sen_TEMP_DS18B20_ext.h

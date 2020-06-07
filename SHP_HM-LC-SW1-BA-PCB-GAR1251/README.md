@@ -15,7 +15,7 @@ Bei der Inbetriebnahme der fertig aufgebauten Platine und dem Testen sind folgen
 #### Änderungen
 Beim Platinen-Design V2.1 wurde zusätzlich ein Spannungsteiler aufgelötet, der zusammen mit einer erweiterten Firmware dafür sorgt, dass bei Unterschreitung der Batteriespannung das Modul mit CCU Meldung sich selbst deaktiviert. In der Platinen-Version ab 05/2020 ist die Spannungsüberwachung direkt im Platinen-Layout integriert ([siehe Projekt Mitteilung](https://homematic-forum.de/forum/viewtopic.php?f=76&t=49719&hilit=HomeMatic+Gardena+Ventil&start=90#p584848)).
 
-#### Beschreibung
+#### Realisierung
 Die bisherige Firmware 'Gardena_Ventil' wurde komplett überarbeitet. Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
 
 - HM_LC_SW1_BA_PCB_GAR1251.ino - geänderte Firmware
