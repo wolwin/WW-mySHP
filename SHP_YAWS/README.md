@@ -1,4 +1,4 @@
-# WW-mySHP - YAWS - Yet Another Weather Shield - Version 3 - Toolbox
+# WW-mySHP - YAWS - 'Yet Another Weather Shield' - Toolbox - Version 3
 
 [Zurück zur Übersicht ...](../README.md)
 
