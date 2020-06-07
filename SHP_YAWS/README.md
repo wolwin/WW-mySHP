@@ -88,7 +88,7 @@ xxx
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_05.jpg "Galerie")
 <br><br>
-- YAWS - Standard  - Befestigung oben - in Kombination mit Regen-Sensor-Gehäuse über Mastbefestigung (26 mm)
+- YAWS - Standard  - Befestigung unten - in Kombination mit Regen-Sensor-Gehäuse über Mastbefestigung (26 mm)
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_06.jpg "Galerie")
 <br><br>
