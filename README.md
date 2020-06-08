@@ -14,7 +14,7 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
 | [HB‑UNI‑Sen‑CAP‑MOIST](./SHP_HB-UNI-Sen-CAP-MOIST/README.md "Zeigen ...") | Erweiterte Version des 'Asksin++' Projekts 'HB-UNI-Sen-CAP-MOIST - Kapazitiver Bodenfeuchtesensor mit optionalem Temperatursensor DS18B20 für die Integration in HomeMatic' |
 | [HM‑LC‑SW1‑BA‑PCB‑GAR1251](./SHP_HM-LC-SW1-BA-PCB-GAR1251/README.md "Zeigen ...") | Erweiterte Version des 'Asksin++' Projekts 'Umbau GARDENA Bewässerungsventil (1251-20) 9V auf HomeMatic' |
 | [YAWS-Toolbox - Version 3](./SHP_YAWS/README.md "Zeigen ...") | 'Yet Another Weather Shield' - Toolbox - Version 3 |
-| [STALL‑Weatherman](./SHP_Weatherman/README.md "Zeigen ...") | Wetterstation für die Hausautomation von Dr. Stall - Betrieb, Funktion und Bewertung |
+| [STALL‑Weatherman](./SHP_Weatherman/README.md "Zeigen ...") | Selbstbau-Wetterstation 'STALL-Weatherman' für die Hausautomation von Dr. Stall - Funktion, Betrieb, Bewertung und Erweiterungen |
 
 ## Andere Übersichten
 - 'WW-myPCB' - Printed-Circuit-Board Projekte - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/README.md)

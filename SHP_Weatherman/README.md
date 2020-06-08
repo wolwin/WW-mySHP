@@ -54,7 +54,7 @@ Die maximal integrierte Version des 'STALL-Weatherman' (Stage 3) ist das OBO T60
 
 Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall abgelehnt wird, kann leider eine Integration eines GEREGELTEN Lüfters in der 'YAWS-Wetterkappe' nicht (direkt) realisiert werden.
 
-- <b>Stage 1</b> - Weatherman im RND-Gehäuse (RND 455-00223 oder RND 455-00144) mit abgesetztem AddOn Gehäuse für Lichtsensor BH1750 / NTC und Regensensor
+- <b>Stage 1</b> - 'STALL-Weatherman' im RND-Gehäuse (RND 455-00223 oder RND 455-00144) mit abgesetztem AddOn Gehäuse für Lichtsensor BH1750 / NTC und Regensensor
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_RND_01.jpg "AddOn RND-Gehäuse 455-00223")
 <br><br>
@@ -68,7 +68,7 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_RND-Case_02.jpg "AddOn für RND-Gehäuse")
 <br><br>
-- <b>Stage 2</b> - Weatherman im OBO T40 oder OBO T60 Gehäuse mit separaten Gehäusen für Lichtsensor BH1750 / NTC, Regensensor und Wetterkappe YAWS
+- <b>Stage 2</b> - 'STALL-Weatherman' im OBO T40 oder OBO T60 Gehäuse mit separaten Gehäusen für Lichtsensor BH1750 / NTC, Regensensor und Wetterkappe aus der 'YAWS-Toolbox'
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_OBO-Case_01.jpg "OBO T40-Gehäuse")
 <br><br>
@@ -80,7 +80,7 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_Case-Rain_01.jpg "Regensensor Gehäuse")
 <br><br>
-- <b>Stage 3</b> - Weatherman im OBO T60 Gehäuse und Wetterkappe aus der 'YAWS-Toolbox' mit der 'STALL-Weatherman' Option
+- <b>Stage 3</b> - 'STALL-Weatherman' im OBO T60 Gehäuse und Wetterkappe aus der 'YAWS-Toolbox' mit der 'STALL-Weatherman' Option
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_OBO-Case_03.jpg "OBO T60-Gehäuse mit YAWS 'STALL-Weatherman' Option")
 <br><br>
