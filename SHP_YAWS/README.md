@@ -6,7 +6,7 @@
 
 Es gibt viele Wetterkappen für unterschiedliche Sensoren - sowohl kommerziell als auch im OpenSource Bereich. Die Anzahl ist nahezu unüberschaubar. Im Rahmen meines ['STALL-Weatherman' Projektes](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Weatherman/README.md) habe auch ich mich in den letzten zwei Jahren ebenfalls an dem Thema Wetterkappe versucht.
 
-Meine persönlichen Erfahrungen münden nun mit der Version 3 in eine universielle Toolbox für Wetterkappen. Der Nutzer der Toolbox kann die Wetterkappe selber zusammenstellen. Mehrere verschiedene Sensorhalter, unterschiedliche Befestigungen der Kappe, mit oder ohne 40 mm Lüfteroption, sowie Insektenschutz der Sensorkammer, bis hin zur Integration des 'STALL-Weatherman' werden angeboten. Dabei wird die Konnektivität über die 'OBO Toolbox' hergestellt, sodaß der Anwender eigene Gehäuse - Wetterkappen Konfigurationen zusammenstellen kann.
+Meine persönlichen Erfahrungen münden nun mit der Version 3 in eine universielle Toolbox für Wetterkappen. Der Nutzer der Toolbox kann die Wetterkappe selber zusammenstellen. Mehrere verschiedene Sensorhalter, unterschiedliche Befestigungen der Kappe, mit oder ohne 40 mm Lüfteroption, sowie Insektenschutz der Sensorkammer, bis hin zur Integration des 'STALL-Weatherman' werden angeboten. Dabei wird die Konnektivität über die ['OBO-Toolbox'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO/README.md) hergestellt, sodaß der Anwender eigene Gehäuse - Wetterkappen Konfigurationen zusammenstellen kann.
 
 #### Realisierung
 Ziel bei der Entwicklung der Wetterkappe war es, die Konstruktion so anzulegen, dass möglichst viele Optionen individuell miteinander kombiniert werden können. Gegenüber der Vorgängerversion wurde die Sensorkammer deutlich vergrößert. Die zwei ebenfalls vergößerten konischen Luftabführungen sorgen dafür, dass durch direkte Sonneneinstrahlung anfallende Wärme nach oben abtransportiert wird (als Option kann zusätzlich ein 40 mm Lüfter verbaut werden). Alle Gehäuseteile werden mit 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,9 x 9,5 mm' verbunden.
@@ -30,7 +30,7 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 - 'YAWS-Toolbox' - Standard
   - 4-Pin Sensorhalter (z.B. für BME280) mit 5 mm Kabel-Bohrung
   - Fixierringe für Insektenschutz
-  - verdeckte Befestigungsbohrung (oben)
+  - verdeckte Befestigungsbohrung (obere Kappe)
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Overview_02.jpg "Standard")
 <br><br>
@@ -38,9 +38,9 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 <br><br>
 - 'YAWS-Toolbox' - Optionen - Beispiel
   - 4-Pin Sensorhalter (z.B. für BME280) mit 5 mm Kabel-Bohrung
-  - Halterung für 40 mm Lüfter (z.B.: NOCTUA NF-A4x10 5V)
+  - Halterung für 40 mm Lüfter (Empfehlung: NOCTUA NF-A4x10 5V)
   - Fixierringe für Insektenschutz
-  - seitlicher M10 Befestigungsanschluß (oben)
+  - seitlicher M10 Befestigungsanschluß (obere Kappe)
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Overview_04.jpg "Optionen")
 <br><br>
@@ -52,7 +52,7 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
   - Fixierringe für Insektenschutz
   - gekapselte Glaskuppel für Helligkeits- (BH1750) und Sonnentemperaturmessung (NTC-Fühler) mit PTFE-Membranschraube zum Feuchtigkeitsaustausch
   - seperates Regensensorgehäuse (beheizte Sensorplatine) mit PTFE-Membranschraube zum Feuchtigkeitsaustausch
-  - Einbau der 40 mm Lüfter-Option ist gegeben (siehe oben - YAWS-Optionen)
+  - Einbau der 40 mm Lüfter-Option ist gegeben (siehe oben - 'YAWS-Toolbox' - Optionen)
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Overview_06.jpg "Option STALL-Weatherman")
 <br><br>
@@ -72,7 +72,7 @@ xxx
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_01.jpg "Galerie")
 <br><br>
-- 'YAWS-Toolbox' - Standard mit Mastbefestigung (26 mm)
+- 'YAWS-Toolbox' - Standard - Befestigung unten - Mastbefestigung (26 mm)
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_02.jpg "Galerie")
 <br><br>
