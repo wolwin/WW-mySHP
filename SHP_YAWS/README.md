@@ -62,10 +62,10 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 - 3D-Druck Projekt für 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
 #### Hardware
-xxx
+... _folgt in Kürze_
 
 #### Konfiguration, Aufbau und Inbetriebnahme
-xxx
+... _folgt in Kürze_
 
 #### Galerie
 - 'YAWS-Toolbox' - Optionen - Beispiele
