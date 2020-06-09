@@ -36,9 +36,10 @@ Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
   Erweiterung: 'init', 'measure' und 'read' Funktionen mit optionalen Aufrufparameter für String-Rückgabe der Sensor-IDs. Wird momentan lokal eingebunden - wäre möglich ohne Änderung in die Asksin-Lib zu übernehmen, dann globale Einbindung (-> Entfall hier ...).
 
 #### INO-Script und Dateien
-  [Download ...](./bin/HB_UNI_Sen_TEMP_DS18B20_ext_20200529.zip)
+  [Download ...](./bin/HB_UNI_Sen_TEMP_DS18B20_ext_20200609.zip)
 
 #### Historie
+- 2020-06-09 - INO-Script - Fixing ID compare
 - 2020-05-29 - INO-Script - Fixing compiler warnings
 - 2020-02-03 - Veröffentlichung an dieser Stelle
 - 2019-11-19 - Änderungen
