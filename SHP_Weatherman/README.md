@@ -54,6 +54,10 @@ Die maximal integrierte Version des 'STALL-Weatherman' (Stage 3) ist das OBO T60
 
 Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall abgelehnt wird, kann leider eine Integration eines GEREGELTEN Lüfters in der 'YAWS-Wetterkappe' nicht (direkt) realisiert werden.
 
+- <b>Stage 0</b> - Grundplatten zur mechanischen Befestigung des 'STALL-Weatherman' in den RND-Gehäusen 'RND 455-00223' und 'RND 455-00144' bzw. den OBO-Gehäusen 'OBO-T40' und 'OBO-T60'.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Baseplate_01.jpg "Weatherman Grundplatte")
+<br><br>
 - <b>Stage 1</b> - 'STALL-Weatherman' im RND-Gehäuse (RND 455-00223 oder RND 455-00144) mit abgesetztem AddOn Gehäuse für Lichtsensor BH1750 / NTC und Regensensor
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_RND_01.jpg "AddOn RND-Gehäuse 455-00223")
@@ -95,4 +99,5 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 - 3D-Druck Projekt der 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
 #### Historie
+- 2020-06-16 - Stage 0 - Grundplatten
 - 2020-06-07 - Erstveröffentlichung
