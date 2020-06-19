@@ -13,7 +13,7 @@ Bei der Inbetriebnahme der fertig aufgebauten Platine und dem Testen sind folgen
 - Einstellparameter aus der CCU werden nicht alle vom Modul übernommen
 
 #### Änderungen
-Beim Platinen-Design V2.1 wurde zusätzlich ein Spannungsteiler aufgelötet, der zusammen mit einer erweiterten Firmware dafür sorgt, dass bei Unterschreitung der Batteriespannung das Modul mit CCU Meldung sich selbst deaktiviert. In der Platinen-Version ab 05/2020 ist die Spannungsüberwachung direkt im Platinen-Layout integriert ([siehe Projekt Mitteilung](https://homematic-forum.de/forum/viewtopic.php?f=76&t=49719&hilit=HomeMatic+Gardena+Ventil&start=90#p584848)).
+Beim Platinen-Design V2.1 wurde zusätzlich ein Spannungsteiler aufgelötet, der zusammen mit einer erweiterten Firmware dafür sorgt, dass bei Unterschreitung der Batteriespannung das Modul mit CCU Meldung sich selbst deaktiviert. In der Platinen-Version 4.x ist die Spannungsüberwachung direkt im Platinen-Layout integriert ([siehe Projekt Mitteilung](https://homematic-forum.de/forum/viewtopic.php?f=76&t=49719&hilit=HomeMatic+Gardena+Ventil&start=90#p584848)).
 
 #### Realisierung
 Die bisherige Firmware 'Gardena_Ventil' wurde komplett überarbeitet. Die softwareseitige Änderung bzw. Erweiterung besteht aus drei Dateien:
@@ -45,7 +45,7 @@ Von der Struktur her ist die Firmware an das eigentliche Ursprungsscript 'HM-LC-
   - 3D-Druck Projekt für 'GARDENA EasyControl' mit 'HM-LC-SW1-BA-PCB-GAR1251' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_GARDENA_EasyControl/README.md)
 
 #### Hardware
-- Für das Platinen-Layout V 2.1 kann eine Hardware-Modifikation vorgenommen werden, falls eine Batteriespannungsmessung über Spannungsteiler durchgeführt werden soll.
+- Für das Platinen-Layout Version 2.1 kann eine Hardware-Modifikation vorgenommen werden, falls eine Batteriespannungsmessung über Spannungsteiler durchgeführt werden soll.
   - Schaltung Spannungsteiler
 <br><br>
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_01.jpg "HM-LC-SW1-BA-PCB-GAR1251 - Spannungsteiler")
@@ -54,23 +54,23 @@ Von der Struktur her ist die Firmware an das eigentliche Ursprungsscript 'HM-LC-
 <br><br>
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_02.jpg "HM-LC-SW1-BA-PCB-GAR1251 - Platine")
 <br><br>
-- Für das aktuelle Platinen-Layout ab 05/2020 ist keine Hardware-Modifikation mehr notwendig, da der Spannungsteiler integriert wurde.
+- Für das Platinen-Layout Version 4.x ist keine Hardware-Modifikation mehr notwendig, da der Spannungsteiler integriert wurde.
 <br><br>
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_04.jpg "HM-LC-SW1-BA-PCB-GAR1251 - Platine")
 
 #### Konfiguration und Inbetriebnahme
 Das INO-Script hier herunterladen und in 'HM_LC_SW1_BA_PCB_GAR1251.h' die Konfigurationsparameter evtl. anpassen:
 
-- für Platinenversion ab 05/2020 - mit integriertem Spannungsteiler:
+- für Platinen-Layout Version 4.x - mit integriertem Spannungsteiler:
     - '#define BAT_SENSOR_MODE 3' => 'Batteriespannungsmessung unter Last'
     - => voreingestellter Wert
 
 
-- für Platinenversion 2.1 - vor 05/2020 - ohne Spannungsteiler:
+- für Platinen-Layout Version 2.1 - ohne Spannungsteiler:
   - '#define BAT_SENSOR_MODE 1' => 'keine Batteriespannungsmessung'
 
 
-- für Platinenversion 2.1 - vor 05/2020 - mit nachgerüstetem Spannungsteiler:
+- für Platinen-Layout Version 2.1 - mit nachgerüstetem Spannungsteiler:
   - '#define BAT_SENSOR_MODE 2' => 'Batteriespannungsmessung über Spannungsteiler'
 
 Dann weiter, wie gewohnt das INO Script kompilieren und über den 6-poligen ISP Anschluß auf der Platine hochladen - [siehe AskSin++ - 'Software flashen' - 'FTDI Adapter'](https://asksinpp.de/Grundlagen/02_software.html#anschluss-des-ftdi-adapters).
@@ -82,5 +82,6 @@ Mit Anlernen an der Zentrale die Platine in Betrieb nehmen.
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_03.jpg "HM-LC-SW1-BA-PCB-GAR1251 - CCU")
 
 #### Historie
+- 2020-06-19 - Aktualisierung Platinen-Layout Angaben
 - 2020-05-30 - Aktualisierung Platinen-Layout und INO-Script
 - 2020-02-23 - Veröffentlichung an dieser Stelle
