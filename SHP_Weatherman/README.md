@@ -88,6 +88,8 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_OBO-Case_03.jpg "OBO T60-Gehäuse mit YAWS 'STALL-Weatherman' Option")
 <br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_OBO-Case_05.jpg "OBO T60-Gehäuse mit YAWS 'STALL-Weatherman' Option")
+<br><br>
 - Kombinationsmöglichkeiten für den 'STALL-Weatherman' in Verbindung mit der 'YAWS-Toolbox'
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_OBO_Combi_01.jpg "Weatherman - OBO T60-Gehäuse - Kombinationen")

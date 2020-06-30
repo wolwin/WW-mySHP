@@ -95,6 +95,8 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 - 'YAWS-Toolbox' - Option 'STALL-Weatherman'  - Befestigung unten - in Kombination mit OBO T60 Gehäuse
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_07.jpg "Galerie")
+<br><br>
+![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_08.jpg "Galerie")
 
 #### Historie
 - 2020-06-07 - Veröffentlichung an dieser Stelle
