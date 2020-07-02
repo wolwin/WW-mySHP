@@ -100,6 +100,80 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 - 3D-Druck Projekt für Gehäuse-Erweiterungen der Wetterstation 'STALL-Weatherman' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_Weatherman/README.md)
 - 3D-Druck Projekt der 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
+#### Langzeit-Erfahrungen (Hardware)
+- Nach zweijährigem Betrieb wurde der Weatherman zur Revision abgebaut. Das RND-Gehäuse ist deutlich von den Umwelteinflüssen gezeichnet.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_01.jpg "Weatherman - Revision")
+<br><br>
+- Die zusätzlich aufgebrachten Silikon Abdichtungen sind nach anderthalb Jahren in sehr gutem Zustand. Die Regensensorplatine ist trotz seiner Goldkontakte angegriffen, aber voll funktionsfähig. Das Glas ist ebenfalls unversehrt und wie im Neuzustand.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_02.jpg "Weatherman - Revision")
+<br><br>
+- Nach dem Öffnen des Gehäuses sind die schon oben benannten Schwachpunkte sofort ersichtlich: die Verklebungen mit dem ABS-Gehäuse sind teilweise nicht von Dauer - Sonneneinstrahlung und Temperaturunterschiede tun dabei ihr übriges ... die verklebten Schrauben zur Befestigung der Weatherman Platine sind alle abgelöst.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_03.jpg "Weatherman - Revision")
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_04.jpg "Weatherman - Revision")
+<br><br>
+- Die Problematik wird deutlich bei der Verklebung der Regensensorplatine - Wasserflecken auf Gehäuse und BH1750 Sensor sind vorhanden. Dieser Schaden trat schon nach einem 1/2 Jahr im Betrieb auf. Daraufhin wurde mit UV-beständigem Silikon (LUGATO Wetterschutz-Slicon (transparent) WIE GUMMI 310 ml - EAN 4009071098233) die Platine und das Lichtsensorglas (erfolgreich) abgedichtet. Der zusätzliche Einsatz von Kabeldurchführungen im RND-Gehäuse verhinderte Schlimmeres im Langzeitbetrieb.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_05.jpg "Weatherman - Revision")
+<br><br>
+- Zeitgleich wurde mit dem Weatherman auch ein Feinstaubsensor im 'OBO-T60' Gehäuse mit Kabeldurchführungen und Belüftung aufgestzt und in Betrieb genommen. Nach zwei Betriebsjahren ist diese Einheit in einem DEUTLICH besseren Zustand als der Weatherman im RND-Gehäuse.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_06.jpg "Weatherman - Revision")
+<br><br>
+- Beim Feinstaubgehäuse wurden zwei Belüftungen über Kabeldurchführungen mit PTFE-Druckausgleichsmembranen (B+B Sensors -  Druckausgleich-Membran Ø10,2/5,5 VPE, Art.Nr.: SHOP DAM-AD10) eingebaut. Jedoch lösten sich beide Membranen von ihren Verklebungen - wahrscheinlich durch die gelbe Farbe angelockt - erledigten Insekten dann den Rest ...
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_07.jpg "Weatherman - Revision")
+<br><br>
+- Über das Thema BME280 wurde schon an anderer Stelle viel geschrieben ... insgesamt versagten VIER BME280 im Weatherman ihren Dienst. Alle Maßnahmen einer 'Kapselung' versagten: weder Plastik-Versiegelung, aktive Belüftung mit Lüfter, noch zusätzliche PTFE-Membran über dem Sensor (Auflösungserscheinung der Membran u.a. durch Insekten) halfen langfristig ...
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_08.jpg "Weatherman - Revision")
+<br><br>
+- Außerdem diente ein BME280 den Spinnen als Basis zum Überwintern ihrer Brut ...
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_09.jpg "Weatherman - Revision")
+<br><br>
+- Der VENTUS W132 tat bis heute zuverläßig seinen Dienst. Wichtig beim Zusammenbau ist der Einbau der Dioden D4 und D5 im W132, damit dieser zusätzlich mit Batterien betrieben werden Kann. Hintergrund: der W132 speichert beim Einschalten der Versorgungsspannung die aktuelle Windfahnenposition als Nordrichtung ab. Bei Netzunterbrechung 'vergisst' die Windfahne die Nordrichtung und muss dann manuell wieder neu eingestellt werden (siehe Bauanleitung). Als Batterien habe ich zwei 'Energizer Batterien AA, Ultimate Lithium' (ASIN: B000IWW1G6) eingesetzt.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_10.jpg "Weatherman - Revision")
+<br><br>
+- Ärgerlich beim VENTUS W132 ist die billig lackierte Rohrschelle, die zu äußerst unschönen Roststellen führt - links im Bild ist eine Rohrschellenhalterung zu sehen (gleich alt), wie es sein sollte ... also: man sollte beim Neuaufbau den VENTUS W132 mit besserem Material befestigen.
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_11.jpg "Weatherman - Revision")
+<br><br>
+- Der Regenmesser WS-280 arbeitete unauffällig und gut. Direkt zu Anfang wurde er mit einem 'Vogel- und Blätterabwehrgitter' versehen (nicht schön, aber wirksam). Bei Sturzregen konnte beobachtet werden, dass eine große Regenmenge das Gerät überforderte: die Auffanghöhe ist schlicht zu niedrig - das Regenwasser schwappte über den zu niedrigen Rand. Auf Thingiverse gibt es eine Randerhöhung für den WS-280 (Einbau siehe Bild), der diese Problem deutlich mildert:<br>
+'Rain Gauge Funnel  Extension for WS-280' https://www.thingiverse.com/thing:2551621
+<br><br>
+![WW-mySHP - Weatherman](./img/SHP_WM_Rev_12.jpg "Weatherman - Revision")
+
+### Fazit - Langzeit-Erfahrungen (Hardware)
+- Die Langzeit-Erfahrungen mündeten letztlich in zwei großen eigenen Projekten:
+  <br><br>
+  - WW-mySHP - STALL-Weatherman (dieses Projekt)
+  - [WW-mySHP - YAWS - 'Yet Another Weather Shield' - Toolbox - Version 3](https://github.com/wolwin/WW-mySHP/blob/master/SHP_YAWS/README.md)
+<br><br>
+- mit den zugehörigen 3D-Print Projekten:
+  <br><br>
+  - [WW-my3DP - Gehäuse-Erweiterungen der Wetterstation 'STALL-Weatherman'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_Weatherman/README.md)
+  - [WW-my3DP - YAWS - Yet Another Weather Shield - Toolbox - Version 3](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
+<br><br>
+- Maximal integrierte Version des 'STALL-Weatherman' (Stage 3) mit 'OBO-T60' Gehäuse und Wetterkappe aus der ['YAWS-Toolbox' mit der 'STALL-Weatherman' Option](https://github.com/wolwin/WW-mySHP/blob/master/SHP_YAWS/README.md).
+  <br><br>
+  - Mittels PTFE-Membran belüftetes 'OBO-T60' Gehäuse mit Kabelverschraubungen für den Weatherman
+  - Getrennte Gehäuse für Regen- und Lichtsensor / NTC - Belüftung der Gehäuse über PTFE-Membran
+  - Aufwändig konstruierte Wetterkappe für den BME280
+<br><br>
+- Weatherman - Stand 06-2020
+  <br><br>
+  ![WW-mySHP - Weatherman](./img/SHP_WM_New_W.jpg "Weatherman")
+  <br><br>
+- Feinstaubsensor - Stand 06-2020
+  <br><br>
+  ![WW-mySHP - Weatherman](./img/SHP_WM_New_F.jpg "Feinstaubsensor")
+
 #### Historie
+- 2020-07-02 - Dokumentation Langzeit-Erfahrungen (Hardware)
 - 2020-06-16 - Stage 0 - Grundplatten
 - 2020-06-07 - Erstveröffentlichung

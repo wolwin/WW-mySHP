@@ -59,13 +59,10 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Overview_07.jpg "Option STALL-Weatherman - Schnittmodell")
 
 #### 3D-Print
-- 3D-Druck Projekt für 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
+- 3D-Druck Projekt für 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md#stl-dateien)
 
-#### Hardware
-... _folgt in Kürze_
-
-#### Konfiguration, Aufbau und Inbetriebnahme
-... _folgt in Kürze_
+#### Hardware, Konfiguration, Aufbau und Inbetriebnahme
+- siehe unter: [WW-my3DP - YAWS - Yet Another Weather Shield - Toolbox - Version 3](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
 #### Galerie
 - 'YAWS-Toolbox' - Optionen - Beispiele
@@ -98,5 +95,11 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_08.jpg "Galerie")
 
+### Bilder
+- 'YAWS-Toolbox' - Option 'STALL-Weatherman' (oben) und 'YAWS-Toolbox' - Standard mit Feinstaubsensor (unten) - Stand 06-2020
+  <br><br>
+![WW-mySHP - YAWS](./img/SHP_YAWS_New_WF.jpg "Galerie")
+
 #### Historie
+- 2020-07-02 - Vervollständigung Dokumentation
 - 2020-06-07 - Veröffentlichung an dieser Stelle
