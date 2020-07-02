@@ -96,7 +96,8 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_08.jpg "Galerie")
 
 ### Bilder
-- 'YAWS-Toolbox' - Option 'STALL-Weatherman' (oben) und 'YAWS-Toolbox' - Standard mit Feinstaubsensor (unten) - Stand 06-2020
+- 'YAWS-Toolbox' - Option 'STALL-Weatherman' (oben) und 'YAWS-Toolbox' - Standard mit Feinstaubsensor (unten)
+- Stand 06-2020
   <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_New_WF.jpg "Galerie")
 
