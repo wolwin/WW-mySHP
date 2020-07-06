@@ -18,8 +18,9 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
  | [STALL‑Weatherman](./SHP_Weatherman/README.md "Zeigen ...") | Selbstbau-Wetterstation 'STALL-Weatherman' für die Hausautomation von Dr. Stall - Funktion, Betrieb, Bewertung und Erweiterungen |
 
 ## Andere Übersichten
-- 'WW-myPCB' - Printed-Circuit-Board Projekte - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/README.md)
+- 'WW-mySHT' - Smart-Home-Tools - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/README.md)
 - 'WW-my3DP' - 3D-Print Projekte - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/README.md)
+- 'WW-myPCB' - Printed-Circuit-Board Projekte - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/README.md)
 
 ## Disclaimer
 [Lese DISCLAIMER ...](DISCLAIMER.md "Lesen ...")
