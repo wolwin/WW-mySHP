@@ -70,5 +70,6 @@ Das erweiterte INO-Script hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h
 ![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_05.jpg "Gehäuse 'HB-UNI-Sen-CAP-MOIST'")<br><br>
 
 #### Historie
+- 2020-07-20 - Fehler in der PDF-Übersicht Platinenverdrahtung HB-UNI-Mini-X korrigiert
 - 2020-05-30 - INO-Script - Fixing compiler warnings
 - 2020-02-04 - Erstveröffentlichung
