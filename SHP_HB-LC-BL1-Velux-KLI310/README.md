@@ -26,7 +26,7 @@ Am besten kann der Aufbau der Schaltung über eine der vorhandenen 'Asksin++' Un
   - mit Platine 'HB-UNI-Mini-X AddOn' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X-AddOn)
 
 #### INO-Script
-INO-Script (2-Kanäle) papa: ['HB-LC-Bl1-Velux_2'](./bin/HB-LC-BL1-Velux_ext_20200722.zip)
+INO-Script (2-Kanäle) papa: ['HB-LC-Bl1-Velux_2'](./bin/HB-LC-Bl1-Velux_2_20200722.zip)
 <br>
 Frei konfigurierbares INO-Script : ['HB-LC-Bl1-Velux_ext'](./bin/HB_LC_BL1_Velux_ext_20200722.zip)
 
