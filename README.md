@@ -16,6 +16,7 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
  | [BME‑Shield&nbsp;‑&nbsp;(Outdated)](./SHP_BME-Shield/README.md "Zeigen ...") | Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280 - Version 1 und 2 (!!! veraltet - siehe 'YAWS-Toolbox' !!!) |
  | [YAWS‑Toolbox&nbsp;‑&nbsp;Version&nbsp;3](./SHP_YAWS/README.md "Zeigen ...") | 'Yet Another Weather Shield' - Toolbox - Version 3 |
  | [STALL‑Weatherman](./SHP_Weatherman/README.md "Zeigen ...") | Selbstbau-Wetterstation 'STALL-Weatherman' für die Hausautomation von Dr. Stall - Funktion, Betrieb, Bewertung und Erweiterungen |
+ | [HB‑LC‑Bl1‑Velux](./SHP_HB-LC-BL1-Velux-KLI310/README.md "Zeigen ...") | Erweiterte Version des 'Asksin++' Projekts 'HB-LC-Bl1-Velux' - 'Velux KLI 310 Integration in HomeMatic zur Steuerung von Velux Rolladen' |
 
 ## Andere Übersichten
 - 'WW-mySHT' - Smart-Home-Tools - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/README.md)
