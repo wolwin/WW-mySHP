@@ -55,7 +55,7 @@ Das erweiterte INO-Script hier herunterladen und in '<HB_LC_BL1_Velux_ext.h>' di
   | nicht gesetzt | HM-LC-Bl1-FM | nein - nicht notwendig|
   | gesetzt | HB-LC-Bl1-Velux | ja - notwendig |
 
-  - bei den batteriebetriebenen Geräten wird immer das ['JP-HB-Devices' AddOn](https://github.com/jp112sdl/JP-HB-Devices-addon) mit dem aktuellen [Release](https://github.com/jp112sdl/JP-HB-Devices-addon/releases) benötigt.
+  - bei den batteriebetriebenen Geräten wird immer das ['JP-HB-Devices' AddOn](https://github.com/jp112sdl/JP-HB-Devices-addon) mit dem aktuellen [Release](https://github.com/jp112sdl/JP-HB-Devices-addon/releases) (ab Version 2.28) benötigt.
 <br><br>
 - Die zweite Auswahl betrifft die Anzahl der Kanäle pro Gerät (CHANNEL_COUNT): die Standardanzahl ist 1, es ist jedoch auch möglich zwei Kanäle (sprich: zwei KLI 310 Platinen) pro Asksin++ Modul zu steuern (Achtung: FHEM kann standardmäßig nur einen Kanal bedienen).
 - Es finden sich noch weitere wichtige Einstellungen für einen stromsparenenden Batteriebetrieb, die konfiguriert werden können.
