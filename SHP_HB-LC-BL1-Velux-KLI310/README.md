@@ -73,7 +73,7 @@ des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung
 Asksin++ Fuses:<br>
   | **Fuse** | **Wert** | **Bemerkung** |
   | --- | --- | --- |
-  | Low Fuse | 0xFF | AVR: ext. osc, 8.0 MHz (CKSEL=1111 SUT=11) |
+  | Low Fuse | 0xE2 | AVR: ext. osc, 8.0 MHz (CKSEL=1111 SUT=11) |
   | High Fuse | 0xD2 | für CC1101 Frequenz im EEPROM Speicherbereich |
   | Extended Fuse | 0xFF |  Brown-out detection disabled (BODLEVEL=111) |
 
