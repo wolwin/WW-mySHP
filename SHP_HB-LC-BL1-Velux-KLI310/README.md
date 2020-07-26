@@ -77,7 +77,7 @@ Asksin++ Fuses:<br>
   | High Fuse | 0xD2 | für CC1101 Frequenz im EEPROM Speicherbereich |
   | Extended Fuse | 0xFF |  Brown-out detection disabled (BODLEVEL=111) |
 
-    - Hier ein sehr guter Erklärungs-Link dazu:
+    Hier ein sehr guter Erklärungs-Link dazu:
   [Engbedded Atmel AVR Fuse Calculator](http://www.engbedded.com/fusecalc?P=ATmega328P&V_LOW=0xE2&V_HIGH=0xD2&V_EXTENDED=0xFF&O_HEX=Apply+values)
 
 - Zusammenbau und mit Anlernen an der Zentrale die Platine(n) in Betrieb nehmen - zu den Details ... siehe Bilder unten.
