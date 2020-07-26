@@ -70,15 +70,14 @@ Das erweiterte INO-Script hier herunterladen und in '<HB_LC_BL1_Velux_ext.h>' di
 
   - _Nur für Experten_:<br>Wichtig in diesem Zusammenhang ist natürlich, dass auch die 'Fuse Bits'
 des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung des CC1101 Sendemodul ein EEPROM Speicherbereich zur Verfügung gestellt wird ([siehe CC1101 Frequent Test](https://asksinpp.de/Grundlagen/FAQ/Fehlerhafte_CC1101.html)) oder im Batteriebetrieb die Abschaltung des Sendemoduls bei zu niedriger Versorgungsspannung gewährleistet ist ([siehe Abschaltung oder Dauersender/-störer trotz fast voller Batterien](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html#dauersender-babbling-idiot)). <br><br>
-Asksin++ Fuses:
+    Asksin++ Fuses:
+    | **Fuse** | **Wert** | **Bemerkung** |
+    | --- | --- | --- |
+    | Low Fuse | 0xE2 | AVR ext. osc, 8.0 MHz (CKSEL=1111 SUT=11) |
+    | High Fuse | 0xD2 | für CC1101 Frequenz im EEPROM Speicherbereich |
+    | Extended Fuse | 0xFF |  Brown-out detection disabled (BODLEVEL=111) |
 
-   | **Fuse** | **Wert** | **Bemerkung** |
-   | --- | --- | --- |
-   | Low Fuse | 0xE2 | AVR ext. osc, 8.0 MHz (CKSEL=1111 SUT=11) |
-   | High Fuse | 0xD2 | für CC1101 Frequenz im EEPROM Speicherbereich |
-   | Extended Fuse | 0xFF |  Brown-out detection disabled (BODLEVEL=111) |
-
-   Hier ein sehr guter Erklärungs-Link dazu:
+    Hier ein sehr guter Erklärungs-Link dazu:
   [Engbedded Atmel AVR Fuse Calculator](http://www.engbedded.com/fusecalc?P=ATmega328P&V_LOW=0xE2&V_HIGH=0xD2&V_EXTENDED=0xFF&O_HEX=Apply+values)
 
 - Zusammenbau und mit Anlernen an der Zentrale die Platine(n) in Betrieb nehmen - zu den Details ... siehe Bilder unten.
