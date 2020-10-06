@@ -49,8 +49,5 @@ AddOn Platine für 'HB-UNI-Mini-X' im THT-Format. Mit 'HB-UNI-Mini-X' und dem 'H
 <br><br>
 ![WW-mySHP - HB-UNI-Mini-X](./img/SHP_HB-UNI-Mini-X_10.jpg "HB-UNI-Mini-X")
 
-
-
-
 #### Historie
 - 2020-01-10 - Erstveröffentlichung
