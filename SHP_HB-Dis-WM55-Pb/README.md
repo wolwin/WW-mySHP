@@ -4,20 +4,20 @@
 
 #### Projekt-Beschreibung
 
-Projekt 'HB‑Dis‑WM55‑Pb - Erweiterung der Homematic 'Funk-Statusanzeige HM-Dis-WM55' zur externen zusätzlichen Ansteuerung der Anzeige Push-Buttons'.
+Projekt 'HB‑Dis‑WM55‑Pb - Erweiterung der Homematic 'Funk-Statusanzeige HM-Dis-WM55' zur externen zusätzlichen Ansteuerung der Anzeige-Tasten'.
 
 Das Projekt basiert auf einer Veröffentlichung im FHEM-Forum:
 ['Antw:HomeMatic Funk-Statusanzeige - HM-Dis-WM55' - Antwort #283 am: 17 Mai 2015, 22:00:27 von hoover123](https://forum.fhem.de/index.php?topic=29128.msg295509#msg295509)
 
-Ziel des Projektes war es, die Möglichkeiten des Homematic 'HM-Dis-WM55' Moduls auszuloten. Dabei stellte sich schnell heraus, dass es keine Möglichkeit gibt, die OLED-Anzeige bei einer Nachricht über die CCU Zentrale zu aktivieren - es ist immer ein Tastendruck zur Aktivierung des OLED-Bildschirms notwendig. Die im WebGUI der CCU Zentrale dargestellten Pushbuttons des 'HB-Dis-WM55' Moduls lösen keine Aktion aus, sondern dokumentieren nur den Zeitpunkt einer Aktion am Modul.
+Ziel des Projektes war es, die Möglichkeiten des Homematic 'HM-Dis-WM55' Moduls auszuloten. Dabei stellte sich schnell heraus, dass es keine Möglichkeit gibt, die OLED-Anzeige bei einer Nachricht über die CCU Zentrale zu aktivieren - es ist immer ein Tastendruck zur Aktivierung des OLED-Bildschirms notwendig. Die im WebGUI der CCU Zentrale dargestellten Taster des 'HB-Dis-WM55' Moduls lösen keine Aktion aus, sondern dokumentieren nur den Zeitpunkt einer Aktion am OLED-Modul.
 <br><br>
 'hoover123' aus dem FHEM-Forum hatte die Idee, einen Tastendruck über einen zusätzlichen Schaltaktor 'HM-LC-SW1-BA-PCB' am 'HM-Dis-WM55' OLED-Modul zu simulieren.
 <br><br>
 Diese Idee wurde aufgegriffen und weiterentwickelt. Eine eigene 'Asksin++' Platine 'HB-Dis-WM55-Pb' in Verbindung mit dem 'HM-Dis-WM55' OLED-Modul ermöglicht nun das Betätigen der beiden Taster für je einen kurzen oder langen Tastendruck, gesteuert über die CCU Zentrale.
 <br><br>
-Damit kurze und lange Tastendrucke zuverlässig umgesetzt werden, wurde für das 'Asksin++' Modul ein speziell angepaßtes INO-Script geschrieben - hier wird sichergestellt, dass hardwaremäßig ein kurzer oder langer Tastendruck das 'HB-Dis-WM55' Modul erreicht. Das 'Asksin++' Modul wird als 'HM-LC-SW1-BA-PCB' Gerät mit vier Schaltkanälen in der CCU Zentrale geführt.
+Damit kurze und lange Tastendrucke zuverlässig umgesetzt werden, wurde für das 'Asksin++' Modul ein speziell angepaßtes INO-Script geschrieben - hier wird sichergestellt, dass hardwaremäßig ein kurzer oder ein langer Tastendruck das 'HB-Dis-WM55' Modul erreicht. Das 'Asksin++' Modul wird als 'HM-LC-SW1-BA-PCB' Gerät mit vier Schaltkanälen in der CCU Zentrale geführt.
 
-Die Ansteuerung eines Tastenndrucks sollte nicht im Direktmodus über 'Status und Geräte / Geräte' am 'HM-LC-SW1-BA-PCB' Gerät erfolgen, da es sich ja eigentlich um einen Schaltaktor handelt - d.h.: drückt man für einen Kanal die Taste 'EIN', wird zwar der kurze bzw. lange Tastenimpuls am 'WM-Dis-WM55' ausgelöst, aber die Taste des 'HM-LC-SW1-BA-PCB' Geräts wird in der WebUI nicht zurückgesetzt und bleibt auf 'EIN' stehen!!
+Die Ansteuerung eines Tastenndrucks sollte nicht im Direktmodus des WebGUIs über 'Status und Geräte / Geräte' am 'HM-LC-SW1-BA-PCB' Gerät erfolgen, da es sich ja eigentlich um einen Schaltaktor handelt - d.h.: drückt man für einen Kanal die Taste 'EIN', wird zwar der kurze bzw. lange Tastenimpuls am 'WM-Dis-WM55' ausgelöst, aber die Taste des 'HM-LC-SW1-BA-PCB' Geräts wird in der WebUI nicht zurückgesetzt und bleibt auf 'EIN' stehen!!
 
 Stattdessen muss die Ansteuerung eines Tastendrucks per CCU Programm erfolgen, indem man den gewünschten Kanalschalter für 1 bzw. 2 sec einschaltet.
 
@@ -28,7 +28,7 @@ Stattdessen muss die Ansteuerung eines Tastendrucks per CCU Programm erfolgen, i
  | 3 | Taste unten | kurz |
  | 4 | Taste unten | lang |
 
-Hier exemplarisch alle vier Möglichkeiten als CCU Programm, ausgelöst über die virtuellen BidCoS-RF-Taster:
+Hier exemplarisch alle vier Möglichkeiten als CCU Programm, ausgelöst über virtuelle BidCoS-RF-Taster:
 <br><br>
 ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_51.jpg "")
 <br><br>
@@ -38,21 +38,21 @@ Hier exemplarisch alle vier Möglichkeiten als CCU Programm, ausgelöst über di
 <br><br>
 ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_54.jpg "")
 <br><br>
-Durch diese Kombination von INO-Script und EIN/AUS-Schalter als Impulsgeber, wird sichergestellt, dass der Tastenimpuls immer mit _'korrekter Zeitlänge'_ durchgeführt wird - eine evtl. Auslastung der CCU spielt damit keine Rolle mehr!
+Durch diese Kombination von INO-Script (Hardware) und CCU Zentrale 'EIN'/'AUS' Schalter als Impulsgeber, wird sichergestellt, dass der Tastenimpuls immer mit _'korrekter Zeitlänge'_ am 'HM-Dis-WM55'-Modul durchgeführt wird - eine evtl. Auslastung der CCU spielt damit für den Tastenimpuls 'kurz/lang' keine Rolle mehr!
 
 Damit kann das 'HB-Dis-WM55' Modul nun auch bidirektional eingesetzt werden.
 
 _Anmerkung:_
 <br>
-An dieser Stelle muss jedoch gesagt werden, dass eigentlich das Homematic 'WM-Dis-WM55' Modul sich nicht für die Darstellung von _sehr vielen Nachrichten_ eignet. Neben der begrenzten Display-Darstellung, ist es besonders der nach oben schnellende DutyCycle bei mehreren Meldungen oder eigenen Tast-Aktionen am Display, die das m.E. ausschließen.
+An dieser Stelle muss jedoch gesagt werden, dass eigentlich das Homematic 'WM-Dis-WM55' Modul sich nicht für die Darstellung von _sehr vielen Nachrichten_ eignet. Neben der begrenzten Display-Darstellung, ist es besonders der nach oben schnellende DutyCycle, der bei mehreren Meldungen oder eigenen Tast-Aktionen am Display, das m.E. ausschließen.
 
-Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des Hauses, jetzt schnell und einfach ausgegeben werden.
+Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlassen des Hauses, nun schnell und einfach über die CCU Zentrale an das Homematic 'HM-Dis-WM55' OLED-Display  ausgegeben werden.
 
 #### Platine
-- Platine 'HB‑Dis‑WM55‑Pb - V1.1' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB‑Dis‑WM55‑Pb/README.md)
+- 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb - V1.1' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB‑Dis‑WM55‑Pb/README.md)
 
 #### INO-Script
-- 'HM_LC_SW1_BA_PCB_PB' INO-Script - [Download ...](./bin/HM_LC_SW1_BA_PCB_PB_xxx.zip)
+- 'HM_LC_SW1_BA_PCB_PB' INO-Script für 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb' - [Download ...](./bin/HM_LC_SW1_BA_PCB_PB_20201007.zip)
 
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
 
@@ -61,10 +61,11 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
 
 #### Bilder
 - Auszug 'HM‑Dis‑WM55' Schaltplan mit den herausgeführten Anschlüssen zur Zusatzplatine 'HB‑Dis‑WM55-Pb'
+- Siehe auch Schaltplan im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB‑Dis‑WM55‑Pb/README.md#schaltplan)
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_01.jpg "")
   <br><br>
-- Vorderseite 'HM‑Dis‑WM55' OLED-Dislay Platine mit angelöteten Schaltdrähten (hier sind noch vier Adern verbunden ... es würden auch drei Adern reichen - siehe Schaltbild)
+- Vorderseite 'HM‑Dis‑WM55' OLED-Dislay Platine mit angelöteten Schaltdrähten (hier sind noch vier Adern verbunden ... es reichen auch drei Adern - siehe Schaltbild).
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_10.jpg "")
   <br><br>
@@ -80,7 +81,7 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_13.jpg "")
   <br><br>
-- Das Sendemodul wird in das mit Kabeldurchführungen versehene Batterie-Gehäuse eingebaut - siehe die beiden gebohrten Löcher in den Batteriefächern.
+- Das Sendemodul wird in das mit Kabeldurchführungen aufgebohrte Batterie-Gehäuse eingebaut - siehe die beiden (ovalen) Löcher in den Batteriefächern. Darauf achten, dass die Stromversorgungskabel nicht 'auftragen', sondern 'vertieft' herausgeführt werden.
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_14.jpg "")
   <br><br>
@@ -88,7 +89,7 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_15.jpg "")
   <br><br>
-- Die Löcher der Kabeldurchführungen im Batterie-Gehäuse und die Kabel für Stromversorgung und Tasteranschlüsse müssen so ausgelegt sein, dass nun die OLED-Display Einheit - wie in der Bauanleitung beschrieben - zusammengesteckt werden kann. Dabei ist besonders auf die äußerst filligran ausgelegten Einrasthaken zu achten, die sehr leicht abbrechen können.
+- Die Löcher der Kabeldurchführungen im Batterie-Gehäuse und die Kabel für Stromversorgung und Tasteranschlüsse müssen so ausgelegt sein, dass nun die OLED-Display Einheit - wie in der Bauanleitung beschrieben - zusammengesteckt werden kann. Dabei ist besonders auf die äußerst filligran ausgelegten Einrasthaken zu achten, die sehr leicht abbrechen können. Abschließend wird die OLED Display-Wippe aufgesetzt.
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_16.jpg "")
   <br><br>
@@ -117,7 +118,7 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_24.jpg "")
   <br><br>
-- Alternativ kann auch mit einem eigenen Modulträger der Bausatz 'HM-LC-Sw1-PCB' verbaut werden.
+- Alternativ kann auch mit einem eigenen Modulträger der Bausatz 'HM-LC-Sw1-PCB' verbaut werden (kann nur einen 'HM-Dis-WM55' Taster bedienen).
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_25.jpg "")
   <br><br>
@@ -178,9 +179,9 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_38.jpg "")
   <br><br>
-- Beim Einsetzen der Batterien ist so vorzugehen, dass _zuerst die beiden 'außen' liegenden Batterien_ eingesetzt werden. _Als letztes wird dann die mittlere Batterien eingesetzt._ Damit wird erreicht, dass das 'HM-Dis-WM55'- und 'HB-Dis-WM55-Pb'-Modul gleichzeitig mit spannung versorgt werden !!
-- Sind beide Module erfolgreich gestartet wird die Funktionsfähigkeit getestet.
-- Abschließend wird die Batterieklappe eingesetzt und der Gehäusedeckel mit vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,2 x 6,5 mm' eingesetzt.
+- Beim Einsetzen der Batterien ist so vorzugehen, dass _zuerst die beiden 'außen' liegenden Batterien_ eingesetzt werden. _Als letztes wird dann die mittlere Batterien eingesetzt._ Damit wird erreicht, dass das 'HM-Dis-WM55'- und 'HB-Dis-WM55-Pb'-Modul gleichzeitig mit Spannung versorgt werden !!
+- Sind beide Module erfolgreich gestartet, kann die Funktionsfähigkeit getestet werden (siehe CCU-Programme oben).
+- Abschließend wird die Batterieklappe eingesetzt und der Gehäusedeckel mit vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,2 x 6,5 mm' geschlossen.
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_40.jpg "")
   <br><br>
@@ -198,4 +199,4 @@ Trotzdem können Meldungen, wie 'offene Fenster und Türen' beim Verlassen des H
 <br><br>
 
 #### Historie
-- 2020-10-04 - Erstveröffentlichung
+- 2020-10-07 - Erstveröffentlichung
