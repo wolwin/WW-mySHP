@@ -61,7 +61,7 @@ Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlas
 
 #### Bilder
 - Auszug 'HM‑Dis‑WM55' Schaltplan mit den herausgeführten Anschlüssen zur Zusatzplatine 'HB‑Dis‑WM55-Pb'
-- Siehe auch Schaltplan im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB‑Dis‑WM55‑Pb/README.md#schaltplan)
+- Siehe auch Schaltplan im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-Dis-WM55-Pb/README.md#schaltplan)
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_01.jpg "")
   <br><br>
