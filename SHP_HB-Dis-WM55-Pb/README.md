@@ -49,7 +49,7 @@ An dieser Stelle muss jedoch gesagt werden, dass eigentlich das Homematic 'WM-Di
 Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlassen des Hauses, nun schnell und einfach über die CCU Zentrale an das Homematic 'HM-Dis-WM55' OLED-Display  ausgegeben werden.
 
 #### Platine
-- 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb - V1.1' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB‑Dis‑WM55‑Pb/README.md)
+- 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb - V1.1' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-Dis-WM55-Pb/README.md)
 
 #### INO-Script
 - 'HM_LC_SW1_BA_PCB_PB' INO-Script für 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb' - [Download ...](./bin/HM_LC_SW1_BA_PCB_PB_20201007.zip)
@@ -57,7 +57,7 @@ Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlas
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
 
 #### 3D-Print
-- 3D-Druck Projekt für 'HB‑Dis‑WM55‑Pb' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HB‑Dis‑WM55‑Pb/README.md)
+- 3D-Druck Projekt für 'HB‑Dis‑WM55‑Pb' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HB-Dis-WM55-Pb/README.md)
 
 #### Bilder
 - Auszug 'HM‑Dis‑WM55' Schaltplan mit den herausgeführten Anschlüssen zur Zusatzplatine 'HB‑Dis‑WM55-Pb'
