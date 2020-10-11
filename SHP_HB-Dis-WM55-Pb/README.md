@@ -69,7 +69,7 @@ Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlas
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_10.jpg "")
   <br><br>
-- Das Anlöten der Drähte an die Taster sollte in jedem Fall vor dem Einbau des OLED-Displays erfolgen. Es ist auf eine ausreichende Länge der Drähte zu achten, damit man später das OLED-Modul aus dem Gehäuse nehmen zu können, um z.B. den Modul-Konfigurationsknopf zu drücken!! Dann mit Heißkleber die Kabellötungen fixieren.
+- Das Anlöten der Drähte an die Taster sollte in jedem Fall vor dem Einbau des OLED-Displays erfolgen. Es ist auf eine ausreichende Länge der Drähte zu achten, damit man später das OLED-Modul aus dem Gehäuse nehmen kann, um z.B. den Modul-Konfigurationsknopf zu drücken!! Dann mit Heißkleber die Kabellötungen fixieren.
   <br><br>
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_11.jpg "")
   <br><br>
