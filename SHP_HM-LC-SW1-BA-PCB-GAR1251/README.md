@@ -39,7 +39,7 @@ Von der Struktur her ist die Firmware an das eigentliche Ursprungsscript 'HM-LC-
    [Engbedded Atmel AVR Fuse Calculator](http://www.engbedded.com/fusecalc?P=ATmega328P&V_LOW=0xE2&V_HIGH=0xD2&V_EXTENDED=0xFF&O_HEX=Apply+values)
 
 #### INO-Script
-  [Download ...](./bin/HM_LC_SW1_BA_PCB_GAR1251_20200529.zip)
+  [Download ...](./bin/HM_LC_SW1_BA_PCB_GAR1251_20210403.zip)
 
 #### 3D-Print
   - 3D-Druck Projekt für 'GARDENA EasyControl' mit 'HM-LC-SW1-BA-PCB-GAR1251' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_GARDENA_EasyControl/README.md)
@@ -82,6 +82,7 @@ Mit Anlernen an der Zentrale die Platine in Betrieb nehmen.
 ![WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251](./img/SHP_HM-LC-SW1-BA-PCB-GAR1251_03.jpg "HM-LC-SW1-BA-PCB-GAR1251 - CCU")
 
 #### Historie
+- 2021-04-03 - Aktualisierung INO-Script für 'Asksin++' V4.1.6 + V5.0.0 
 - 2020-06-19 - Aktualisierung Platinen-Layout Angaben
 - 2020-05-30 - Aktualisierung Platinen-Layout und INO-Script
 - 2020-02-23 - Veröffentlichung an dieser Stelle
