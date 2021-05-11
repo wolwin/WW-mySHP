@@ -27,7 +27,7 @@ Weiter wurde zusätzlich entwickelt:
 Am besten kann der Aufbau der erweiterten Schaltung über eine der vorhandenen 'Asksin++' Universal-Platinen erfolgen:
 
 - 'normale' Version
-  - Platine 'HB-UNI-Sens-X' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X)
+  - Platine 'HB-UNI-Sens-X' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Sens-X)
   - [Übersicht Platinenverdrahtung ...](./bin/HB-UNI-Sen-CAP-MOIST_ext_Verdrahtung_HB-UNI-Sens-X.pdf)
   - [Teile- und Bestückungsliste ...](./bin/HB-UNI-Sen-CAP-MOIST_HB-UNI-Sens-X_Teileliste.txt)
 <br><br>
