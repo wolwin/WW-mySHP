@@ -76,6 +76,9 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - Die Gardena 118x Sensoren unterscheiden zwischen 'trocken' und 'feucht' - hier eine Übersicht:
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_08.jpg "HB-SCI-4-O-Gar118x")
+
+- Die Gardena 118x Sensoren unterscheiden zwischen 'trocken' und 'feucht' - hier eine Übersicht:
+<br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_09.jpg "HB-SCI-4-O-Gar118x")
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_10.jpg "HB-SCI-4-O-Gar118x")
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_11.jpg "HB-SCI-4-O-Gar118x")
@@ -101,7 +104,39 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_07.jpg "HB-SCI-4-O-Gar118x")
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_08.jpg "HB-SCI-4-O-Gar118x")
 
+#### CCU-Integration (hier: über Systemvariable)
+
+- CCU Geräte-Einstellungen
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_00.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Anlegen von drei Systemvariablen
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_01.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_02.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_03.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Programm für die Auswertung von Gardena 1188 (Bodenfeuchtesensor)
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_10.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Programm für die Auswertung von Gardena 1189 (Regenfeuchtesensor)
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_11.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Programm für die Auswertung einer 'Low Bat'-Meldung
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_12.jpg "HB-SCI-4-O-Gar118x")
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_13.jpg "HB-SCI-4-O-Gar118x")
+<br><br>
+- Ansicht der Gardena Systemvariablen für Bodenfeuchte- und Regensensor mit den Rückgabewerten 'Fehler', 'trocken' oder 'feucht'. Zusätzlich wird der Status einer niedrigen Batterispannung des Moduls ausgegeben.
+<br><br>
+![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_04.jpg "HB-SCI-4-O-Gar118x")
+
 #### Historie
+- 2021-06-10 - Erweiterung um die Beschreibung der CCU-Integration
 - 2021-06-07 - INO-Script - bugfix for compiler error with Asksin++ V5
 - 2020-05-31 - INO-Script - Fixing compiler warnings
 - 2020-03-23 - INO Bugfix (force CCU toogle update)
