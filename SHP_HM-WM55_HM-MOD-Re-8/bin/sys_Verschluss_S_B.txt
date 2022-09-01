@@ -1,0 +1,9 @@
+sys_Verschluss_S_B
+Verschluss - Schaltzustand Booten
+
+Bedingung: Wenn...
+ - Systemzustand  sv_CCU-Status  bei  Betrieb  nur prüfen
+
+Aktivität: Dann...  Haken  Vor dem Ausführen alle laufenden Verzögerungen für diese Aktivitäten beenden (z.B. Retriggern).
+ - Systemzustand  sys_Verschluss_Flag  sofort  0
+

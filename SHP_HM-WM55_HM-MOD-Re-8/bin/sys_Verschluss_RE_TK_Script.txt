@@ -1,0 +1,17 @@
+! sys_Verschluss_RE_TK
+
+var v_src = dom.GetObject("$src$");
+! dom.GetObject("_sys_Debug").State(v_src # " - " # system.Date("%H:%M:%S"));
+
+! --- Systemvariable ---
+object o_Ch = dom.GetObject("sys_Verschluss_Channel");
+
+if (v_src && o_Ch) {
+ 
+  var src_Channel = dom.GetObject(v_src.Channel());
+
+  ! --- Systemvariable auf Verschluss-Channel setzen ---
+  o_Ch.State( src_Channel );
+}
+
+! dom.GetObject("_sys_Debug_1").State( o_Ch.Value() );

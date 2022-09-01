@@ -1,0 +1,328 @@
+sys_Verschluss_S_X
+Verschluss - Schaltzustand X
+
+Bedingung: Wenn...
+ - Systemzustand  sys_Verschluss_Flag  bei  X  bei Änderung auslösen
+
+Aktivität: Dann...  Haken  Vor dem Ausführen alle laufenden Verzögerungen für diese Aktivitäten beenden (z.B. Retriggern).
+ - Skript ...  sofort
+
+
+-------
+Skript:
+-------
+var v_src = dom.GetObject("$src$");
+! dom.GetObject("_sys_Debug").State( v_src # " - " # system.Date("%H:%M:%S"));
+
+! sys_Verschluss_S_X - alle Gewerke 'Verschluss' auf 'GESCHLOSSEN' prüfen 
+!                      und Ergebnis etagenweise mit LED anzeigen
+!
+! - Voraussetzung: Mit Hilfe eines 'HM-MOD-Re-8' wird der 'GESCHLOSSEN' Status
+!   aller Geräte des Gewerks 'Verschluss' geprüft und je Etage mit LED angezeigt.
+!   Dabei muss das Verschluss-Gerät im Raum-Eintrag die Stockwerksinformation 
+!   im Format (i-XX_...) enthalten (z.B.: 1-EG_Flur).
+!
+! Enthält Code-Teile aus: Alle Fenstersensoren - v1.42 (c) by Alchy
+! https://homematic-forum.de/forum/viewtopic.php?f=26&t=25517&p=301186#p301186
+!
+! Erstellung: 10.07.2022
+! Version   : 17.07.2022 - by wolwin - (Creative Commons)
+!
+
+! --- Verschluss ---
+string Dev_SC = "1-EG_FL_TK";
+! HM-Sec-SCo
+! BidCos-RF.OEQ2132537:1.STATE
+! Debug:
+! dom.GetObject(dom.GetObject("sys_Verschluss_Active")).State(false);
+! var v_src = dom.GetObject("BidCos-RF.OEQ2132537:1.STATE");
+
+! --- Anzeige ---
+string Dev_RE = "1-EG_FL_RE";
+! HM-MOD-Re-8
+! BidCos-RF.REQ1207957:1.STATE
+! BidCos-RF.REQ1207957:2.STATE
+! BidCos-RF.REQ1207957:3.STATE
+! BidCos-RF.REQ1207957:4.STATE
+! Debug:
+! dom.GetObject(dom.GetObject("sys_Verschluss_Active")).State(false);
+! var v_src = dom.GetObject("BidCos-RF.REQ1207957:2.STATE");
+!
+! Hardware-Zuordnung Geschoss - Device-Channel
+! Beispiel:
+! G0 = 0-KG           => -
+! G1 = 1-EG           => Kanal 4 (Rot) / 8 (Grün)
+! G2 = 2-OG           => Kanal 3 (Rot) / 7 (Grün)
+! G3 = 3-DG           => Kanal 2 (Rot) / 6 (Grün)
+! G9 = alle Geschosse => Kanal 1 (Rot) / 5 (Grün)
+integer G1_Ch_R = 4;
+integer G2_Ch_R = 3;
+integer G3_Ch_R = 2;
+integer G9_Ch_R = 1;
+
+integer G1_Ch_G = 8;
+integer G2_Ch_G = 7;
+integer G3_Ch_G = 6;
+integer G9_Ch_G = 5;
+
+! --- Anzeige-Dauer (sec) ---
+integer GX_OnTime = 5;
+
+! --- Systemvariablen ---
+object o_Fl = dom.GetObject("sys_Verschluss_Flag");
+object o_Ch = dom.GetObject("sys_Verschluss_Channel");
+!
+! ---
+
+if ( v_src && o_Ch && o_Fl) {
+
+  string sTmp;
+  string z_D = ":";
+  string z_C = "";  
+  string z_B = "-";
+  string z_E = "";
+  
+  var src_Value = o_Ch.Value();
+  var src_Device = ("" # src_Value).StrValueByIndex(z_D, 0);
+ 
+  ! dom.GetObject("_sys_Debug_1").State( src_Device # " - " # Dev_SC # " - " # Dev_RE);  
+  
+  ! --- nur benannte Devices behandeln ---
+  if ((src_Device == Dev_SC) || (src_Device == Dev_RE)) {
+    
+    string sTmp;
+    string s_device;
+    object o_device;
+
+    string sFunc = "Verschluss";
+    string sExclude = "";
+    string sOnTime = "ON_TIME";
+    
+    integer Count_0 = 0;
+    integer Count_1 = 0;
+    integer Count_2 = 0;
+    integer Count_3 = 0;
+    integer Count_9 = 0;
+    
+    ! --- Kanal-Nummer extrahieren ---
+    z_C = ("" # src_Channel).StrValueByIndex(z_D, 1);
+    ! WriteLine("z_C       : " # z_C);
+    
+    ! --- wenn auslösender Verschluss ---
+    ! --- dann Name merken ---
+    if (src_Device == Dev_SC) {
+      sExclude = Dev_SC.ToLower();
+      z_C = G9_Ch_R;
+    }
+    
+        ! ===========================
+        ! === Gewerk 'Verschluss' ===
+        ! ===========================
+        ! WriteLine ("Gewerk " # sFunc)
+        
+        o_device = dom.GetObject(sFunc);
+        if (o_device) {
+      
+          s_device = "";
+
+          ! --- Über alle Devices vom Typ 'Verschluss' iterieren ---
+          foreach(s_device, o_device.EnumUsedIDs()) {
+        
+            var choice = false;
+            var status = false;
+
+            var ch = dom.GetObject(s_device);
+            var dev = dom.GetObject(ch.Device());
+            var chType = ch.HssType();
+            var devType = dev.HssType();
+            var chName = "" # (ch.Name()).StrValueByIndex(z_D, 0);
+            
+            ! WriteLine(dev.Address() # " " # devType # " " # chType);
+
+            string sRoom = ""; 
+            string s_deviced = "";
+        
+            ! Alle zugehörigen Raum-Bezeichnungen des Device holen
+            ! und nach der Etagen-Ziffer i in der Bezeichnung 'i-XX...' suchen
+            ! wenn keine gefunden wird, dann Etagen-Ziffer auf 1 setzen
+            foreach(s_deviced, ch.ChnRoom()) {   
+              sRoom = "" # dom.GetObject(s_deviced).Name();
+              ! Etagen-Index 0...3
+              z_E = "1";
+              if (sRoom) {
+                z_E = sRoom.StrValueByIndex(z_B, 0);
+                if ( (z_E != "0") && (z_E != "1") && (z_E != "2") && (z_E != "3") ) {
+                  z_E = "1";
+                }
+              }
+            } 
+          
+            ! --- Verschluss oder Neigungssensor ---
+            if ( (chType == "SHUTTER_CONTACT") || (chType == "TILT_SENSOR") ) { 
+              choice = true; 
+              status = ch.DPByHssDP("STATE").Value();
+              ! if (!status) { status_new = " zu "; } else { status_new = " offen "; }
+            } else {
+              ! Fenstergriff
+              if ( chType.StartsWith("ROTARY_HANDLE") ) { 
+                choice = true; 
+                status = ch.DPByHssDP("STATE").Value();
+                ! if (!status) { status_new = " zu ";}
+                ! if (status == 1 ){ status_new = " gekippt "; }
+                ! if (status == 2 ){ status_new = " offen "; }
+              }
+              else {
+                ! Homematic Türschlossantrieb
+                if ( (devType == "HM-Sec-Key") && (chType == "KEYMATIC") ) { 
+                  choice = true; 
+                  status = ch.DPByHssDP("STATE").Value(); 
+                  ! if (!status) { status_new = " zu "; } else { status_new = " offen "; }
+                }
+                else {
+                  ! Winmatic Fensterantrieb
+                  if ( (devType.StartsWith("HM-Sec-Win")) && (chType == "WINMATIC") ) {
+                    choice = true; 
+                    status = ch.DPByHssDP("LEVEL").Value(); 
+                    ! if (ch.DPByHssDP("LEVEL").Value() == -0.005 ){status_new = " verriegelt ";}
+                    ! if (ch.DPByHssDP("LEVEL").Value() == 0.0 ){status_new = " zu ";}
+                    ! if (ch.DPByHssDP("LEVEL").Value() >= 0.1 ){status_new = " offen ";}
+                  }
+                }
+              }
+            }
+        
+            if (choice){
+              if (status) {
+                ! WriteLine(chName # " " # sExclude # " " # dev.Address() # " " # devType # " " # chType # " " # status);
+                ! --- Zähler je Etagen-Index - ausgenommen, wenn Auslösung durch Verschluss-Event ---
+                if ( chName.ToLower() != sExclude ) {
+                  if (z_E == "0") { Count_0 = Count_0 + 1; }
+                  if (z_E == "1") { Count_1 = Count_1 + 1; }
+                  if (z_E == "2") { Count_2 = Count_2 + 1; }
+                  if (z_E == "3") { Count_3 = Count_3 + 1; }
+                  Count_9 = Count_9 + 1;
+                }
+              }
+            }
+          }
+
+          ! WriteLine("Count_0 = " # Count_0);
+          ! WriteLine("Count_1 = " # Count_1);
+          ! WriteLine("Count_2 = " # Count_2);
+          ! WriteLine("Count_3 = " # Count_3);
+          ! WriteLine("Count_9 = " # Count_9);
+          
+          ! dom.GetObject("_sys_Debug_2").State( Count_1 );  
+          ! dom.GetObject("_sys_Debug_3").State( Count_2 );  
+          ! dom.GetObject("_sys_Debug_4").State( Count_3 );  
+          ! dom.GetObject("_sys_Debug_5").State( Count_9 );  
+          ! dom.GetObject("_sys_Debug_9").State( "" );            
+          
+        }
+        ! ===============
+    
+    ! --- auf 'Y' setzen: Anzeige-Ausgabe ---
+    dom.GetObject(o_Fl).State(3);
+
+    ! --- Alle aktivierten Anzeige LEDs löschen ---
+    sTmp = Dev_RE # z_D # G1_Ch_R;
+    if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+    sTmp = Dev_RE # z_D # G2_Ch_R;
+    if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+    sTmp = Dev_RE # z_D # G3_Ch_R;
+    if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+    sTmp = Dev_RE # z_D # G9_Ch_R;
+    if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+    system.Exec("sleep 0.1");
+  
+    ! --- LED je nach Etage für 5sec einschalten ---
+    if (src_Device == Dev_SC) {
+      ! --- Auslöser = Verschluss ---
+      ! WriteLine ("Auslöser Verschluss")
+      if (Count_1 > 0) {
+        sTmp = Dev_RE # z_D # G1_Ch_R;
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      if (Count_2 > 0) {
+        sTmp = Dev_RE # z_D # G2_Ch_R;
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      if (Count_3 > 0) {
+        sTmp = Dev_RE # z_D # G3_Ch_R;
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      if (Count_9 > 0) {
+        sTmp = Dev_RE # z_D # G9_Ch_R;
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      } else {
+        sTmp = Dev_RE # z_D # G9_Ch_G;
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+    } else {
+      ! --- Auslöser = Anzeige ---
+      ! WriteLine ("Auslöser Anzeige")
+      if ((z_C == G1_Ch_R) || (z_C == G9_Ch_R)) {
+        if (Count_1 > 0) {
+          sTmp = Dev_RE # z_D # G1_Ch_R;
+        } else {
+          sTmp = Dev_RE # z_D # G1_Ch_G;
+        }
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      if ((z_C == G2_Ch_R) || (z_C == G9_Ch_R)) {
+        if (Count_2 > 0) {
+          sTmp = Dev_RE # z_D # G2_Ch_R;
+        } else {
+          sTmp = Dev_RE # z_D # G2_Ch_G;
+        }
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      if ((z_C == G3_Ch_R) || (z_C == G9_Ch_R)) {
+        if (Count_3 > 0) {
+          sTmp = Dev_RE # z_D # G3_Ch_R;
+        } else {
+          sTmp = Dev_RE # z_D # G3_Ch_G;
+        }
+        ! WriteLine(sTmp);
+        dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+        dom.GetObject(sTmp).State(true);
+      }
+      ! if (z_C == G9_Ch_R) {
+      !   if (Count_9 > 0) {
+      !     sTmp = Dev_RE # z_D # G9_Ch_R;
+      !   } else {
+      !     sTmp = Dev_RE # z_D # G9_Ch_G;
+      !   }
+      !   ! WriteLine(sTmp);
+      !   dom.GetObject(sTmp).DPByHssDP(sOnTime).State(GX_OnTime);
+      !   dom.GetObject(sTmp).State(true);
+      ! }
+      
+    }
+    system.Exec("sleep 0.1");
+    
+  }
+  else {
+    
+    ! --- auf 'Z' setzen: Beenden ---
+    dom.GetObject(o_Fl).State(4);
+    
+    ! dom.GetObject("_sys_Debug_9").State( "src_Device != Dev_SC Dev_RE" );            
+    
+  }
+  
+}

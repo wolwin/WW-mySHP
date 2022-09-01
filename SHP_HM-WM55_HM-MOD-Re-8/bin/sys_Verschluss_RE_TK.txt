@@ -1,0 +1,36 @@
+sys_Verschluss_RE_TK
+Verschluss - Schalter Türkontakt
+
+Bedingung: Wenn...
+ - Geräteauswahl  1-EG_FL_TK:1  bei  offen  bei Änderung auslösen 
+ UND
+ - Systemzustand  sys_Verschluss_Flag  bei  0  nur prüfen
+ UND
+ - Systemzustand  DutyCycle  im Wertebereich  kleiner als 80.00%  nur prüfen
+
+Bedingung: Sonst, wenn...
+
+Aktivität: Dann...  Haken  Vor dem Ausführen alle laufenden Verzögerungen für diese Aktivitäten beenden (z.B. Retriggern).
+ - Skript ...  sofort
+ - Systemzustand  sys_Verschluss_Flag  sofort  T
+ - Geräteauswahl  1-EG_FL_RE:1  verzögert um  1  Sekunden  Schaltzustand; Ein
+
+
+-------
+Skript:
+-------
+var v_src = dom.GetObject("$src$");
+! dom.GetObject("_sys_Debug").State(v_src # " - " # system.Date("%H:%M:%S"));
+
+! --- Systemvariable ---
+object o_Ch = dom.GetObject("sys_Verschluss_Channel");
+
+if (v_src && o_Ch) {
+ 
+  var src_Channel = dom.GetObject(v_src.Channel());
+
+  ! --- Systemvariable auf Verschluss-Channel setzen ---
+  o_Ch.State( src_Channel );
+}
+
+! dom.GetObject("_sys_Debug_1").State( o_Ch.Value() );

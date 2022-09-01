@@ -1,0 +1,21 @@
+! sys_Verschluss_RE_4
+
+var v_src = dom.GetObject("$src$");
+! dom.GetObject("_sys_Debug").State(v_src # " - " # system.Date("%H:%M:%S"));
+
+! --- Systemvariablen ---
+object o_Fl = dom.GetObject("sys_Verschluss_Flag");
+object o_Ch = dom.GetObject("sys_Verschluss_Channel");
+
+if (v_src && o_Ch && o_Fl) {
+
+  var src_Channel = dom.GetObject(v_src.Channel());
+  
+  if (o_Fl.Value() == "0") {
+    ! --- Systemvariable auf Channel von 'HM-MOD-Re-8' setzen ---
+    o_Ch.State( src_Channel );
+  }
+  ! --- sonst Systemvariable auf eingetragenen Verschluss-Channel belassen ---
+}
+
+! dom.GetObject("_sys_Debug_1").State( o_Ch.Value() );

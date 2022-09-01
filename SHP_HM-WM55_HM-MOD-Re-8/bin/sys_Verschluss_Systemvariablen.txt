@@ -1,0 +1,4 @@
+sys_Verschluss Systemvariablen
+
+sys_Verschluss_Channel   Verschluss-Anzeige - Channel          Zeichenkette
+sys_Verschluss_Flag      Verschluss-Anzeige - Aktivität-Flag   Werteliste	0;T;X;Y;Z

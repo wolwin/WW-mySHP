@@ -1,0 +1,37 @@
+! sys_Verschluss_S_Z
+
+string Dev_RE = "1-EG_FL_RE";
+! HM-MOD-Re-8
+
+! Hardware-Zuordnung Geschoss - Device-Channel
+! Beispiel:
+! G0 = 0-KG           => -
+! G1 = 1-EG           => Kanal 4 (Rot) / 8 (Grün)
+! G2 = 2-OG           => Kanal 3 (Rot) / 7 (Grün)
+! G3 = 3-DG           => Kanal 2 (Rot) / 6 (Grün)
+! G9 = alle Geschosse => Kanal 1 (Rot) / 5 (Grün)
+integer G1_Ch_R = 4;
+integer G2_Ch_R = 3;
+integer G3_Ch_R = 2;
+integer G9_Ch_R = 1;
+
+integer G1_Ch_G = 8;
+integer G2_Ch_G = 7;
+integer G3_Ch_G = 6;
+integer G9_Ch_G = 5;
+
+string z_D = ":";
+
+string sTmp;
+
+! --- Alle aktivierten (roten) Anzeige LEDs löschen ---
+sTmp = Dev_RE # z_D # G1_Ch_R;
+if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+sTmp = Dev_RE # z_D # G2_Ch_R;
+if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+sTmp = Dev_RE # z_D # G3_Ch_R;
+if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+sTmp = Dev_RE # z_D # G9_Ch_R;
+if ( dom.GetObject(sTmp).Value() ) { dom.GetObject(sTmp).State(false); }
+
+system.Exec("sleep 0.1");
