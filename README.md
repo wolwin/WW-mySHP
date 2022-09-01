@@ -18,7 +18,7 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
  | [STALL‑Weatherman](./SHP_Weatherman/README.md "Zeigen ...") | Selbstbau-Wetterstation 'STALL-Weatherman' für die Hausautomation von Dr. Stall - Funktion, Betrieb, Bewertung und Erweiterungen |
  | [HB‑LC‑Bl1‑Velux](./SHP_HB-LC-BL1-Velux-KLI310/README.md "Zeigen ...") | Erweiterte Version des 'Asksin++' Projekts 'HB-LC-Bl1-Velux - Velux KLI 310 Integration in HomeMatic zur Steuerung von Velux Rolladen' |
  | [HB‑Dis‑WM55‑Pb](./SHP_HB-Dis-WM55-Pb/README.md "Zeigen ...") | Erweiterung der Homematic 'Funk-Statusanzeige HM-Dis-WM55' zur externen zusätzlichen Ansteuerung der Anzeige-Tasten |
- | [HM‑WM55_HM‑MOD‑Re‑8](./SHP_HM-WM55_HM-MOD-Re-8/README.md "Zeigen ...") | Realisierung einer Homematic 'Ampelanzeige' für offene Verschlüsse mit dem Homematic 8-Kanal-Empfangsmodul 'HM-MOD-Re-8' in einem WM55-Gehäuse  |
+ | [HM‑WM55_HM‑MOD‑Re‑8](./SHP_HM-WM55_HM-MOD-Re-8/README.md "Zeigen ...") | Realisierung einer Homematic 'Ampelanzeige' für offene Verschlüsse mit dem Homematic 8-Kanal-Empfangsmodul 'HM-MOD-Re-8' in einem WM55-Gehäuse |
 
 ## Andere Übersichten
 - 'WW-mySHT' - Smart-Home-Tools - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/README.md)
