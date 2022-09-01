@@ -13,7 +13,7 @@ Es ist zu beachten, dass das batteriebetriebene Homematic Modul 'HM-MOD-Re-8' we
 - WM55-Platinen für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_WM55_HM-MOD-Re-8/README.md)
 
 #### 3D-Print
-- 3D-Druck für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HM-WM55_HM-WM55_HM-MOD-Re-8/README.md)
+- 3D-Druck für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HM-WM55_HM-MOD-Re-8/README.md)
 
 #### HM-Scripte
 - Scripte für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](./README_SW.md)
