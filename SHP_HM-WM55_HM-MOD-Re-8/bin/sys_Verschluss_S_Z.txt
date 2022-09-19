@@ -2,7 +2,7 @@ sys_Verschluss_S_Z
 Verschluss - Schaltzustand Z
 
 Bedingung: Wenn...
- - Systemzustand  sys_Verschluss_Flag  bei  ^Z  bei Änderung auslösen
+ - Systemzustand  sys_Verschluss_Flag  bei  Z  bei Änderung auslösen
 
 Aktivität: Dann...  Haken  Vor dem Ausführen alle laufenden Verzögerungen für diese Aktivitäten beenden (z.B. Retriggern).
  - Skript ...  sofort

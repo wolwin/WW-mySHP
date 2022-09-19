@@ -8,12 +8,10 @@ Bedingung: Wenn...
  UND
  - Systemzustand  DutyCycle  im Wertebereich  kleiner als 80.00%  nur prüfen
 
-Bedingung: Sonst, wenn...
-
 Aktivität: Dann...  Haken  Vor dem Ausführen alle laufenden Verzögerungen für diese Aktivitäten beenden (z.B. Retriggern).
  - Skript ...  sofort
- - Systemzustand  sys_Verschluss_Flag  sofort  T
- - Geräteauswahl  1-EG_FL_RE:1  verzögert um  1  Sekunden  Schaltzustand; Ein
+ - Systemzustand  sys_Verschluss_Flag  verzögert um  1  Sekunden  T
+ - Geräteauswahl  1-EG_FL_RE:1  verzögert um  2  Sekunden  Schaltzustand; Ein
 
 
 -------
