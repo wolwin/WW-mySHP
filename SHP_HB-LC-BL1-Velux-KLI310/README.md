@@ -139,11 +139,11 @@ des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung
 <br><br>
 ![WW-mySHP - HB-LC-Bl1-Velux](./img/SHP_Velux-KLI_23.jpg "")
 <br><br>
-- Verdarhtung Trägerplatte mit zwei Asksin++ Modulen (incl. 'Lochraster AddOn') und drei Velux KLI 310 Platinen (Ansicht von unten).
+- Verdrahtung Trägerplatte mit zwei Asksin++ Modulen (incl. 'Lochraster AddOn') und drei Velux KLI 310 Platinen (Ansicht von unten).
 <br><br>
 ![WW-mySHP - HB-LC-Bl1-Velux](./img/SHP_Velux-KLI_24.jpg "")
 <br><br>
-- Ansicht Verdarhtung eines Asksin++ Moduls (incl. 'Lochraster AddOn') und drei Velux KLI 310 Platinen (Ansicht seitlich von unten).
+- Ansicht Verdrahtung eines Asksin++ Moduls (incl. 'Lochraster AddOn') und drei Velux KLI 310 Platinen (Ansicht seitlich von unten).
 <br><br>
 ![WW-mySHP - HB-LC-Bl1-Velux](./img/SHP_Velux-KLI_25.jpg "")
 <br><br>
