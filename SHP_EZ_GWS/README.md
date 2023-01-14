@@ -57,7 +57,7 @@ Da zuerst nicht klar war, wie man das Zählwerk des Gaszählers 'Pipersberg G4-R
 
   3. Abtastung des Magneten in der letzten, rechten Walze des Gaszählers
 
-    ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_Hall.jpg "Hallgeber 49E mit 'Schmitt-Trigger'")
+  ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_Hall.jpg "Hallgeber 49E mit 'Schmitt-Trigger'")
 
   Das 'Hallgeber-Breakout (KY-024 Linear Magnetic Hall Sensor - 49E)' konnte den Magnetvorbeilauf ermitteln - dafür mußte die Breakout-Platine ganz rechts hinten in der Zählerausbuchtung positioniert werden. Auch bei diesem Breakout mußte ein 'Schmitt-Trigger' nachgeschaltet werden. Die Einstellung der Hysterese mit dem Poti auf dem Breakout ist nicht so kritisch wie bei dem 'TCRT5000-Modul'.
 
