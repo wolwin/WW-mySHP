@@ -43,20 +43,19 @@ Das Original-Script wurde so angepaßt, dass alle möglichen Konfigurationsparam
 Da zuerst nicht klar war, wie man das Zählwerk des Gaszählers 'Pipersberg G4-RF1' am besten auswerten kann, wurden folgende Tests durchgeführt:
 
   1. Reed-Kontaktgeber
-
+  <br><br>
   ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_Reed.jpg "Reed-Kontakt")
 
   Funktioniert nicht, da der Reed-Sensor nicht direkt über der letzten, rechten Walze positioniert werden kann. Außerdem scheint die Magnetfeldstärke einfach zu gering zu sein, um den Reed-Sensor auszulösen.
 
-
   2. Abtastung des Spiegels in der Ziffer '6' in der letzten, rechten Walze des Gaszählers
-
+  <br><br>
   ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_TCRT.jpg "TCRT 5000 mit 'Schmitt-Trigger'")
 
   Mit einem 'TCRT5000-Breakout' konnte der Spiegelvorbeilauf auf der letzten Ziffernwalze ermittelt werden - dafür mußte das IR-Modul direkt auf der Plexiglasscheibe aufsitzen. Weiter muß unbedingt ein 'Schmitt-Trigger' nachgeschaltet sein, damit 'eindeutige' Ein-/Aus-Signale am Eingang des 'HM-ES-TX-WM' anliegen. Für die Einstellung der Hysterese (Anzeige über Signal-LED auf dem Breakout) mit dem Poti auf dem Breakout braucht man eine ruhige Hand und Geduld ...
 
   3. Abtastung des Magneten in der letzten, rechten Walze des Gaszählers
-
+  <br><br>
   ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_Hall.jpg "Hallgeber 49E mit 'Schmitt-Trigger'")
 
   Das 'Hallgeber-Breakout (KY-024 Linear Magnetic Hall Sensor - 49E)' konnte den Magnetvorbeilauf ermitteln - dafür mußte die Breakout-Platine ganz rechts hinten in der Zählerausbuchtung positioniert werden. Auch bei diesem Breakout mußte ein 'Schmitt-Trigger' nachgeschaltet werden. Die Einstellung der Hysterese mit dem Poti auf dem Breakout ist nicht so kritisch wie bei dem 'TCRT5000-Modul'.
