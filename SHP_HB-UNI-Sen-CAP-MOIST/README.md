@@ -37,7 +37,7 @@ Am besten kann der Aufbau der erweiterten Schaltung über eine der vorhandenen '
   - [Übersicht Platinenverdrahtung ...](./bin/HB-UNI-Sen-CAP-MOIST_ext_Verdrahtung_HB-UNI-Mini-X.pdf)
 
 #### INO-Script
-[Download ...](./bin/HB_UNI_Sen_CAP_MOIST_ext_20200530.zip)
+[Download ...](./bin/HB_UNI_Sen_CAP_MOIST_ext_20230208.zip)
 
 #### Konfiguration
 
@@ -70,6 +70,7 @@ Das erweiterte INO-Script hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h
 ![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_05.jpg "Gehäuse 'HB-UNI-Sen-CAP-MOIST'")<br><br>
 
 #### Historie
+- 2023-02-08 - INO-Script - Fixing choice of NO_DS18B20 and NO_MOSFET defines
 - 2020-07-20 - Fehler in der PDF-Übersicht Platinenverdrahtung HB-UNI-Mini-X korrigiert
 - 2020-05-30 - INO-Script - Fixing compiler warnings
 - 2020-02-04 - Erstveröffentlichung
