@@ -45,6 +45,25 @@ Da zuerst nicht klar war, wie man das Zählwerk des Gaszählers 'Pipersberg G4-R
   <br><br>
   ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_Reed.jpg "Reed-Kontakt")
 
+****
+Mein Gaszähler ist von der SWM (München) und ist ein Gaszähler G4-RF1 aber es steht ACTARIS drauf und nicht Pipersberg. Deshalb war ich lange verunsichert welche Art der Ablesung ich brauche. 
+Dies hat etwas geholfen: http://www.flogiston.hu/downloads/products/163/rf1g4_rf1g6__d.pdf 
+Allerdings ist auch hier, wie in vielen Bildern, der Zähler mit 0,1m³ abgebildet und einer eingekreisten 2. Ich habe ebenfalls die 0,01m³-Variante und eine eingekreiste 1.
+
+Ich habe auch lange mit dem Reedkontakt (mk 471 b) probiert und war verzweifelt. 
+Ich hatte mein Setup (Details siehe unten) soweit, dass es mit einem Magneten ging, aber nicht am Gaszähler. Der Trick war die Positionierung des Reedkontakts zu ändern.
+Es hat funktioniert, als ich den Kontakt mit dem Kabel zum Betrachter über die letzte Rolle (weil 0,01) gelegt habe. Die "Vorderseite" des Kontakts nach unten, so dass die Bohrlöcher des Kontakts in der Luft hängen und nach links zeigen. Dann habe ich ihn bis hinten durchgeschoben und einfach mit etwas Papier festgeklemmt. Der Kontakt schließt wenn die 9 vorne ist und öffnet wieder wenn die 0 vorne ist. Ich hoffe das kann noch jemandem helfen!
+
+![IMG_3147](https://user-images.githubusercontent.com/34236115/226191147-cb1884be-6487-41d6-8101-876d184a72d4.jpg)
+
+Danke an für Inspiration zur Grundlage meines Setups (ESP8622 + 10k Widerstand + Reed mk 471 b)
+https://raphalang.de/blog/technik/esphome-gaszaehler/
+Da ich noch nie gelötet habe, habe ich das ganze nur zusammengesteckt und die ersten Tage hält es bereits. Vielleicht treffe ich noch wen, der mir das richtig macht.
+Danke an "Tristan's Smartes Heim" auf youtube "Gaszähler mit Aqara Melder bzw. Impulssensor smart machen" & ""Antworten auf eure Fragen zum smarten DIY Gaszähler https://www.youtube.com/watch?v=PX2CsRs42dc 
+Auf Grund des Hinweises von Jens Schröder mache ich die Umrechung *0,01 auf dem Pi und nicht auf dem ESP.
+
+****
+
   Funktioniert nicht, da der Reed-Sensor nicht direkt über der letzten, rechten Walze positioniert werden kann. Außerdem scheint die Magnetfeldstärke einfach zu gering zu sein, um den Reed-Sensor auszulösen.
 
   2. Abtastung des Spiegels in der Ziffer '6' in der letzten, rechten Walze des Gaszählers
