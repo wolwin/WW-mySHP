@@ -1,6 +1,6 @@
 # WW-mySHP - HB‑Dis‑WM55‑Pb
 
-[Zurück zur Übersicht ... ](../README.md)
+[Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
 

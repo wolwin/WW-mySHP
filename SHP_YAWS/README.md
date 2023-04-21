@@ -1,6 +1,6 @@
 # WW-mySHP - YAWS - 'Yet Another Weather Shield' - Toolbox - Version 3
 
-[Zurück zur Übersicht ... ](../README.md)
+[Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
 Es gibt viele Wetterkappen für unterschiedliche Sensoren - sowohl kommerziell als auch im OpenSource Bereich. Die Anzahl ist nahezu unüberschaubar. Im Rahmen meines ['STALL-Weatherman' Projektes](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Weatherman/README.md) habe auch ich mich in den letzten zwei Jahren ebenfalls an dem Thema Wetterkappe versucht.

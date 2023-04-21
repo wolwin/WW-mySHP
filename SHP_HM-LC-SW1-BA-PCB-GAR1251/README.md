@@ -1,6 +1,6 @@
 # WW-mySHP - HM-LC-SW1-BA-PCB-GAR1251
 
-[Zurück zur Übersicht ... ](../README.md)
+[Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
 Grundlage ist das 'Asksin++' Projekt 'Umbau GARDENA Bewässerungsventil (1251-20) 9V auf HomeMatic' von Gelegenheitsbastler:

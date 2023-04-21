@@ -1,6 +1,6 @@
 # WW-mySHP - STALL-Weatherman
 
-[Zurück zur Übersicht ... ](../README.md)
+[Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
 Beim 'STALL-Weatherman' handelt es sich um eine Selbstbau Wetterstation, die sich über eine WLAN Verbindung in die eigene Heimautomation einbinden läßt.

@@ -1,6 +1,6 @@
 # WW-mySHP - Sens-Gar-118x
 
-[Zurück zur Übersicht ... ](../README.md)
+[Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
 Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X'. Eine Einbau- bzw. Montagemöglichkeit kann über vier 2 mm Platinen-Löcher realisiert werden.
