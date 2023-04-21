@@ -1,6 +1,6 @@
 # WW-mySHP - Homematic Energiezähler für Gas, Wasser und Strom
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 ### Projekt-Beschreibung
 Registrierung der Zählerstände für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM'. Die Zählersensor-Sendeeinheit ist das Kernstück des Energiezähler-Erfassungssystems von Homematic. Das Gerät stellt die Funk-Verbindung zwischen den Gas-, Strom-, Wasserzählersensoren des Systems sowie einer Zentrale ('CCU' oder 'RaspberryMatic') her und sorgt für die Anpassung an den jeweilig angeschlossenen Energiezähler

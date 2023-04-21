@@ -1,6 +1,6 @@
 # WW-mySHP - HB-LC-Bl1-Velux
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 ### Projekt-Beschreibung
 Grundlage ist das 'Asksin++' Skript 'HB-LC-Bl1-Velux' von papa. Darauf aufbauend wurde ein universell konfigurierbares Skript entwickelt, aus dem das Projekt 'HB-LC-Bl1-Velux - Velux KLI 310 Integration in HomeMatic zur Steuerung von Velux Rolladen' entstand.

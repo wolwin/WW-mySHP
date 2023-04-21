@@ -1,6 +1,6 @@
 # WW-mySHP - HM-WM55_HM-MOD-Re-8
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 #### Projekt-Beschreibung
 

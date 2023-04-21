@@ -1,6 +1,6 @@
 # WW-mySHP - HB-UNI-Mini-X
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 ### Projekt-Beschreibung
 Universelle 'AskSin++' Mini-Platine im THT-Format. Es sind alle Ports des 'Arduino Pro Mini' über zwei beschriftete Port Reihen (bestückbar mit Pin-Header oder JST-XH) zugänglich. Optionale Pullup Widerstände für I2C und 1-Wire Anschluß können verbaut werden. Eine Einbau- bzw. Montagemöglichkeit kann über vier 2 mm Platinen-Löcher realisiert werden.

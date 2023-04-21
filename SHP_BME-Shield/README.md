@@ -1,6 +1,6 @@
 # WW-mySHP - BME-Shield - (Outdated)
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 ### Projekt-Beschreibung
 

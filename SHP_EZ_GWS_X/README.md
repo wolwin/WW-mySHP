@@ -1,6 +1,6 @@
 # WW-mySHP - Ein Fazit zum Aufbau von Energiezählern für Gas, Wasser und Strom im Homematic Umfeld
 
-[Zurück zur Übersicht ...](../README.md)
+[Zurück zur Übersicht ... ](../README.md)
 
 ### Projekt-Beschreibung
 Ausgangspunkt war die 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM', mit der Gas-, Wasser- und Stromzähler ausgelesen werden sollte. Jedoch war der 'HM-ES-TX-WM' über eine lange Zeit nicht lieferbar - auch der hohe Preis führte dazu, selbst aktiv zu werden und nicht auf eine 'Out of the box' Lösung zu setzen. So wurden für die drei Zählerarten jeweils zwei unterschiedliche Ansätze gewählt.
