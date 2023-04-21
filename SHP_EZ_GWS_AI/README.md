@@ -3,7 +3,7 @@
 [Zurück zur Übersicht ...](../README.md)
 
 ### Projekt-Beschreibung
-Das Github Projekt ['AI-on-the-edge-device'](https://github.com/jomjol/AI-on-the-edge-device}) ermöglicht, analoge Wasser-, Gas-, Strom- und andere Zähler mit billiger und leicht verfügbarer Hardware (ESP-32 CAM) zu digitalisieren. Der Einsatz und die Integration solcher Auslesegeräte im Homematic Umfeld wird hier skizziert und erläutert.
+Das Github Projekt ['AI-on-the-edge-device'](https://github.com/jomjol/AI-on-the-edge-device) ermöglicht, analoge Wasser-, Gas-, Strom- und andere Zähler mit billiger und leicht verfügbarer Hardware (ESP-32 CAM) zu digitalisieren. Der Einsatz und die Integration solcher Auslesegeräte im Homematic Umfeld wird hier skizziert und erläutert.
 
 Aufbau, Hardware und Konfiguration sind den Github Projekt Seiten zu entnehmen:
 
