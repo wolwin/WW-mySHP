@@ -7,13 +7,13 @@ Ausgangspunkt war die 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM', mit d
 
 Im ersten Projekt wurde ein Asksin-Nachbau des 'HM-ES-TX-WM' mit unterschiedlichen Sensoren kombiniert. Diese Impulszähler lieferten direkt ihre Werte als 'Homematic-Gerät' in die CCU Zentrale:  
 
-- [HM‑Energiezähler](./SHP_EZ_GWS/README.md "Zeigen ...") - Homematic Energiezähler für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM'
+- [HM‑Energiezähler](../SHP_EZ_GWS/README.md "Zeigen ...") - Homematic Energiezähler für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM'
 
 Im zweiten Projekt wurden die Zählerwerte mit Hilfe einer ESP32 Kamera und der 'AI-on-the-edge-device' Software digitalisiert und per WLAN über das MQTT Protokoll an die CCU Zentrale vermittelt, wo das 'CCU-Jack' Addon für die Umsetzung der MQTT Topics in ein 'virtuelles Homematic-Gerät' vornahm.
 
-- [AI‑Energiezähler](./SHP_EZ_GWS_AI/README.md "Zeigen ...") - 'AI-on-the-edge-device' Energiezähler für Gas, Wasser und Strom im Homematic Umfeld
+- [AI‑Energiezähler](../SHP_EZ_GWS_AI/README.md "Zeigen ...") - 'AI-on-the-edge-device' Energiezähler für Gas, Wasser und Strom im Homematic Umfeld
 
-Parallel zu den beiden Projekten wurde ein [Homematic Energiezähler-Skript mit 'universeller Konfiguration und Auswertung'](https://github.com/wolwin/WW-mySHT/blob/master/SHT_Script/README.md) entwickelt, damit die unterschiedlichen Projektansätze letztendlich doch in einer vergleichbaren Auswertung zusammenfinden.
+Parallel zu den beiden Projekten wurde ein [Homematic Energiezähler-Skript mit 'universeller Konfiguration und Auswertung'](https://github.com/wolwin/WW-mySHT/blob/master/SHT_EZ-Script/README.md) entwickelt, damit die unterschiedlichen Projektansätze letztendlich doch in einer vergleichbaren Auswertung zusammenfinden.
 
 ### Allgemein
   - Mit dem 'HM‑Energiezähler' Projekt konnten relativ schnelle Umsetzerfolge erzielt werden. Auch die Einbindung in die Homematic Zentrale verlief problemlos. Zeitaufwändig sind jedoch die konstruktiven Anpassungen bzw. die Positionierung der Sensorik an den jeweiligen Zählertypen. Möchte man keinen 'fliegenden Aufbau' mit Klebeband o.ä., dann nimmt der Zeitaufwand mit Konstruktion und 3D-Druck natürlich zu. Bei allen drei Zählertypen konnten gut arbeitende Impulsgeber realisert werden, die zuverlässig mit der CCU zusammenarbeiten.
