@@ -218,8 +218,8 @@ Eine *direkte* Auswertung der gelieferten Zahlenwerte - z.B. für die Verbrauchs
 ### Homematic-Skripte
 Im Rahmen der Evaluierung, welches die beste Methode ist, um Gas-, Wasser- und Stromzähler auszulesen, sind mehrere Homematic Skripte entstanden. Sie sind weitgehend konfigurierbar und universell einsetzbar.
 
-- Skript 'Universelle Zählerstandberechnung für Gas Wasser, Strom' - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/SHT_EZ_Script/README.md)
-- Homematic Prüf-Skript für 'AI-on-the-edge-device' Energiezähler - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/SHT_EZ_Script_AI/README.md)
+- Skript 'Universelle Zählerstandberechnung für Gas Wasser, Strom' - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/SHT_EZ-Script/README.md)
+- Homematic Prüf-Skript für 'AI-on-the-edge-device' Energiezähler - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/SHT_EZ-Script_AI/README.md)
 
 ### 3D-Print
 - 3D-Druck für Gaszähler 'Pipersberg G4-RF1' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_EZ_GWS_AI/README.md)
