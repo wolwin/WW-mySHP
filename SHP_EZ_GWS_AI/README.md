@@ -182,7 +182,8 @@ Um die vom 'AI-on-the-edge-device' übermittelten Werte innerhalb der Homematic 
     - ANALOG_INPUT_TRANSMITTER|REGEXP_GROUP
       - Werteingabe 0
   ```
-    - Das funktioniert jedoch nur, wenn das 'AI-on-the-edge-device' keinen Fehler meldet. Bei einem Fehlerstatus ist das 'value' Topic leer und der 'CCU-Jack' Analogwertempfänger kann diesen Leerstring nicht verarbeiten. Daher muß der MQTT-Wert über ein JSON TEMPLATE ausgelesen werden. Das Template überprüft den Fehlerstatus: steht der Fehlerstatus auf 'no error' wird der 'value' Wert übernommen, andernfalls wird im Fehlerfall ein Wert '0' gesetzt.
+
+  - Das funktioniert jedoch nur, wenn das 'AI-on-the-edge-device' keinen Fehler meldet. Bei einem Fehlerstatus ist das 'value' Topic leer und der 'CCU-Jack' Analogwertempfänger kann diesen Leerstring nicht verarbeiten. Daher muß der MQTT-Wert über ein JSON TEMPLATE ausgelesen werden. Das Template überprüft den Fehlerstatus: steht der Fehlerstatus auf 'no error' wird der 'value' Wert übernommen, andernfalls wird im Fehlerfall ein Wert '0' gesetzt.
 
     ```
     - ANALOG_INPUT_TRANSMITTER|TOPIC  -  je nach Zählertyp
