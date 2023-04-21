@@ -2,8 +2,7 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
-
+### Projekt-Beschreibung
 Grundlage ist das 'Asksin++' Projekt 'HB-UNI-Sen-CAP-MOIST - Kapazitiver Bodenfeuchtesensor mit optionalem Temperatursensor DS18B20 für die Integration in HomeMatic' von Jérôme Pech:
 
 [Original-Projekt zeigen ...](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST)
@@ -22,8 +21,7 @@ Weiter wurde zusätzlich entwickelt:
 - Unterstützung unterschiedlicher 'Asksin++' Platinen
 - einheitliches Gehäuse für diese Platinen im 3D-Druck
 
-#### Aufbau
-
+### Aufbau
 Am besten kann der Aufbau der erweiterten Schaltung über eine der vorhandenen 'Asksin++' Universal-Platinen erfolgen:
 
 - 'normale' Version
@@ -36,23 +34,22 @@ Am besten kann der Aufbau der erweiterten Schaltung über eine der vorhandenen '
   - Platine 'HM-UNI-Mini' - Ronny Thomas - [Zeigen ...](https://github.com/ronnythomas/HB-Mini)
   - [Übersicht Platinenverdrahtung ...](./bin/HB-UNI-Sen-CAP-MOIST_ext_Verdrahtung_HB-UNI-Mini-X.pdf)
 
-#### INO-Script
+### INO-Skript
 [Download ...](./bin/HB_UNI_Sen_CAP_MOIST_ext_20230208.zip)
 
-#### Konfiguration
-
-Das erweiterte INO-Script hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h>' die Konfigurationsparameter anpassen - dann weiter, wie im Original-Projekt ...
+### Konfiguration
+Das erweiterte INO-Skript hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h>' die Konfigurationsparameter anpassen - dann weiter, wie im Original-Projekt ...
 
 [Siehe Original-Projekt ...](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST#code-flashen)
 
-#### Inbetriebnahme
+### Inbetriebnahme
 
 [Siehe Original-Projekt ...](https://github.com/jp112sdl/HB-UNI-Sen-CAP-MOIST#gerät-anlernen)
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekt für 'HB-UNI-Sen-CAP-MOIST' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HB-UNI-Sen-CAP-MOIST/README.md)
 
-#### Bilder
+### Bilder
 - Unterschiedliche 'Capacitive Soil' Sensoren
 <br><br>
 ![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_01.jpg "Feuchtesensoren")<br><br>
@@ -69,8 +66,8 @@ Das erweiterte INO-Script hier herunterladen und in '<HB-UNI-Sen-CAP-MOIST_ext.h
 <br><br>
 ![WW-mySHP - HB-UNI-Sen-CAP-MOIST](./img/SHP_CAP-MOIST_05.jpg "Gehäuse 'HB-UNI-Sen-CAP-MOIST'")<br><br>
 
-#### Historie
-- 2023-02-08 - INO-Script - Fixing choice of NO_DS18B20 and NO_MOSFET defines
+### Historie
+- 2023-02-08 - INO-Skript - Fixing choice of NO_DS18B20 and NO_MOSFET defines
 - 2020-07-20 - Fehler in der PDF-Übersicht Platinenverdrahtung HB-UNI-Mini-X korrigiert
-- 2020-05-30 - INO-Script - Fixing compiler warnings
+- 2020-05-30 - INO-Skript - Fixing compiler warnings
 - 2020-02-04 - Erstveröffentlichung

@@ -2,41 +2,43 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
-Registrierung der Zählerstände für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM'. Die Zählersensor-Sendeeinheit ist das Kernstück des Energiezähler-Erfassungssystems von Homematic. Das Gerät stellt die Funk-Verbindung zwischen den Gas-, Strom-, Wasserzählersensoren des Systems sowie einer Zentrale ('CCU' oder 'RaspberryMatic') her und sorgt für die Anpassung an den jeweilig angeschlossenen Energiezähler.
-
+### Projekt-Beschreibung
+Registrierung der Zählerstände für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM'. Die Zählersensor-Sendeeinheit ist das Kernstück des Energiezähler-Erfassungssystems von Homematic. Das Gerät stellt die Funk-Verbindung zwischen den Gas-, Strom-, Wasserzählersensoren des Systems sowie einer Zentrale ('CCU' oder 'RaspberryMatic') her und sorgt für die Anpassung an den jeweilig angeschlossenen Energiezähler
 Für die folgenden Geräte wurden mit Hilfe von Breakout-Sensor-Modulen <b>_einfache 'proof-of-concept' Lösungen_</b> geschaffen:
 - <b>Gaszähler 'Pipersberg G4-RF1'</b> mit der Spezifikation '1 Impuls = 0,01 m3'
 - <b>Wasserzähler 'elster de-08-mi001-ptb 019'</b> mit der Mess-Auflösung 'x0001 m3'
 - <b>Ferraris Tarifstromzähler 'Siemens Drehstromzähler'</b> mit der Spezifikation '75 Umdrehungen = 1 kWh'
 
-#### Allgemeiner Aufbau
-Für jeden der drei Zähler muß eine eigene 'HM-ES-TX-WM' Zählereinheit installiert werden - dabei auf ausreichend Abstand zwischen den Sendeeinheiten achten. Benutzt werden nicht die Original Homematic Geräte, sondern 'Asksin++' Module mit entsprechender 'HM-ES-TX-WM' INO-Firmware. Als Hardware-Basis werden 'HB-UNI-Sens-X'-Platinen eingesetzt, die eine 4 - 12 Volt Spannungsregulierung auf 3,3 Volt bieten, mit der auch die Sensoren-Breakouts versorgt werden.
-
+### Allgemeiner Aufbau
 Da sich im Laufe der Tests zeigte, dass es zu 'Überschwingungen' am Ausgang der benutzten Breakout-Sensor Modulen kam und damit falsche Zählimpulse generiert wurden, mußte noch ein nachgeschalteter Hardware 'Schmitt-Trigger' eingefügt werden, der korrekte Rechteck-Impulse erzeugt.
 
 ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Konzept.jpg "System-Konzept")
 
  Der 'Schmitt-Trigger' kann auf einer 40 x 20 mm Lochrasterplatine einfach selbst verdrahtet werden - oder aber es kann direkt eine einfache 38 x 15 mm PCB-Platine (THT) benutzt werden. Schaltung und Gerber-Dateien finden sich im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_Schmitt-Trigger_uni/README.md)
 
- Eingebaut wurde die HM-Sendeeinheit in ein 'OBO T40' Gehäuse mit Befestigungsteilen aus dem 3D-Drucker - [siehe 'OBO T40 für 'HB HomeBrew' Platinen'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md). Die Spannungsversorgung erfolgt über ein externes 12 Volt Steckernetzteil über 5,5 x 2,1 mm DC-Buchse / Stecker. Platz für den Einbau eines 3-fach AA-Batteriehalters für eine optionale Stromausfallüberbrückung ist vorhanden.
+ Eingebaut wurde die HM-Sendeeinheit in ein 'OBO T40' Gehäuse mit Befestigungsteilen aus dem 3D-Drucker - [siehe 'OBO T40 für 'HB HomeBrew' Platinen'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md). Die Spannungsversorgung erfolgt über ein externes 12 Volt Steckernetzteil über 5,5 x 2,1 mm DC-Buchse / Stecker.
 
  ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_01.jpg "OBO T40 Gehäuse mit 'HB-UNI-Sens-X'")
 
-#### Platinen
-- Platine 'Universielle 'AskSin++' Platine' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-UNI-Sens-X/README.md)
+Platz für den Einbau eines 3-fach AA-Batteriehalters für eine optionale Stromausfallüberbrückung ist vorhanden.
+
+![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_03.jpg "Stromausfallüberbrückung mit 1N5817 Dioden")
+![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_02.jpg "OBO T40 Gehäuse mit 'HB-UNI-Sens-X' und Batteriehalter")
+
+### Platinen
+- Platine 'Universelle 'AskSin++' Platine' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-UNI-Sens-X/README.md)
 - Platine 'Schmitt-Trigger uni' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_Schmitt-Trigger_uni/README.md)
 
-#### INO-Script
-Grundlage ist das 'Asksin++' Beispiel-Script 'HM-ES-TX-WM_CCU' von Jérôme Pech:
+### INO-Skript
+Grundlage ist das 'Asksin++' Beispiel-Skript 'HM-ES-TX-WM_CCU' von Jérôme Pech:
 
-- Original-Script - [Zeigen ...](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-ES-TX-WM_CCU)
+- Original-Skript - [Zeigen ...](https://github.com/jp112sdl/Beispiel_AskSinPP/tree/master/examples/HM-ES-TX-WM_CCU)
 
-Das Original-Script wurde so angepaßt, dass alle möglichen Konfigurationsparameter nun in der Datei 'HM-ES-TX-WM_CCU_ext.h' ausserhalb des INO-Files zusammengefaßt wurden. So kann das Gerät 'HM-ES-TX-WM_CCU' individuell konfiguriert werden, ohne den zentralen Quelltext ändern zu müssen:
+Das Original-Skript wurde so angepaßt, dass alle möglichen Konfigurationsparameter nun in der Datei 'HM-ES-TX-WM_CCU_ext.h' ausserhalb des INO-Files zusammengefaßt wurden. So kann das Gerät 'HM-ES-TX-WM_CCU' individuell konfiguriert werden, ohne den zentralen Quelltext ändern zu müssen:
 
-- Erweitertes Script - [Download ...](./bin/HM-ES-TX-WM_CCU_ext_20230106.zip)
+- Erweitertes Skript - [Download ...](./bin/HM-ES-TX-WM_CCU_ext_20230106.zip)
 
-#### Impulsgeber für Gaszähler 'Pipersberg G4-RF1'
+### Impulsgeber für Gaszähler 'Pipersberg G4-RF1'
 <br>![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Gas_G4-RF1.jpg "Gaszähler Pipersberg G4-RF1")
 
 Da zuerst nicht klar war, wie man das Zählwerk des Gaszählers 'Pipersberg G4-RF1' am besten auswerten kann, wurden folgende Tests durchgeführt:
@@ -78,7 +80,7 @@ Benutzte Breakout-Module von: www.az-delivery.de
   - Einstellbar mit Poti (LM393)
   - Betriebsspannung 3.3 V - 5 V
 
-#### Impulsgeber für Wasserzähler 'elster de-08-mi001-ptb 019'
+### Impulsgeber für Wasserzähler 'elster de-08-mi001-ptb 019'
 <br>![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Wasser_elster019.jpg "Wasserzähler elster de-08-mi001-ptb 019")
 
 Wie schon beim Impulsgeber für den Gaszähler zeigte sich, dass eine 'sichere' Abtastung der sich drehenden kleinen Zeiger der Wasseruhr mit dem 'TCRT5000-Breakout' auf Grund der dicken Plexiglasscheibe nicht funktioniert. Angelehnt an das Projekt [STALL.BIZ](https://www.stall.biz/project/impulsgeber-fuer-den-wasserzaehler-selbst-gebaut) wurde das 'TCRT5000-Breakout' modifiziert, indem die TCRT5000-LED-Einheit entfernt und durch eine grüne 3 mm LED und eine 5 mm Fotodiode ersetzt wurden. Um eine optimale Positionierung von LED und Fotodiode erreichen zu können, sitzen diese extern vom Breakout in einer speziellen Lochblenden-Konstruktion. Die Lochblende und die grün leuchtende LED (hell mit engen Abstrahlungswinkel) sorgt für einen definierten Kreis, durch den dann der rote Zeiger der Wasseruhr fährt und damit eine Spannungsänderung am Fototransistor auslöst. Auch hier wurde ein invertierender 'Schmitt-Trigger' nachgeschaltet.
@@ -141,18 +143,18 @@ Zusammenbau der 3D-Druckteile und Fixierung mit 2,5 mm Kabelbindern:
       - Gehäuseform: T-1
       - Montage: THT
 
-#### Impulsgeber für Ferraris Tarifstromzähler 'Siemens Drehstromzähler'
+### Impulsgeber für Ferraris Tarifstromzähler 'Siemens Drehstromzähler'
+Auch für den Tarif-Stromzähler kann das modifizierte 'TCRT5000-Breakout' benutzt werden. Trotz einer schwarzen (statt einer roten) Markierung auf der Ferraris Scheibe werden die Impulse korrekt erkannt. Als Befestigung wird ein 3D-Druck Rahmen benutzt, der die Lochblende zentriert über der Ferraris Scheibe fixiert. Die Konstruktion wird vom [Small Ball Mounting System](https://www.thingiverse.com/thing:4632571) gehalten - die hier benötigten Teile sind im 3D-Druck Archiv für den Tarif-Stromzähler enthalten.
 
-Auch für den Tarif-Stromzähler kann das modifizierte 'TCRT5000-Breakout' benutzt werden. Auch mit einer schwarzen Markierung auf der Ferraris Scheibe werden die Impulse korrekt erkannt. Als Befestigung wird ein 3D-Druck Rahmen benutzt, der die Lochblende zentriert über der Ferraris Scheibe fixiert. Die Konstruktion wird vom [Small Ball Mounting System](https://www.thingiverse.com/thing:4632571) gehalten - die hier benötigten Teile sind im 3D-Druck Archiv für den Tarif-Stromzähler enthalten.
-
-![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Strom_LED_01.jpg "Lochblende mit LED und Fototransistor")
+![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Strom_LED_01.jpg "Tarifstromzähler")
 <br><br>
-![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Strom_LED_02.jpg "LED-Hülse")
+![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_Strom_LED_02.jpg "Tarifstromzähler")
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck für Gaszähler 'Pipersberg G4-RF1' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_EZ_GWS/README.md)
 - 3D-Druck für Wasserzähler 'elster de-08-mi001-ptb 019' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_EZ_GWS/README.md)
 - 3D-Druck für Ferraris Tarifstromzähler 'Siemens Drehstromzähler' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_EZ_GWS/README.md)
 
-#### Historie
+### Historie
+- 2023-04-13 - Ergänzung Schaltung Stromausfallüberbrückung
 - 2023-01-14 - Erstveröffentlichung

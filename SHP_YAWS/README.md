@@ -2,13 +2,12 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
-
+### Projekt-Beschreibung
 Es gibt viele Wetterkappen für unterschiedliche Sensoren - sowohl kommerziell als auch im OpenSource Bereich. Die Anzahl ist nahezu unüberschaubar. Im Rahmen meines ['STALL-Weatherman' Projektes](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Weatherman/README.md) habe auch ich mich in den letzten zwei Jahren ebenfalls an dem Thema Wetterkappe versucht.
 
-Meine persönlichen Erfahrungen münden nun mit der Version 3 in eine universielle Toolbox für Wetterkappen. Der Nutzer der Toolbox kann die Wetterkappe selber zusammenstellen. Mehrere verschiedene Sensorhalter, unterschiedliche Befestigungen der Kappe, mit oder ohne 40 mm Lüfteroption, sowie Insektenschutz der Sensorkammer, bis hin zur Integration des 'STALL-Weatherman' werden angeboten. Dabei wird die Konnektivität über die ['OBO-Toolbox'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO/README.md) hergestellt, sodaß der Anwender eigene Gehäuse - Wetterkappen Konfigurationen zusammenstellen kann.
+Meine persönlichen Erfahrungen münden nun mit der Version 3 in eine universelle Toolbox für Wetterkappen. Der Nutzer der Toolbox kann die Wetterkappe selber zusammenstellen. Mehrere verschiedene Sensorhalter, unterschiedliche Befestigungen der Kappe, mit oder ohne 40 mm Lüfteroption, sowie Insektenschutz der Sensorkammer, bis hin zur Integration des 'STALL-Weatherman' werden angeboten. Dabei wird die Konnektivität über die ['OBO-Toolbox'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO/README.md) hergestellt, sodaß der Anwender eigene Gehäuse - Wetterkappen Konfigurationen zusammenstellen kann.
 
-#### Realisierung
+### Realisierung
 Ziel bei der Entwicklung der Wetterkappe war es, die Konstruktion so anzulegen, dass möglichst viele Optionen individuell miteinander kombiniert werden können. Gegenüber der Vorgängerversion wurde die Sensorkammer deutlich vergrößert. Die zwei ebenfalls vergößerten konischen Luftabführungen sorgen dafür, dass durch direkte Sonneneinstrahlung anfallende Wärme nach oben abtransportiert wird (als Option kann zusätzlich ein 40 mm Lüfter verbaut werden). Alle Gehäuseteile werden mit 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,9 x 9,5 mm' verbunden.
 <br><br>
 Die Sensorkammer kann oben und unten mit einem Insektenschutz versehen werden - entsprechende Klemmringe fixieren die beiden Insektengitter an der Sensorkammer.
@@ -58,13 +57,13 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Overview_07.jpg "Option STALL-Weatherman - Schnittmodell")
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekt für 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md#stl-dateien)
 
-#### Hardware, Konfiguration, Aufbau und Inbetriebnahme
+### Hardware, Konfiguration, Aufbau und Inbetriebnahme
 - siehe unter: [WW-my3DP - YAWS - Yet Another Weather Shield - Toolbox - Version 3](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
-#### Galerie
+### Galerie
 - 'YAWS-Toolbox' - Optionen - Beispiele
 <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_Galerie_01.jpg "Galerie")
@@ -101,6 +100,6 @@ Eine Auswahl der Konfigurationsmöglichkeiten der 'YAWS-Wetterkappe' wird in der
   <br><br>
 ![WW-mySHP - YAWS](./img/SHP_YAWS_New_WF.jpg "Galerie")
 
-#### Historie
+### Historie
 - 2020-07-02 - Vervollständigung Dokumentation
 - 2020-06-07 - Veröffentlichung an dieser Stelle

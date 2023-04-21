@@ -2,8 +2,7 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
-
+### Projekt-Beschreibung
 Anschluß von GARDENA Bodenfeuchte- und Regensensor 118x an eine Homematic Zentrale mit 'AskSin++' Modul 'HB-UNI-Mini-X' (oder 'HB-UNI-Sens-X') und der Sensorplatine 'Sens-Gar-118x'. Es können auch statt der GARDENA Geräte potentialfreie Schalter angeschlossen werden.
 
   - GARDENA - Bodenfeuchtesensor 1188-20 [(Bedienungsanleitung)](./bin/GARDENA_Anleitung_1188-20_Feuchtesensor.pdf)
@@ -16,7 +15,7 @@ Anschluß von GARDENA Bodenfeuchte- und Regensensor 118x an eine Homematic Zentr
 
 Alle 5 Minuten wird der Status der angeschlossenen GARDENA 118x Sensoren (bzw. potential freien Schaltern) überprüft (feucht / trocken und Leitungsstatus) und bei Änderung an die Homematic Zentrale geschickt. Eine Ruhestromaufnahme von nur 11 uA mit 3 AA Batterien soll eine langfristige Laufzeit garantieren.
 
-#### Aufbau
+### Aufbau
 Das Gerät besteht aus zwei Teilen: der Sensor-Platine 'Sens-Gar-118x' (Platinenbestückung incl. Spannungsversorgung 4 - 9 V) und dem 'AskSin++' Modul (minimale Platinenbestückung):
   - SHP-Projekt 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md "Zeigen ...")
   - SHP-Projekt 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Mini-X/README.md "Zeigen ...")
@@ -33,8 +32,7 @@ Zwischen den Platinen müssen noch folgende Kabelverbindungen hergestellt werden
   | PA4 | PD6 |
   | VCC | VCC |
 
-#### Konfiguration
-
+### Konfiguration
 Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (Anzahl / Bedeutung der Schalter) wird mit Hilfe der Jumper J1 und J2 auf der Sensor-Platine 'Sens-Gar-118x' und in der Datei 'HB-SCI-4-O-Gar118x.h' über die Defines 'CHANNEL_COUNT', 'CHANNEL_PINS' und 'CHANNEL_DEBUG' festgelegt.
 
   - Als Default-Einstellung ist der Anschluß von zwei GARDENA Geräten voreingestellt:
@@ -48,10 +46,10 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 - Übersicht Anschluß-Varianten 'Sens-Gar-118x' - [Zeigen ...](./bin/HB-SCI-4-O-Gar118x_Varianten.pdf "Zeigen ...")
 - Detail Anschluß-Varianten 'Sens-Gar-118x' - [Zeigen ...](./bin/HB-SCI-4-O-Gar118x_Varianten.txt "Zeigen ...")
 
-#### INO-Script
+### INO-Skript
 [Download ...](./bin/HB_SCI_4_O_Gar118x_20210607.zip)
 
-#### Inbetriebnahme
+### Inbetriebnahme
 - Zur Inbetriebnahme werden im ersten Schritt _keine_ Geräte an das 'Sens-Gar-118x' Sensor-Modul angeschlossen.
 - Über den Punkt 'HM Gerät anlernen' wird der Anlernprozeß in der WebUI der Homematic Zentrale gestartet - auf dem 'AskSin++' Modul wird dann der Taster S1 kurz gedrückt. Nach dem erfolgreichen Anmelden findet sich das neue Gerät im Posteingang zur Übernahme.
 <br><br>
@@ -72,7 +70,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 <br><br>
 - Mit dem Anschluß der Gardena Geräte ist die Grundeinstellung abgeschlossen: der Leitungsstatus wechselt auf 'ok' (='verschlossen') und der Gardena 118x Status wird angezeigt.
 
-#### Gardena 118x Status
+### Gardena 118x Status
 - Die Gardena 118x Sensoren unterscheiden zwischen 'trocken' und 'feucht' - hier eine Übersicht:
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_08.jpg "HB-SCI-4-O-Gar118x")
@@ -83,10 +81,10 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_10.jpg "HB-SCI-4-O-Gar118x")
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_Betrieb_11.jpg "HB-SCI-4-O-Gar118x")
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekte für 'HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
-#### Bilder
+### Bilder
 - Aufbau ['Sens-Gar-118x'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_Sens-Gar-118x/README.md) mit ['HB-UNI-Sens-X'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-UNI-Sens-X/README.md) auf ['OBO-T40-HB-Sockel'](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md).
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_01.jpg "HB-UNI-Sens-X und Sens-Gar-118x")
@@ -104,8 +102,7 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_07.jpg "HB-SCI-4-O-Gar118x")
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_08.jpg "HB-SCI-4-O-Gar118x")
 
-#### CCU-Integration (hier: über Systemvariable)
-
+### CCU-Integration (hier: über Systemvariable)
 - CCU Geräte-Einstellungen
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_00.jpg "HB-SCI-4-O-Gar118x")
@@ -135,10 +132,10 @@ Die Anschlußkonfiguration und das Erscheinungsbild in der Homematic Zentrale (A
 <br><br>
 ![WW-mySHP - HB-SCI-4-O-Gar118x](./img/SHP_HB-SCI-4-O-Gar118x_CCU_04.jpg "HB-SCI-4-O-Gar118x")
 
-#### Historie
+### Historie
 - 2021-06-10 - Erweiterung um die Beschreibung der CCU-Integration
-- 2021-06-07 - INO-Script - bugfix for compiler error with Asksin++ V5
-- 2020-05-31 - INO-Script - Fixing compiler warnings
+- 2021-06-07 - INO-Skript - bugfix for compiler error with Asksin++ V5
+- 2020-05-31 - INO-Skript - Fixing compiler warnings
 - 2020-03-23 - INO Bugfix (force CCU toogle update)
 - 2020-02-04 - INO Bugfix und neue Bilder
 - 2020-01-10 - Erstveröffentlichung

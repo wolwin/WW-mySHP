@@ -1,19 +1,17 @@
-# WW-mySHP - HM-WM55_HM-MOD-Re-8 - Scripte
+# WW-mySHP - HM-WM55_HM-MOD-Re-8 - Skripte
 
 [Zurück zur Übersicht ...](../README.md)
 
 [Zurück zu 'HM-WM55_HM-MOD-Re-8' ...](./README.md)
 
-#### Allgemeines
-
+### Allgemeines
 Wie schon angemerkt, ist die Homematic-Zentrale ('CCU' oder 'RaspberryMatic') und das eingesetzte Homematic Modul 'HM-MOD-Re-8' nicht (unbedingt) für eine direkte und flotte Eventabarbeitung ausgelegt worden. Ein hohes Funkaufkommen wird mit einem hohen 'DutyCycle' bestraft, der letztlich bei 100% er Auslastung mit der Einstellung des Funkverkehrs zwischen Homematic Zentrale und Homematic Geräten bestraft wird.
 
-So konnte auch in diesem Projekt nicht eine 'serielle/lineare Programmiereung' der eigentlich einfachen Aufgabenstellung 'zeige per LED an/aus, ob alle Verschlüsse einer Etage geschlossen sind' vorgenommen werden, da sie oft mit Geräte-Warnmeldungen des 'HM-MOD-Re-8' Moduls einher gingen. Die einzige Möglichkeit, die Homematic-Zentrale zu (zeitlich) definierten Funkaktionen zu zwingen, bestand darin, den Ablauf in mehrere Teil-Scripte zu zerlegen, die dann über das (zeitgesteuerte) Setzen einer Systemvariablen aufgerufen werden. So erreicht man eine gewisse Latenz (im Sekundenbereich), die dafür sorgt, dass das Abarbeiten der Funkbefehle nicht gestört wird. Da jeder LED-Schaltvorgang durch einen Funkbefehl ausgeführt wird, wurde bei der Programmierung darauf geachtet, die LED Ansteuerung so zu gestalten, dass nur 'notwendige' LEDs zur Anzeige gebracht werden. Um zu verhindern, dass die Aktionen des 'HM-MOD-Re-8' Moduls den Funkverkehr der Zentrale durch einen 100% DutyCycle blockieren, wurde in den Event-Modul Scripten immer die Einschränkung gesetzt, dass der aktuelle DutyCycle kleiner als 80% sein muss - andernfalls findet keine Verschluss-Anzeige statt.
+So konnte auch in diesem Projekt nicht eine 'serielle/lineare Programmiereung' der eigentlich einfachen Aufgabenstellung 'zeige per LED an/aus, ob alle Verschlüsse einer Etage geschlossen sind' vorgenommen werden, da sie oft mit Geräte-Warnmeldungen des 'HM-MOD-Re-8' Moduls einher gingen. Die einzige Möglichkeit, die Homematic-Zentrale zu (zeitlich) definierten Funkaktionen zu zwingen, bestand darin, den Ablauf in mehrere Teil-Skripte zu zerlegen, die dann über das (zeitgesteuerte) Setzen einer Systemvariablen aufgerufen werden. So erreicht man eine gewisse Latenz (im Sekundenbereich), die dafür sorgt, dass das Abarbeiten der Funkbefehle nicht gestört wird. Da jeder LED-Schaltvorgang durch einen Funkbefehl ausgeführt wird, wurde bei der Programmierung darauf geachtet, die LED Ansteuerung so zu gestalten, dass nur 'notwendige' LEDs zur Anzeige gebracht werden. Um zu verhindern, dass die Aktionen des 'HM-MOD-Re-8' Moduls den Funkverkehr der Zentrale durch einen 100% DutyCycle blockieren, wurde in den Event-Modul Skripten immer die Einschränkung gesetzt, dass der aktuelle DutyCycle kleiner als 80% sein muss - andernfalls findet keine Verschluss-Anzeige statt.
 
 Das WM55 Anzeigemodul unterteilt sich in die 'Rot / Grün' Ampeln für Erdgeschoss, Obergeschoss, Dachgeschoss und einer 'Hausampel'. Die Hausampel reagiert auf den sich öffnenden Türkontakt: sie signalisiert, ob alle Verschlüsse (bis auf den Türkontakt) geschlossen sind. Zusätzlich können über vier Taster am Anzeigemodul die jeweiligen Stati auch manuell abgerufen werden.
 
-#### Funktion
-
+### Funktion
 Folgende Anzeige-Funktionen sind implementiert:
 
 - Türkontakt öffnet
@@ -45,14 +43,13 @@ Folgende Anzeige-Funktionen sind implementiert:
         - 'Geschossampel', deren Verschlüsse alle geschlossen sind, geht für ca. 5 sec auf 'Grün'
         - 'Geschossampel', deren Verschlüsse nicht alle geschlossen sind, geht für ca. 5 sec auf 'Rot'
 
-#### Systemvariablen
-
+### Systemvariablen
 Folgende Systemvariablen müssen angelegt werden:
 
 ['sys_Verschluss' Systemvariablen ...](./bin/sys_Verschluss_Systemvariablen.txt)
 
-#### Programme
-Nach einem Türkontakt- bzw. Tasten-Event des 'HM-MOD-Re-8' Moduls setzen die 'sys_Verschluss' Script-Module zeitverzögert das Aktivitäts-Flag 'sys_Verschluss_Flag'. Über die Werte '0;T;X;Y;Z' werden die jeweiligen Ansteuer- und Auswerte-Scripte aufgerufen, die dann für das Ein- und Ausschalten der LEDs sorgen.
+### Programme
+Nach einem Türkontakt- bzw. Tasten-Event des 'HM-MOD-Re-8' Moduls setzen die 'sys_Verschluss' Skript-Module zeitverzögert das Aktivitäts-Flag 'sys_Verschluss_Flag'. Über die Werte '0;T;X;Y;Z' werden die jeweiligen Ansteuer- und Auswerte-Skripte aufgerufen, die dann für das Ein- und Ausschalten der LEDs sorgen.
 
 - [sys_Verschluss_RE_1](./bin/sys_Verschluss_RE_1.txt):</br>
   Event-Modul: wenn Taster 1 des 'HM-MOD-Re-8' Moduls auf 'Ein' geht
@@ -114,5 +111,5 @@ Nach einem Türkontakt- bzw. Tasten-Event des 'HM-MOD-Re-8' Moduls setzen die 's
   ![WW-mySHP - HM-WM55_HM-MOD-Re-8](./img/SHP_HM-WM55_HM-MOD-Re-8_sys_Verschluss_S_Z_2.jpg "")
   </br></br>
 
-#### Historie
+### Historie
 - 2022-09-01 - Erstveröffentlichung

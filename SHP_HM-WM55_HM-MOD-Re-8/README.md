@@ -7,7 +7,7 @@
 Realisierung der Hardware für eine 'Ampelanzeige', die offene Verschlüsse mit dem Homematic 8-Kanal-Empfangsmodul 'HM-MOD-Re-8' in einem WM55-Gehäuse anzeigt.
 
 _Anmerkung:_</br>
-Es ist zu beachten, dass das batteriebetriebene Homematic Modul 'HM-MOD-Re-8' wegen seines Burst-Verhaltens (= Anstieg des DutyCycle) 'sparsam verwendet' werden sollte. Ein nach oben schnellender DutyCycle wird besonders bei der Darstellung von _sehr vielen Kanal-Ansteuerungen (LEDs)_ auftreten. Daher ist der Einsatzzweck des Moduls eher für eine niederfrequente Nutzung gedacht - dieser Ansatz sollte auch bei der Script-Erstellung berücksichtigt werden.
+Es ist zu beachten, dass das batteriebetriebene Homematic Modul 'HM-MOD-Re-8' wegen seines Burst-Verhaltens (= Anstieg des DutyCycle) 'sparsam verwendet' werden sollte. Ein nach oben schnellender DutyCycle wird besonders bei der Darstellung von _sehr vielen Kanal-Ansteuerungen (LEDs)_ auftreten. Daher ist der Einsatzzweck des Moduls eher für eine niederfrequente Nutzung gedacht - dieser Ansatz sollte auch bei der Skript-Erstellung berücksichtigt werden.
 
 #### Platine
 - WM55-Platinen für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_WM55_HM-MOD-Re-8/README.md)
@@ -15,8 +15,8 @@ Es ist zu beachten, dass das batteriebetriebene Homematic Modul 'HM-MOD-Re-8' we
 #### 3D-Print
 - 3D-Druck für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HM-WM55_HM-MOD-Re-8/README.md)
 
-#### HM-Scripte
-- Scripte für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](./README_SW.md)
+#### HM-Skripte
+- Skripte für das Projekt 'HM-WM55_HM-MOD-Re-8' - [Zeigen ...](./README_SW.md)
 
 #### Bilder und Zusammenbau
 - Im Folgenden wird für das Homematic 8-Kanal-Empfangsmodul 'HM-MOD-Re-8' ein Gehäuse-Design mit vier Tasten und acht LEDs gewählt. Zugehörige Schaltpläne für die Verdrahtung finden sich im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_WM55_HM-MOD-Re-8/README.md#schaltplan)

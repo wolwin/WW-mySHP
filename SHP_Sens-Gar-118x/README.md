@@ -2,20 +2,19 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
-
+### Projekt-Beschreibung
 Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X'. Eine Einbau- bzw. Montagemöglichkeit kann über vier 2 mm Platinen-Löcher realisiert werden.
 
 Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen GARDENA 118x Sensoren (bzw. potential freien Schaltern). Über die Ausgangsports des ATtiny 24a wird ein Änderungsflag, der Sensorstatus ON / OFF und bei den GARDENA Sensoren der Leitungsstatus VERBUNDEN / UNTERBROCHEN als Fehlerstatus ausgegeben.
 
-#### Platine
+### Platine
 - Platine 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_Sens-Gar-118x/README.md)
 - Platine 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-UNI-Mini-X/README.md)
 
-#### Einsatz der Platine
+### Einsatz der Platine
 - Projekt 'SHP_HB-SCI-4-O-Gar118x' - [Zeigen ...](https://github.com/wolwin/WW-mySHP/blob/master/SHP_HB-SCI-4-O-Gar118x/README.md)
 
-#### Funktion
+### Funktion
 - Allgemeine Funktionsbeschreibung von Platine und ATtiny24a
 
       // Description:
@@ -97,13 +96,13 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
       //   not set, the power consumtion of 5uA could not be reached !
       // - the Brown out Detection Level of the board must be disabled !
 
-#### ATtiny24a INO-Script
+### ATtiny24a INO-Skript
 [Download ...](./bin/GARDENA_Sensor_118x_20191228.zip)
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekte für 'Sens-Gar-118x' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO_T40_HB/README.md)
 
-#### Bilder
+### Bilder
 - Übersicht - 'Sens-Gar-118x'
   - die GARDENA 118x Sensoren werden mit ihren Zuleitungskabeln über die Schraubklemmen verbunden (rechts)
     - Gerät 1 = Kabel 'Gar1 + GND'
@@ -115,5 +114,5 @@ Die Platine prüft alle 5 Minuten den Status von ein bzw. zwei angeschlossenen G
 ![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_01.jpg "Sens-Gar-118x")
 <br><br>![WW-mySHP - Sens-Gar-118x](./img/SHP_Sens-Gar-118x_02.jpg "Sens-Gar-118x")
 
-#### Historie
+### Historie
 - 2020-01-10 - Erstveröffentlichung

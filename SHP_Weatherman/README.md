@@ -2,7 +2,7 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
+### Projekt-Beschreibung
 Beim 'STALL-Weatherman' handelt es sich um eine Selbstbau Wetterstation, die sich über eine WLAN Verbindung in die eigene Heimautomation einbinden läßt.
 
 ['STALL-Weatherman' Original-Projekt zeigen ...](https://www.stall.biz/project/weatherman-die-perfekte-wetterstation-fuer-die-hausautomation)
@@ -11,17 +11,17 @@ Support Unterstützung für den 'STALL-Weatherman' kann man im 'HomeMatic FHZ-Fo
 
 [Thread im 'HomeMatic FHZ-Forum' zeigen ...](https://homematic-forum.de/forum/viewtopic.php?t=38485)
 
-#### Hardware
+### Hardware
 Dr. Eugen Stall vertreibt über seinen Web-Shop einen Bausatz für den 'STALL-Weatherman'. Zusätzlich sind noch weitere Komponenten zu beschaffen, die auf der Projekt-Seite des Weatherman und in der Bauanleitung aufgeführt sind.
 
 [Bausatz mit allen Teilen im Webshop 'www.stall.biz' ... und dort befindet sich auch der Link zur aktuellen Bauanleitung ...](https://www.stall.biz/produkt/weatherman-controller)
 
-#### Konfiguration und Inbetriebnahme
+### Konfiguration und Inbetriebnahme
 Bei dem Aufbau des 'STALL-Weatherman' sollte man sich grundsätzlich eng an die in der Bauanleitung vorgegebenen Empfehlungen halten. Bei Schwierigkeiten kann man versuchen, über das FHZ-Forum Hilfe zu bekommen.
 
 Die Inbetriebnahme des 'STALL-Weatherman' ist auf der Weatherman Projektseite beschrieben.
 
-#### Erfahrungen und Bewertungen
+### Erfahrungen und Bewertungen
 Bei mir ist der 'STALL-Weatherman' seit über zwei Jahren in Betrieb. Der Erstaufbau erfolgte 'peinlich genau' entsprechend der Bauanleitung - außerdem wurden (Material-) Tipps aus dem FHZ-Forum (u.a. von Dr. Stall) direkt berücksichtigt. Von Beginn an habe ich den Aufbau und Betrieb bzw. die später vorgenommenen Hardware-Änderungen für mich dokumentiert. Zu Beginn war ich von der 'Einfachheit / Klarheit' des Konzeptes - das man relativ preiswert umsetzen konnte - begeistert. Auch die bereitgestellte Firmware tat, was sie sollte - schnell und unauffällig standen die 'Wetterdaten' über WLAN zur Verfügung. Kleine Fehler oder JSON-Protokoll Erweiterungen - die man im FHZ-Forum melden konnte - wurden vom Autor verifiziert und beseitigt.
 <br><br>
 Alles gut also? Leider nicht ganz ...
@@ -47,7 +47,7 @@ Vielleicht kann man noch über einige Dinge der Punkte 2 und 3 hinwegsehen und e
 - <b>Zusammenfassung:</b><br>
 Das Projekt läuft unter dem Titel 'WEATHERMAN … die perfekte Wetterstation für die Hausautomation'. Das sehe ich SO nicht - ich denke, die Kritikpunkte sprechen für sich. Vor zwei Jahren war der Weg zu verläßlichen eigenen Wetterinformationen für die Heimautomation aus meiner Sicht fast vollständig erreicht - die Optimierung von wenigen Dingen hätten einen sehr guten Stand gebracht. Leider hat der Entwickler Dr. Stall einen anderen Weg eingeschlagen.
 
-#### Änderungen und Realisierung
+### Änderungen und Realisierung
 Um meinem Weatherman neues Leben einzuhauchen, habe ich mir die Punkte 'Gehäuse und Feuchtigkeit' vorgenommen. Über Stage 1, Stage 2 und Stage 3 habe ich drei unterschiedliche Lösungsansätze für den 'STALL-Weatherman' konstruiert: in allen drei Versionen wird das Weatherman Gehäuse und die Gehäuse für den Lichtsensor und die Regensensorplatine separiert und voneinander unabhängig betrieben, sowie mit Hilfe von PTFE-Ventilationsschrauben belüftet.
 
 Die maximal integrierte Version des 'STALL-Weatherman' (Stage 3) ist das OBO T60 Gehäuse mit Wetterkappe aus der ['YAWS-Toolbox' mit der 'STALL-Weatherman' Option](https://github.com/wolwin/WW-mySHP/blob/master/SHP_YAWS/README.md).
@@ -96,11 +96,11 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_OBO_Combi_02.jpg "Weatherman - OBO T60-Gehäuse  - Kombinationen")
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekt für Gehäuse-Erweiterungen der Wetterstation 'STALL-Weatherman' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_Weatherman/README.md)
 - 3D-Druck Projekt der 'YAWS-Toolbox' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_YAWS/README.md)
 
-#### Langzeit-Erfahrungen (Hardware)
+### Langzeit-Erfahrungen (Hardware)
 - Nach zweijährigem Betrieb wurde der Weatherman zur Revision abgebaut. Das RND-Gehäuse ist deutlich von den Umwelteinflüssen gezeichnet.
 <br><br>
 ![WW-mySHP - Weatherman](./img/SHP_WM_Rev_01.jpg "Weatherman - Revision")
@@ -173,7 +173,7 @@ Da die Nachfrage für eine OpenSource Version des Weatherman-Codes von Dr. Stall
   <br><br>
   ![WW-mySHP - Weatherman](./img/SHP_WM_New_F.jpg "Feinstaubsensor")
 
-#### Historie
+### Historie
 - 2020-07-02 - Dokumentation Langzeit-Erfahrungen (Hardware)
 - 2020-06-16 - Stage 0 - Grundplatten
 - 2020-06-07 - Erstveröffentlichung

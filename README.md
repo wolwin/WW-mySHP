@@ -6,8 +6,8 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
 
  | **Projekt** | **Beschreibung** |
  | --- | --- |
- | [HB‑UNI‑Mini‑X](./SHP_HB-UNI-Mini-X/README.md "Zeigen ...") | Universielle 'AskSin++' Mini-Platine (THT-Format) |
- | [HB‑UNI‑Sens‑X](./SHP_HB-UNI-Sens-X/README.md "Zeigen ...") | Universielle 'AskSin++' Platine mit verschiedenen Sensor Anschluß- und Konfigurationsmöglichkeiten (THT-Format) |
+ | [HB‑UNI‑Mini‑X](./SHP_HB-UNI-Mini-X/README.md "Zeigen ...") | Universelle 'AskSin++' Mini-Platine (THT-Format) |
+ | [HB‑UNI‑Sens‑X](./SHP_HB-UNI-Sens-X/README.md "Zeigen ...") | Universelle 'AskSin++' Platine mit verschiedenen Sensor Anschluß- und Konfigurationsmöglichkeiten (THT-Format) |
  | [Sens-Gar‑118x](./SHP_Sens-Gar-118x/README.md "Zeigen ...") | Sensorplatine für GARDENA 118x Geräte zum Anschluß an 'HB-UNI-Sens-X' oder 'HB-UNI-Mini-X' (THT-Format) |
  | [HB‑SCI‑4‑O‑Gar118x](./SHP_HB-SCI-4-O-Gar118x/README.md "Zeigen ...") | Anschluß von GARDENA 118x Geräten mit Hilfe von 'AskSin++' an Homematic |
  | [HB‑UNI‑Sen‑TEMP‑DS18B20](./SHP_HB-UNI-Sen-TEMP-DS18B20/README.md "Zeigen ...") | Erweiterte Version des 'Asksin++' Projekts 'HB-UNI-Sen-TEMP-DS18B20 - 8fach Universal-Temperatursensor für die Integration in HomeMatic' |
@@ -20,6 +20,8 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
  | [HB‑Dis‑WM55‑Pb](./SHP_HB-Dis-WM55-Pb/README.md "Zeigen ...") | Erweiterung der Homematic 'Funk-Statusanzeige HM-Dis-WM55' zur externen zusätzlichen Ansteuerung der Anzeige-Tasten |
  | [HM‑WM55_HM‑MOD‑Re‑8](./SHP_HM-WM55_HM-MOD-Re-8/README.md "Zeigen ...") | Realisierung einer Homematic 'Ampelanzeige' für offene Verschlüsse mit dem Homematic 8-Kanal-Empfangsmodul 'HM-MOD-Re-8' in einem WM55-Gehäuse |
  | [HM‑Energiezähler](./SHP_EZ_GWS/README.md "Zeigen ...") | Homematic Energiezähler für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM' |
+ | [AI‑Energiezähler](./SHP_EZ_GWS_AI/README.md "Zeigen ...") | 'AI-on-the-edge-device' Energiezähler für Gas, Wasser und Strom im Homematic Umfeld |
+ | [Fazit Energiezähler](./SHP_EZ_GWS_X/README.md "Zeigen ...") | Ein Fazit zum Aufbau von Energiezählern für Gas, Wasser und Strom im Homematic Umfeld |
 
 ## Andere Übersichten
 - 'WW-mySHT' - Smart-Home-Tools - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/README.md)

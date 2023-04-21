@@ -2,11 +2,11 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
+### Projekt-Beschreibung
 
 Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
 
-#### Details
+### Details
 - Der ursprüngliche Entwurf der Wetterkappe stammt von Dr. Eugen Stall:
   - https://www.stall.biz/produkt/wetterkappe-fuer-den-weatherman-neues-layout
 <br><br>
@@ -21,8 +21,8 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
 
 - Version 3.0 der Wetterkappe wurde als ['YAWS Toolbox'](https://github.com/wolwin/WW-mySHP/blob/master/SHP_YAWS/README.md "Zeigen ...") fortentwickelt.
 
-#### BME-Shield - Version 1.1
-- ##### BME-Shield V 1.1 - Konstruktion
+### BME-Shield - Version 1.1
+- #### BME-Shield V 1.1 - Konstruktion
   - Passiv belüftete Wetterkappe
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_101.jpg "BME-Shield V 1.1 - Übersicht")
@@ -31,7 +31,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   ![WW-mySHP - BME-Shield](./img/UWK_103.jpg "BME-Shield V 1.1 - Übersicht")
   ![WW-mySHP - BME-Shield](./img/UWK_104.jpg "BME-Shield V 1.1 - Übersicht")
 
-- ##### BME-Shield V 1.1 - 3D-Druck - Details
+- #### BME-Shield V 1.1 - 3D-Druck - Details
   - Sensorkammer V1.0 mit Lüftungskappen und Sensor-Adapter:
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_201.jpg "BME-Shield V 1.0 - 3D-Druck")
@@ -53,7 +53,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_206.jpg "BME-Shield V 1.0 - 3D-Druck")
 
-- ##### BME-Shield V 1.1 - 3D-Druck
+- #### BME-Shield V 1.1 - 3D-Druck
   - BME-Shield V1.0 (einfach):
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_301.jpg "BME-Shield V 1.1 einfach - 3D-Druck")
@@ -66,7 +66,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_303.jpg "BME-Shield V 1.1 erweitert - 3D-Druck")
 
-- ##### Montagematerial:
+- #### Montagematerial:
   - 1 BME280
   - 1 PTFE Druckausgleich-Membran Ø10,2/5,5 VPE
   - 1 Blechschraube 3,5 x 13
@@ -75,8 +75,8 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_209.jpg)
 
-#### BME-Shield - Version 2.0
-- ##### BME-Shield V 2.0 - Konstruktion
+### BME-Shield - Version 2.0
+- #### BME-Shield V 2.0 - Konstruktion
   - Aufwändig konstruierte Wetterkappe - einsetzbar mit oder ohne Lüfter
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_401.jpg "BME-Shield V 2.0 - Übersicht")
@@ -87,7 +87,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   - Erprobungszeitraum  vom Frühjahr 2019 bis Sommer 2020 mit und ohne Lüfter-Aktivierung, um die 'grundsätzliche' Funktionsfähigkeit des BME-Shields zu testen .
 
-- ##### BME-Shield V 2.0 - 3D-Druck
+- #### BME-Shield V 2.0 - 3D-Druck
   - Übersicht der 3D-Druckteile
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_411.jpg "BME-Shield V 2.0 - 3D-Druck")
@@ -134,7 +134,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_419.jpg "BME-Shield V 2.0 - 3D-Druck")
 
-- ##### Montagematerial:
+- #### Montagematerial:
   - 1 BME280
   - 1 PTFE Druckausgleich-Membran Ø10,2/5,5 VPE
   - 1 40mm Lüfter NOCTUA NF-A4x10 5V
@@ -145,7 +145,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   - Zylinderschraube >= 4 x 35 + Unterlegscheibe mit Mutter 4 mm
   - Kabelbinder 2,5 mm
 
-- ##### Langzeiterfahrung:
+- #### Langzeiterfahrung:
   - Wetterkappe V 2.0 nach ca. einem Jahr im Dauerbetrieb (Sommer 2019 bis Sommer 2020)
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_501.jpg "BME-Shield V 2.0 - Langzeiterfahrung")
@@ -162,14 +162,14 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_504.jpg "BME-Shield V 2.0 - Langzeiterfahrung")
 
-#### BME-Shield - Sonstiges
+### BME-Shield - Sonstiges
 - #### Tipps:
   - Natürlich sollten alle 3D-Druckteile mit einem weissen UV-beständigen Acryl-Lack überzogen werden. Man kann natürlich Sprühlack einsetzen - aber: im Innenbereich nicht einsetzbar !! Gute Erfahrungen habe ich mit lösungsmittelfreien Streichlack gemacht - läßt sich mit einem kleinen Pinsel super verarbeiten ... und riecht (fast) nicht:
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_451.jpg) 400 ml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![WW-mySHP - BME-Shield](./img/UWK_452.jpg) 125 ml
   <br><br>
 
-- ##### BME280 Modul, PTFE-Druckausgleichsmembran, NOCTUA Lüfter:
+- #### BME280 Modul, PTFE-Druckausgleichsmembran, NOCTUA Lüfter:
   - Siehe hier:
   <br><br>
   ![WW-mySHP - BME-Shield](./img/UWK_210.jpg)
@@ -183,7 +183,7 @@ Universelle Wetterkappe für die Luftdruck-Sensormodule BME280 oder BMP280.
   - NOCTUA NF-A4x10 5V
     - https://noctua.at/de/products/fan/nf-a4x10-5v
 
-#### Historie
+### Historie
 - 2020-07-05 - Umzug in SHP Bereich / Outdated Vermerk und Hinweis auf 'YAWS-Toolbox'
 - Version 2.0 - 2018-05-10
   - Neue erweiterte Version

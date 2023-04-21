@@ -2,11 +2,10 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
+### Projekt-Beschreibung
+Grundlage ist das 'Asksin++' Skript 'HB-LC-Bl1-Velux' von papa. Darauf aufbauend wurde ein universell konfigurierbares Skript entwickelt, aus dem das Projekt 'HB-LC-Bl1-Velux - Velux KLI 310 Integration in HomeMatic zur Steuerung von Velux Rolladen' entstand.
 
-Grundlage ist das 'Asksin++' Script 'HB-LC-Bl1-Velux' von papa. Darauf aufbauend wurde ein universiell konfigurierbares Script entwickelt, aus dem das Projekt 'HB-LC-Bl1-Velux - Velux KLI 310 Integration in HomeMatic zur Steuerung von Velux Rolladen' entstand.
-
-[Original-Script papa ...](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-LC-Bl1-Velux)
+[Original-Skript papa ...](https://github.com/pa-pa/AskSinPP/tree/master/examples/custom/HB-LC-Bl1-Velux)
 
 Folgende Änderungen und Erweiterungen wurden durchgeführt:
 - für eine einfache Konfiguration wurde zusätzlich eine '<HB_LC_BL1_Velux_ext.h>' angelegt, in der alle wesentlichen Konfigurationsparameter zusammengefasst sind - es braucht nun nicht mehr das Original INO File geändert werden.
@@ -14,8 +13,7 @@ Folgende Änderungen und Erweiterungen wurden durchgeführt:
 - Unterstützung unterschiedlicher 'Asksin++' Platinen
 - einheitliches Gehäuse für diese Platinen im 3D-Druck
 
-#### Aufbau
-
+### Aufbau
 Am besten kann der Aufbau der Schaltung über eine der vorhandenen 'Asksin++' Universal-Platinen erfolgen:
 
 - 'einfache' Versionen (bastelaufwendig) - siehe Bilder unten
@@ -25,13 +23,12 @@ Am besten kann der Aufbau der Schaltung über eine der vorhandenen 'Asksin++' Un
   - Platine 'HB-UNI-Mini-X' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X)
   - mit Platine 'HB-UNI-Mini-X AddOn' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/tree/master/PCB_HB-UNI-Mini-X-AddOn)
 
-#### INO-Script
-INO-Script (2-Kanäle) papa: ['HB-LC-Bl1-Velux_2'](./bin/HB-LC-Bl1-Velux_2_20200722.zip)
+### INO-Skript
+INO-Skript (2-Kanäle) papa: ['HB-LC-Bl1-Velux_2'](./bin/HB-LC-Bl1-Velux_2_20200722.zip)
 <br>
-Frei konfigurierbares INO-Script : ['HB-LC-Bl1-Velux_ext'](./bin/HB_LC_BL1_Velux_ext_20200722.zip)
+Frei konfigurierbares INO-Skript : ['HB-LC-Bl1-Velux_ext'](./bin/HB_LC_BL1_Velux_ext_20200722.zip)
 
-#### Konfiguration und Inbetriebnahme
-
+### Konfiguration und Inbetriebnahme
 Wichtig in diesem Zusammenhang ist, wieviele Velux Fenster (wie) angesteuert werden sollen. Es ist nicht notwendig, für jedes Velux Fenster einen eigenen Schaltkanal vorzusehen. Sollen nämlich immer zwei Velux Rolladen (oder mehr) gleichzeitig zusammen angesteuert werden, kann man dies durch eine Koppelung über einen Velux KLI 310 Wandschalter erreichen:
 
 [VELUX - Produkte löschen und Gruppen anlegen mit dem Funk-Wandschalter KLI](https://www.youtube.com/watch?v=4bwj79AXB-s)
@@ -46,7 +43,7 @@ Wichtig in diesem Zusammenhang ist, wieviele Velux Fenster (wie) angesteuert wer
 
 Mit dem Einbau einer derart gekoppelten Velux KLI 310 Platine ist es dann mit nur einem Asksin++ Modul möglich, mehrere Velux Rolladen gleichzeitig zu bedienen.
 
-Das erweiterte INO-Script hier herunterladen und in '<HB_LC_BL1_Velux_ext.h>' die Konfigurationsparameter anpassen. Dabei sollte man sich für eine der beiden Asksin++ Platinen entscheiden, mit denen man den Aufbau vornehmen möchte. Letzlich entscheidet die Konfiguration und der Umfang über die Auswahl: die Platine 'HM-UNI-Mini' eignet sich gleichermaßen, wie die  Platine 'HB-UNI-Mini-X'. Die Platine 'HB-UNI-Mini-X' bietet zusammen mit der Platine 'HB-UNI-Mini-X AddOn' eine integrative Gesamtlösung, während mit der 'HM-UNI-Mini' Platine evtl. für Spannungsregelung und/oder Spannungsmessung zusätzlich ein 'Lochraster AddOn' mit aufgebaut werden muß (siehe unten).
+Das erweiterte INO-Skript hier herunterladen und in '<HB_LC_BL1_Velux_ext.h>' die Konfigurationsparameter anpassen. Dabei sollte man sich für eine der beiden Asksin++ Platinen entscheiden, mit denen man den Aufbau vornehmen möchte. Letzlich entscheidet die Konfiguration und der Umfang über die Auswahl: die Platine 'HM-UNI-Mini' eignet sich gleichermaßen, wie die  Platine 'HB-UNI-Mini-X'. Die Platine 'HB-UNI-Mini-X' bietet zusammen mit der Platine 'HB-UNI-Mini-X AddOn' eine integrative Gesamtlösung, während mit der 'HM-UNI-Mini' Platine evtl. für Spannungsregelung und/oder Spannungsmessung zusätzlich ein 'Lochraster AddOn' mit aufgebaut werden muß (siehe unten).
 
 - Der wesentliche Unterschied wird über die Konfiguration des Defines USE_WOR vorgenommen - dabei wird zwischen nicht batteriebetriebenen und batteriebetriebenen Geräten unterschieden:
 
@@ -66,7 +63,7 @@ Das erweiterte INO-Script hier herunterladen und in '<HB_LC_BL1_Velux_ext.h>' di
 
 - Soll der Arduino Pro Mini mit Batterie betrieben werden, sollte der Ruhestrom gesenkt werden - [siehe Tom Major - 'Ruhestrom Arduino Pro Mini'](https://github.com/TomMajor/SmartHome/tree/master/Info/Ruhestrom/).
 
-- Nach der Konfiguration wie gewohnt das INO Script kompilieren und über den 6-poligen ISP Anschluß auf der Platine hochladen - [siehe AskSin++ - 'Software flashen' - 'FTDI Adapter'](https://asksinpp.de/Grundlagen/02_software.html#anschluss-des-ftdi-adapters).
+- Nach der Konfiguration wie gewohnt das INO Skript kompilieren und über den 6-poligen ISP Anschluß auf der Platine hochladen - [siehe AskSin++ - 'Software flashen' - 'FTDI Adapter'](https://asksinpp.de/Grundlagen/02_software.html#anschluss-des-ftdi-adapters).
 
   - _Nur für Experten_:<br>Wichtig in diesem Zusammenhang ist natürlich, dass auch die 'Fuse Bits'
 des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung des CC1101 Sendemodul ein EEPROM Speicherbereich zur Verfügung gestellt wird ([siehe CC1101 Frequent Test](https://asksinpp.de/Grundlagen/FAQ/Fehlerhafte_CC1101.html)) oder im Batteriebetrieb die Abschaltung des Sendemoduls bei zu niedriger Versorgungsspannung gewährleistet ist ([siehe Abschaltung oder Dauersender/-störer trotz fast voller Batterien](https://asksinpp.de/Grundlagen/FAQ/babbling_idiot.html#dauersender-babbling-idiot)). <br><br>
@@ -82,10 +79,10 @@ des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung
 
 - Zusammenbau und mit Anlernen an der Zentrale die Platine(n) in Betrieb nehmen - zu den Details ... siehe Bilder unten.
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekt für 'HB-LC-Bl1-Velux' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HB-LC-BL1-Velux-KLI310/README.md)
 
-#### Bilder
+### Bilder
 - Velux KLI 310 Wandtaster
 <br><br>
 ![WW-mySHP - HB-LC-Bl1-Velux](./img/SHP_Velux-KLI_81.jpg "")
@@ -172,5 +169,5 @@ des AVRs richtig gesetzt sind: z.B. für das Abspeichern der Frequenzeinstellung
 ![WW-mySHP - HB-LC-Bl1-Velux](./img/SHP_Velux-KLI_28.jpg "")
 <br><br>
 
-#### Historie
+### Historie
 - 2020-07-24 - Erstveröffentlichung

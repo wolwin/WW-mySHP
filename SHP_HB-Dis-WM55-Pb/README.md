@@ -2,7 +2,7 @@
 
 [Zurück zur Übersicht ...](../README.md)
 
-#### Projekt-Beschreibung
+### Projekt-Beschreibung
 
 Projekt 'HB‑Dis‑WM55‑Pb - Erweiterung der Homematic 'Funk-Statusanzeige HM-Dis-WM55' zur externen zusätzlichen Ansteuerung der Anzeige-Tasten'.
 
@@ -15,7 +15,7 @@ Ziel des Projektes war es, die Möglichkeiten des Homematic 'HM-Dis-WM55' Moduls
 <br><br>
 Diese Idee wurde aufgegriffen und weiterentwickelt. Eine eigene 'Asksin++' Platine 'HB-Dis-WM55-Pb' in Verbindung mit dem 'HM-Dis-WM55' OLED-Modul ermöglicht nun das Betätigen der beiden Taster für je einen kurzen oder langen Tastendruck, gesteuert über die CCU Zentrale.
 <br><br>
-Damit kurze und lange Tastendrucke zuverlässig umgesetzt werden, wurde für das 'Asksin++' Modul ein speziell angepaßtes INO-Script geschrieben - hier wird sichergestellt, dass hardwaremäßig ein kurzer oder ein langer Tastendruck das 'HB-Dis-WM55' Modul erreicht. Das 'Asksin++' Modul wird als 'HM-LC-SW1-BA-PCB' Gerät mit vier Schaltkanälen in der CCU Zentrale geführt.
+Damit kurze und lange Tastendrucke zuverlässig umgesetzt werden, wurde für das 'Asksin++' Modul ein speziell angepaßtes INO-Skript geschrieben - hier wird sichergestellt, dass hardwaremäßig ein kurzer oder ein langer Tastendruck das 'HB-Dis-WM55' Modul erreicht. Das 'Asksin++' Modul wird als 'HM-LC-SW1-BA-PCB' Gerät mit vier Schaltkanälen in der CCU Zentrale geführt.
 
 Die Ansteuerung eines Tastenndrucks sollte nicht im Direktmodus des WebGUIs über 'Status und Geräte / Geräte' am 'HM-LC-SW1-BA-PCB' Gerät erfolgen, da es sich ja eigentlich um einen Schaltaktor handelt - d.h.: drückt man für einen Kanal die Taste 'EIN', wird zwar der kurze bzw. lange Tastenimpuls am 'WM-Dis-WM55' ausgelöst, aber die Taste des 'HM-LC-SW1-BA-PCB' Geräts wird in der WebUI nicht zurückgesetzt und bleibt auf 'EIN' stehen!!
 
@@ -38,7 +38,7 @@ Hier exemplarisch alle vier Möglichkeiten als CCU Programm, ausgelöst über vi
 <br><br>
 ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_54.jpg "")
 <br><br>
-Durch diese Kombination von INO-Script (Hardware) und CCU Zentrale 'EIN'/'AUS' Schalter als Impulsgeber, wird sichergestellt, dass der Tastenimpuls immer mit _'korrekter Zeitlänge'_ am 'HM-Dis-WM55'-Modul durchgeführt wird - eine evtl. Auslastung der CCU spielt damit für den Tastenimpuls 'kurz/lang' keine Rolle mehr!
+Durch diese Kombination von INO-Skript (Hardware) und CCU Zentrale 'EIN'/'AUS' Schalter als Impulsgeber, wird sichergestellt, dass der Tastenimpuls immer mit _'korrekter Zeitlänge'_ am 'HM-Dis-WM55'-Modul durchgeführt wird - eine evtl. Auslastung der CCU spielt damit für den Tastenimpuls 'kurz/lang' keine Rolle mehr!
 
 Damit kann das 'HB-Dis-WM55' Modul nun auch bidirektional eingesetzt werden.
 
@@ -48,18 +48,18 @@ An dieser Stelle muss jedoch gesagt werden, dass eigentlich das Homematic 'WM-Di
 
 Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlassen des Hauses, nun schnell und einfach über die CCU Zentrale an das Homematic 'HM-Dis-WM55' OLED-Display  ausgegeben werden.
 
-#### Platine
+### Platine
 - 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb - V1.1' - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-Dis-WM55-Pb/README.md)
 
-#### INO-Script
-- 'HM_LC_SW1_BA_PCB_PB' INO-Script für 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb' - [Download ...](./bin/HM_LC_SW1_BA_PCB_PB_20201007.zip)
+### INO-Skript
+- 'HM_LC_SW1_BA_PCB_PB' INO-Skript für 'Asksin++' Platine 'HB‑Dis‑WM55‑Pb' - [Download ...](./bin/HM_LC_SW1_BA_PCB_PB_20201007.zip)
 
 - Alle wichtigen Informationen zu 'AskSin++' findet man auf der 'AskSin++'-Side - [Zeigen ...](https://asksinpp.de/)
 
-#### 3D-Print
+### 3D-Print
 - 3D-Druck Projekt für 'HB‑Dis‑WM55‑Pb' - [Zeigen ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_HB-Dis-WM55-Pb/README.md)
 
-#### Bilder
+### Bilder
 - Auszug 'HM‑Dis‑WM55' Schaltplan mit den herausgeführten Anschlüssen zur Zusatzplatine 'HB‑Dis‑WM55-Pb'
 - Siehe auch Schaltplan im PCB-Bereich - [Zeigen ...](https://github.com/wolwin/WW-myPCB/blob/master/PCB_HB-Dis-WM55-Pb/README.md#schaltplan)
   <br><br>
@@ -198,5 +198,5 @@ Jedoch können 'einfache' Meldungen, wie 'offene Fenster und Türen' beim Verlas
   ![WW-mySHP - HB‑Dis‑WM55‑Pb](./img/SHP_HB-Dis-WM55-Pb_44.jpg "")
 <br><br>
 
-#### Historie
+### Historie
 - 2020-10-07 - Erstveröffentlichung
