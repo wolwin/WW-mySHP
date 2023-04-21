@@ -23,6 +23,7 @@ Da sich im Laufe der Tests zeigte, dass es zu 'Überschwingungen' am Ausgang der
 Platz für den Einbau eines 3-fach AA-Batteriehalters für eine optionale Stromausfallüberbrückung ist vorhanden.
 
 ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_03.jpg "Stromausfallüberbrückung mit 1N5817 Dioden")
+
 ![WW-mySHP - EZ-GWS](./img/SHP_EZ-GWS_02.jpg "OBO T40 Gehäuse mit 'HB-UNI-Sens-X' und Batteriehalter")
 
 ### Platinen

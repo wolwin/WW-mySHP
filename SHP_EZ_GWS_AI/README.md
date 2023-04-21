@@ -198,10 +198,10 @@ Um die vom 'AI-on-the-edge-device' übermittelten Werte innerhalb der Homematic 
       - TEMPLATE
     ```
 
-- Nach der Konfiguration des virtuellen 'CCU-Jack' Geräts finden diese sich in der 'CCU-Jack' Oberfläche:
+  - Nach der Konfiguration des virtuellen 'CCU-Jack' Geräts finden diese sich in der 'CCU-Jack' Oberfläche:
   <br><br>![WW-mySHP - EZ-GWS-AI](./img/SHP_EZ-GWS-CCUJ_03.jpg "CCU-Jack")
 
-- Und in der Geräteliste der Homematic Zentrale:
+  - Und in der Geräteliste der Homematic Zentrale:
   <br><br>![WW-mySHP - EZ-GWS-AI](./img/SHP_EZ-GWS-CCUJ_05.jpg "Homematic GUI")
 
 ### Homematic-Anwendung
