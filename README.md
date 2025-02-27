@@ -22,6 +22,7 @@ der unterschiedlichen <b>_S_</b>mart-<b>_H_</b>ome-<b>_P_</b>rojekte:
  | [HM‑Energiezähler](./SHP_EZ_GWS/README.md "Zeigen ...") | Homematic Energiezähler für Gas, Wasser und Strom mit der 'Homematic Zählersensor-Sendeeinheit 'HM-ES-TX-WM' |
  | [AI‑Energiezähler](./SHP_EZ_GWS_AI/README.md "Zeigen ...") | 'AI-on-the-edge-device' Energiezähler für Gas, Wasser und Strom im Homematic Umfeld |
  | [Fazit Energiezähler](./SHP_EZ_GWS_X/README.md "Zeigen ...") | Ein Fazit zum Aufbau von Energiezählern für Gas, Wasser und Strom im Homematic Umfeld |
+| [HM-Sen-DB-PCB](./SHP_HM-Sen-DB-PCB/README.md "Zeigen ...") | Klingel Integration mit Homematic Klingel-Sensor |
 
 ## Andere Übersichten
 - 'WW-mySHT' - Smart-Home-Tools - [Zeigen ...](https://github.com/wolwin/WW-mySHT/blob/master/README.md)
