@@ -20,7 +20,7 @@ Im FHZ-Forum wurde dies in mehrern Threads / Beiträgen diskutiert. Der hier vor
 
 ### Technische Lösung
 Auf einer Lochrasterplatine wurde die Klingel-Filterschaltung zur Spannungsbegrenzung aufgebaut. Außerdem wurde ein vergossener Spannungswandler von 220V Wechselstrom zu 3,3V Gleichstrom mit integriert, der die Batterie Spannungsversorgung des 'Homematic Klingel-Sensor' ersetzt.<br><br>
-<u>Anmerkung:</u> der Widerstand R2 (33K/1W) muss je nach Klingeltrafo dimensioniert werden - er bestimmt die Entladungszeit des Kondensators C1 und damit, wie schnell die Klingel hintereinander betätigt werden kann (kurze Klingel-Tastendrücke).  
+<i>Anmerkung:</i> der Widerstand R2 (33K/1W) muss je nach Klingeltrafo dimensioniert werden - er bestimmt die Entladungszeit des Kondensators C1 und damit, wie schnell die Klingel hintereinander betätigt werden kann (kurze Klingel-Tastendrücke).  
 <br>
 - Vorhandene Klingel mit Originalabdeckung:
 <br><br>
