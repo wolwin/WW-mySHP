@@ -1,0 +1,56 @@
+---------------------------------------------------------------------------
+ALP-600 HTTP-Events -> Homematic
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+1. Homematic Systemvariable als Flag durch ALP-600 HTTP-Event setzen
+---------------------------------------------------------------------------
+
+Bei einem ALP-600 Event (Bewegung und / oder Klingeln) wird eine '1' in die 
+HM-Systemvariable 'sv_ALP_HTTP' geschrieben. Es kann nicht zwischen den 
+HTTP-Events unterschieden werden, da die automatische URL-Verkettung 
+(mit &) in der ALP-600 dies verhindert. Der Name der HM-Systemvariablen 
+muss kurz genug gewählt werden, da die Feldgröße von 'Zusätzlicher Wert'
+in der Konfigurationsoberfläche sonst den Eingabestring abschneidet. 
+Zusätzlich muss es ein Programm geben, das die Änderung der 
+HM-Systemvariablen 'sv_ALP_HTTP' auswertet und dann den Wert wieder auf 
+'0' zurücksetzt.
+
+Der allgemeine Homematic HTTP-Aufruf lautet:
+
+http://<CCU_IP>:8181/xyz.exe?sagt=dom.GetObject("<SYSTEM_VARIABLE>").State(<EIN_WERT>)
+
+Einrichtung in der Homematic-Web-Oberfläche:
+--------------------------------------------
+- HM-Systemvariable 'sv_ALP_HTTP' (Text) anlegen
+- HM-Firewall konfigurieren:
+  - Remote Homematic-Script API: Eingeschränkt
+  - Port-Freigabe: 8181
+  - IP-Adressen für den eingeschränkten Zugriff: <IP_ALP-600>
+
+Einrichtung in der ALP-Web-Oberfläche:
+--------------------------------------
+
+Netzwerk - HTTP Ereignis
+------------------------
+Aktivieren - Haken an
+Protokol:    HTTP
+Hostname:    <CCU_IP>:8181
+             192.168.1.10:8181
+Anfrage:     /xyz.exe
+Methode:     GET
+...
+Zusätzlicher Parameter: sagt
+Zusätzlicher Wert:      Allgemein: dom.GetObject("<SYSTEM_VARIABLE>").State(<EIN_WERT>)
+                        Beispiel:  dom.GetObject("sv_ALP_HTTP").State(1)
+Zusätzlicher Body:
+
+Bewegungsmelder
+---------------
+ - Haken aus
+ - HTTP Event: <leer>
+
+Türklingeln
+-----------
+ - Haken aus
+ - HTTP Event: <leer>

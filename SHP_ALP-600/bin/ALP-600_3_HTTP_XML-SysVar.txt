@@ -1,0 +1,77 @@
+---------------------------------------------------------------------------
+ALP-600 HTTP-Events -> Homematic
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+3. Homematic Systemvariable über XML-API durch ALP-600 HTTP-Event setzen
+---------------------------------------------------------------------------
+https://www.homematic-inside.de/software/xml-api
+
+Mit Hilfe des Homematic Addons XML-API kann eine HM-Systemvariable mit 
+spezifischen Werten durch ALP-600 Events (Bewegung und / oder Klingeln)
+gesetzt werden. Der allgemeine HTTP-Addon-Aufruf dazu lautet:
+
+http://<CCU_IP>/config/xmlapi/statechange.cgi?ise_id=<ISE_ID>&new_value=<EIN_WERT>"
+
+- XML-API Addon installieren (Version 2.x)
+  https://github.com/homematic-community/XML-API
+- Erstmalig ein Sicherheitstoken generieren:
+  - in der WebUI unter'Einstellungen / Systemsteuerung / Zusatzsoftware / XML-API' den Knopf 'Einstellen' drücken
+  - SID merken: Beispiel-Token = iljEdPuXOeakOqra
+
+  - Beispiel Token-Liste über Web-Browser abrufen: 
+    https://192.168.1.10/addons/xmlapi/tokenlist.cgi?sid=iljEdPuXOeakOqra
+
+<tokens>
+<token desc="">iljEdPuXOeakOqra</token>
+</tokens>
+
+Einstellungen in der Homematic-Web-Oberfläche:
+----------------------------------------------
+- HM-Firewall konfigurieren:
+  - Homematic XML-RPC API: Eingeschränkt
+  - Port-Freigabe: 1999
+  - IP-Adressen für den eingeschränkten Zugriff: <IP_ALP-600>
+
+- HM-Systemvariable 'sv_ALP_HTTP' (Text) anlegen
+- 'ise_id' dieser HM-Systemvariablen über XML-Schnittstelle mit Browser ermitteln:
+  http://<CCU_IP>/config/xmlapi/sysvarlist.cgi?sid=[TOKEN_ID]
+  http://192.168.1.10/config/xmlapi/sysvarlist.cgi?sid=iljEdPuXOeakOqra
+
+...
+<systemVariable name="sv_ALP_HTTP" variable="null" value="null" value_list="" ise_id="6652" min="" max="" unit="" type="20" subtype="11" logged="false" visible="true" timestamp="1627648285" value_name_0="" value_name_1=""/>
+...
+
+- testen, ob die Systemvariable per HTTP mit Browser gesetzt werden kann:
+  http://<CCU_IP>/config/xmlapi/statechange.cgi?sid=[TOKEN_ID]ise_id=<ISE_ID>&new_value=<EIN_WERT>
+  http://192.168.1.10/config/xmlapi/statechange.cgi?sid=iljEdPuXOeakOqra&ise_id=6652&new_value=EIN_WERT
+  - in der Systemvariablen 'sv_ALP_HTTP' sollte jetzt 'EIN_WERT' stehen ...
+
+- Einrichtung in der ALP-Web-Oberfläche:
+
+Einrichtung in der ALP-Web-Oberfläche:
+--------------------------------------
+
+Netzwerk - HTTP Ereignis
+------------------------
+Aktivieren - Haken an
+Protokol:    HTTP
+Hostname:    Allgemein: <CCU_IP>:<Port>
+             Beispiel:  192.168.1.10:80
+Anfrage:     /config/xmlapi/statechange.cgi
+Methode:     GET
+...
+Zusätzlicher Parameter: ise_id
+Zusätzlicher Wert:      Allgemein: <ISE_ID>&sid=<TOKEN_ID>
+                        Beispiel:  6652&sid=iljEdPuXOeakOqra
+Zusätzlicher Body:
+
+Bewegungsmelder
+---------------
+ - Haken an 
+ - HTTP Event: new_value=BW  => schreibt 'BW' in die System-Variable 'sv_ALP_HTTP' bei Bewegungsevent
+
+Türklingeln
+-----------
+ - Haken an 
+ - HTTP Event: new_value=KL  => schreibt 'KL' in die System-Variable 'sv_ALP_HTTP' bei Klingelevent

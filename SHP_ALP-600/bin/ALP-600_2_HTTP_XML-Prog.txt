@@ -1,0 +1,71 @@
+---------------------------------------------------------------------------
+ALP-600 HTTP-Events -> Homematic
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+2. Homematic Programm über XML-API durch ALP-600 HTTP-Event ausführen
+---------------------------------------------------------------------------
+https://www.homematic-inside.de/software/xml-api
+
+Einrichtung in der Homematic-Web-Oberfläche:
+--------------------------------------------
+- XML-API Addon installieren (Version 2.x)
+  https://github.com/homematic-community/XML-API
+- Erstmalig ein Sicherheitstoken generieren:
+  - in der WebUI unter'Einstellungen / Systemsteuerung / Zusatzsoftware / XML-API' den Knopf 'Einstellen' drücken
+  - SID merken: Beispiel-Token = iljEdPuXOeakOqra
+
+  - Beispiel Token-Liste über Web-Browser abrufen: 
+    https://192.168.1.10/addons/xmlapi/tokenlist.cgi?sid=iljEdPuXOeakOqra
+
+<tokens>
+<token desc="">iljEdPuXOeakOqra</token>
+</tokens>
+
+Einstellungen in der Homematic-Web-Oberfläche:
+----------------------------------------------
+- HM-Firewall konfigurieren:
+  - Homematic XML-RPC API: Eingeschränkt
+  - Port-Freigabe: 1999
+  - IP-Adressen für den eingeschränkten Zugriff: <IP_ALP-600>
+
+- HM-Programm 'prg_ALP_HTTP' anlegen
+- 'program_id' des gewünschten HM-Programms über XML-Schnittstelle mit Browser ermitteln:
+  Allgemein: http://<CCU_IP>/config/xmlapi/programlist.cgi
+  Beispiel:  http://192.168.1.10/config/xmlapi/programlist.cgi?sid=[TOKEN_ID]
+             http://192.168.1.10/config/xmlapi/programlist.cgi?sid=iljEdPuXOeakOqra
+...
+<program id="39205" active="true" timestamp="1627647735" name="prg_ALP_HTTP" description="" visible="true" operate="true"/>
+...
+
+- testen, ob das HM-Programm per HTTP mit Browser gestartet werden kann:
+  Allgemein: http://<CCU_IP>/config/xmlapi/runprogram.cgi?sid=[TOKEN_ID]&program_id=<PROGRAM_ID>
+  Beispiel:  http://192.168.1.10/config/xmlapi/runprogram.cgi?sid=iljEdPuXOeakOqra&program_id=39205
+             - das HM-Programm 'prg_ALP_HTTP' sollte ausgeführt worden sein ...
+
+Einrichtung in der ALP-Web-Oberfläche:
+--------------------------------------
+
+Netzwerk - HTTP Ereignis
+------------------------
+Aktivieren - Haken an
+Protokol:    HTTP
+Hostname:    Allgemein: <CCU_IP>:<Port>
+             Beispiel:  192.168.1.10:80
+Anfrage:     /config/xmlapi/runprogram.cgi
+Methode:     GET
+...
+Zusätzlicher Parameter: program_id
+Zusätzlicher Wert:      Allgemein: <PROGRAM_ID>
+                        Beispiel:  39205&sid=iljEdPuXOeakOqra
+Zusätzlicher Body:
+
+Bewegungsmelder
+---------------
+ - Haken aus
+ - HTTP Event: <leer>
+
+Türklingeln
+-----------
+ - Haken aus
+ - HTTP Event: <leer>

@@ -66,4 +66,5 @@ Auf einer Lochrasterplatine wurde die Klingel-Filterschaltung zur Spannungsbegre
 - 3D-Druck für Klingel mit 'HM-Sen-DB-PCB' - [Zeigen ...](./bin/DIY_Klingel_20240227.zip)
 
 ### Historie
+- 2025-03-01 - Anpassungen
 - 2024-02-27 - Erstveröffentlichung
