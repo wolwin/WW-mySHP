@@ -13,6 +13,9 @@ Der Aufbau und die Konfiguration der 'Alphago ALP-600' wird nicht im Detail besc
 ### Original Dokumentation 'Alphago ALP-600'
 - Dokumentation 'Alphago ALP-600' - Stand 02-2025 - [Zeigen ...](./bin/ALP-600_Doku_20250228.zip)
 
+### Konfiguration 'Alphago ALP-600'
+- Beispiel-Konfiguration (für Homematic) 'Alphago ALP-600' - Stand 12-2023 - [Zeigen ...](./bin/ALP-600_Einst_20231215.zip)
+
 ### 'Alphago ALP-600' - Hardware Lösung zur 'Homematic' Anbindung
 Das Steuergerät der 'Alphago ALP-600' bietet drei Hardware-Ausgänge an, die mit den Kamera-Ereignissen 'Klingeln', 'Bewegung', 'Dunkelheit' und 'Bewegung bei Dunkelheit' über das WebGUI verknüpft werden können. An die drei Ausgänge wird ein Homematic Schaltsensor angeschlossen - im vorliegenden Fall wurde auf Basis von 'Asksin++' ein 'HM-SWI-3-FM' Modul gewählt, das drei Schaltzustände an die 'Homematic' Zentrale melden kann. Natürlich könnte hier auch jede andere HmIP Kontaktschnittstelle zum Einsatz kommen.
 
