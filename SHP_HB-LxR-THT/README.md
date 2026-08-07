@@ -47,7 +47,9 @@ Für die Relaisplatinen **HB-L1R-THT** und **HB-L2R-THT** wurde eine 'AskSin++'-
 
 ### 3D-Print
 Da die **HB-L1R-THT** und **HB-L2R-THT** Platinen im Außenbereich zum Einsatz kommen sollen, wurden Befestigungsadapter für die OBO-Toolbox entworfen.
-- Version - 2026-08-04 &nbsp;&nbsp;&nbsp;&nbsp;[Download 'OBO Adapter für HB-LxR-THT' ...](./bin/OBO_HB-LxR-THT_20260804.zip "OBO Adapter für HB-LxR-THT")
+  - Version - 2026-08-04 &nbsp;&nbsp;&nbsp;&nbsp;[Download 'OBO Adapter für HB-LxR-THT' ...](./bin/OBO_HB-LxR-THT_20260804.zip "OBO Adapter für HB-LxR-THT")
+
+  - Zur Befestigung im OBO Gehäuse werden noch vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 3,5 x 9,5 mm' benötigt. Die Platinen werden jeweils mit vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,2 x 6,5 mm' verschraubt.
 
 - [Zeigen 'OBO-Toolbox ...](https://github.com/wolwin/WW-my3DP/blob/master/3DP_OBO/README.md "OBO-Toolbox")
 
