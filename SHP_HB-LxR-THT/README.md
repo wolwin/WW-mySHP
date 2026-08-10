@@ -47,7 +47,7 @@ Für die Relaisplatinen **HB-L1R-THT** und **HB-L2R-THT** wurde eine 'AskSin++'-
 
 ### 3D-Print
 Da die **HB-L1R-THT** und **HB-L2R-THT** Platinen im Außenbereich zum Einsatz kommen sollen, wurden Befestigungsadapter für die OBO-Toolbox entworfen.
-  - Version - 2026-08-04 &nbsp;&nbsp;&nbsp;&nbsp;[Download 'OBO Adapter für HB-LxR-THT' ...](./bin/OBO_HB-LxR-THT_20260804.zip "OBO Adapter für HB-LxR-THT")
+  - Version - 2026-08-10 &nbsp;&nbsp;&nbsp;&nbsp;[Download 'OBO Adapter für HB-LxR-THT' ...](./bin/OBO_HB-LxR-THT_20260810.zip "OBO Adapter für HB-LxR-THT")
 
   - Zur Befestigung im OBO T60 Gehäuse werden noch vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 3,5 x 9,5 mm' benötigt. Die Platinen werden jeweils mit vier 'Blechschrauben DIN 7981 TX Edelstahl VA Linsenkopf 2,2 x 6,5 mm' verschraubt.
 
@@ -61,6 +61,11 @@ Da die **HB-L1R-THT** und **HB-L2R-THT** Platinen im Außenbereich zum Einsatz k
 - OBO T60 - HB-L2R-THT (V 1.0 - 5 Volt)<br><br>
 ![WW-mySHP - HB-L2R-THT](./img/OBO_T60_HB-L2R-THT_Adapter.jpg "HB-L2R-THT - V 1.0")
 ![WW-mySHP - HB-L2R-THT](./img/OBO_T60_HB-L2R-THT_Platine.jpg "HB-L2R-THT - V 1.0")
+<br><br>
+- OBO T60 - HB-L2R-THT mit Wiska EVPS 12 Druckausgleichsstopfen (linke Seite - unten)<br><br>
+![WW-mySHP - HB-L2R-THT](./img/OBO_T60_HB-L2R-THT_1.jpg "HB-L2R-THT - V 1.0")
+![WW-mySHP - HB-L2R-THT](./img/OBO_T60_HB-L2R-THT_2.jpg "HB-L2R-THT - V 1.0")
+![WW-mySHP - HB-L2R-THT](./img/OBO_T60_HB-L2R-THT_3.jpg "HB-L2R-THT - V 1.0")
 
 ### Historie
 - 2026-08-06 - Erstveröffentlichung
